@@ -1,0 +1,14 @@
+status update 1:
+
+For our progress, we wanted to have a basic map overlay with a couple of points on it by our first 2 weeks. Data collection remains being our most difficult part, we spent some time over the week trying to find weather data in our desired csv format, but most of them are in weird IMMA formats, which I'm unfamiliar with. For the most part, here are the more valuable contributions contributions:
+
+1. Found out the important libraries that we will be using, we explored libraries such as GeoJSON and TopoJSON, we took some time to analyze the difference and found that GeoJSON is more time consuming for larger datasets, so we decided to select TopoJSON to display our data. We were able to find a dataset compatible with TopoJSON for the map of the USA (attachment 1), this is a fully rendered and functional USA map, we can use this and directly insert points with latitude and longtiude, and it would appear on the map. Having the background appear so early in our progress is surprising nonetheless, as we thought this and the data collection were going to be the hardest parts.
+
+2. We found an interesting dataset that we're hoping to work with, it's in csv format: https://www.kaggle.com/datasets/noaa/noaa-icoads. This dataset has everything that we need, such as longitude, latitude, wind direction, wind speed. The most recent dataset was in 2017, so that's the one that we're expecting to use (attachments 2, 3)
+
+As for timeline, we had originally planned to have a small version working by the first 2 weeks. After the first week, we need to
+
+1. Plot the points on the mini version of the map that we have
+2. Make the points vectors instead
+
+And then we will have met our timeline for the first 2 weeks.
