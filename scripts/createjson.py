@@ -2,6 +2,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 import json
 
+# THIS TAKES AROUND 5 MINUTES TO RUN: PLAN ACCORDINGLY
+
 def month_str_to_num(month):
     return datetime.strptime(month, '%b').month
 
