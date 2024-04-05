@@ -2,7 +2,7 @@ const width = 975;
 const height = 615;
 const circleSize = 5;
 const hoveringCircleSize = 10;
-const pointColor = "blue";
+const pointColor = "green";
 
 
 function renderLineChart(data, selector) {
@@ -37,27 +37,64 @@ function renderLineChart(data, selector) {
         .attr('d', line);
 }
 
+
 function renderUSA(svg) {
-    d3.json("./states-albers-10m.json", function(error, us) {
+    d3.json("./counties-albers-10m.json", function(error, us) {
 
         if (error) throw error;
+        const ccolor = d3.scaleSequential(d3.interpolateRdYlBu);
     
         const projection = d3.geoAlbersUsa()
             .translate([width / 2, height / 2])
             .scale(1300);
     
         const path = d3.geoPath();
-    
+        
         const USbackground = svg.append('path')
-            .attr('fill', '#ddd')
+            .attr('fill', 'grey')
+            .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
-    
-        const borders = svg.append('path')
-            .attr('fill', 'none')
-            .attr('stroke', '#fff')
-            .attr('stroke-linejoin', 'round')
-            .attr('stroke-linecap', 'round')
-            .attr('d', path(topojson.mesh(us, us.objects.states, (a,b) => a !== b)));
+
+            
+        // const counties = svg.append("path")
+        //     .datum(topojson.mesh(us, us.objects.counties))
+        //     .attr("fill", "none")
+        //     .attr("stroke", "white")
+        //     .attr("stroke-linejoin", "round")
+        //     .attr("d", path);
+
+        // Load the CSV file
+        d3.csv("scripts/data/newData.csv", (function(error2, data) {
+            if (error2) throw error2;
+            // Store the data in the variable
+            const countyValueMap = {};
+            data.forEach(function(d) {
+                countyValueMap[d.ID] = +d.Value;
+            });
+
+            const colorScale = d3.scaleLinear()
+            .domain([0, 45, 90])
+            .range(["blue", "beige", "red"]);
+
+            const counties = svg.append("g")
+                .selectAll("path")
+                .data(topojson.feature(us, us.objects.counties).features)
+                .enter().append('path')
+                    .attr("fill", function(d) { 
+                        if(countyValueMap[d.id] == undefined || countyValueMap[d.id] == null)
+                            return "black";
+                        return colorScale(countyValueMap[d.id]);
+                    })
+                    .attr("stroke", "white")
+                    .attr("d", path);
+        }));
+
+        const states = svg.append("path")
+            .datum(topojson.mesh(us, us.objects.states))
+              .attr("fill", "none")
+              .attr("stroke", "black")
+              .attr("stroke-linejoin", "round")
+              .attr("d", path);
         
         // edit tooltip style here
         var tooltip = d3.select('body').append('div')
@@ -121,6 +158,7 @@ function renderUSA(svg) {
                     renderLineChart(lineChartData, `#${chartID}`);
                 })
         });
+
     
     })
 }
