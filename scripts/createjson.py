@@ -2,10 +2,12 @@ import pandas as pd
 from datetime import datetime, timedelta
 import json
 
+
 # THIS TAKES AROUND 5 MINUTES TO RUN: PLAN ACCORDINGLY
 
 def month_str_to_num(month):
     return datetime.strptime(month, '%b').month
+
 
 if __name__ == "__main__":
     filename = "updated_weather.csv"
@@ -16,12 +18,12 @@ if __name__ == "__main__":
     monthsDone = set()
 
     for (month, day), group in groupData:
-        
+
         thisDay = []
 
         for index, row in group.iterrows():
             date = datetime(2008, month_str_to_num(month), day)
-            
+
             location_df = df[df["Location"] == row["Location"]]
             info = []
             x = 0
@@ -37,7 +39,7 @@ if __name__ == "__main__":
                 x += 1
 
             info.reverse()
-                
+
             thisDay.append({
                 "Location": row["Location"],
                 "Longitude": row["Longitude"],
@@ -50,6 +52,3 @@ if __name__ == "__main__":
 
         with open(filename, "w") as outfile:
             json.dump(thisDay, outfile, indent=4)
-    
-   
-    

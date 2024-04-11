@@ -3,19 +3,39 @@ const height = 615;
 const circleSize = 5;
 const hoveringCircleSize = 10;
 
+const svg = d3.select('#svg-container').append('svg')
+        .attr('height', height)
+        .attr('width', width);
+
+const dateText = d3.select("#date-text")
+    .style("font-family", "Roboto")
+    .style("letter")
 
 function renderLineChart(data, selector) {
-    const margin = {top: 20, right: 30, bottom: 30, left: 40},
-        width = 200 - margin.left - margin.right, // Adjust size as needed
-        height = 100 - margin.top - margin.bottom; // Adjust size as needed
+    const margin = {top: 20, right: 20, bottom: 50, left: 40},
+        width = 275 - margin.left - margin.right,
+        height = 250 - margin.top - margin.bottom;
 
-    const x = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.x)) // Assuming data is an array of objects with x and y
+    const x = d3.scalePoint()
+        .domain(data.map(d => d.x))
         .range([0, width]);
 
+    const x_axis = d3.axisBottom(x)
+        .tickFormat(function(d) {
+            return +d + 1;
+        })
+
+    const maxY = d3.max(data, d => d.y);
+
+    const yTickValues = [0, maxY / 2, maxY];
+
     const y = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.y))
+        .domain([0, maxY])
         .range([height, 0]);
+
+    const y_axis = d3.axisLeft(y)
+        .tickValues(yTickValues)
+        .tickFormat(d3.format("d"));
 
     const line = d3.line()
         .x(d => x(d.x))
@@ -34,6 +54,30 @@ function renderLineChart(data, selector) {
         .attr('stroke', 'steelblue')
         .attr('stroke-width', 1.5)
         .attr('d', line);
+
+    svg.append("g")
+        .attr("transform", `translate(0,${height})`)
+        .call(x_axis);
+
+    svg.append("g")
+        .call(y_axis);
+
+    svg.append("text")             
+        .attr("transform", `translate(${width / 2}, ${height + margin.top + 20})`)
+        .style("text-anchor", "middle")
+        .style("font-size", "15px")
+        .style("font-family", "Roboto")
+        .text("Days since today");
+
+    svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x",0 - (height / 2))
+        .attr("dy", "1em")
+        .style("font-size", "15px")
+        .style("text-anchor", "middle")
+        .text("Wind Speed (mph)")
+        .style("font-family", "Roboto");
 }
 
 
@@ -83,9 +127,6 @@ function renderUSA(svg, month, day) {
               .attr("stroke-linejoin", "round")
               .attr("d", path);
         
-        // edit tooltip style here
-       
-        
         plotPoints(month, day);
     })
 }
@@ -100,8 +141,12 @@ function plotPoints(month, day) {
 
     if (tooltip.empty()) {
         tooltip = d3.select('body').append('div')
-            .attr('class', 'tooltip') // Use a class to identify the tooltip
-            .style('display', 'inline')
+            .attr('class', 'tooltip')
+            .style('width', '300px')
+            .style('height', '300px')
+            .style('display', 'block')
+            .style('justify-content', 'center')
+            .style('align-items', 'center')
             .style('position', 'fixed')
             .style('visibility', 'hidden')
             .style('opacity', 0)
@@ -113,7 +158,7 @@ function plotPoints(month, day) {
     }
 
     // plot the points
-    fileName = `./weatherdata/${month}${day}.json`
+    fileName = `./scripts/weatherdata/${month}${day}.json`
     d3.json(fileName, function(error, data) {
         if (error) throw error;
 
@@ -142,11 +187,15 @@ function plotPoints(month, day) {
             .attr("cy", function(d) { return projection([d.Longitude, d.Latitude])[1]; })
             .attr("r", circleSize)
             .attr("fill", function(d) { return colorScale(d.WS); }) // change the point color
+            .attr("stroke", "black")
+            .attr("stroke-width", "1px")
             .on("mouseover", function() {
                 d3.select(this)
+                    .raise()
                     .transition()
                     .duration(100)
-                    .attr("r", hoveringCircleSize);
+                    .attr("r", hoveringCircleSize)
+                    .attr("stroke-width", "4px")
             })
             .on("mousemove", function() {
                 tooltip.style('top', (d3.mouse(this)[1] - 10) + 'px')
@@ -156,7 +205,8 @@ function plotPoints(month, day) {
                 d3.select(this)
                     .transition()
                     .duration(100)
-                    .attr("r", circleSize);
+                    .attr("r", circleSize)
+                    .attr("stroke-width", "1px")
                 tooltip.transition()
                     .duration(300)
                     .style('opacity', 0)
@@ -166,11 +216,18 @@ function plotPoints(month, day) {
                 const chartID = 'line-chart';
                 tooltip.html(`
                 <div>
-                    <text>${d.Location}</text>
+                    <text>AIRPORT CODE: ${d.Location}</text>
+                    <br/>
+                    <text>WIND SPEED (TODAY): ${d.WS} mph</text>
                     <div id="${chartID}"></div>
-                    <text>Wind speed: ${d.WS} mph</text>
                 </div>`)
                     .style('visibility', 'visible')
+                    .style('font-family', "Roboto")
+                    .style('font-weight', '500')
+                    .style('padding', '1vh 1vw')
+                    .style('display', 'flex')
+                    .style('justify-content', 'center')
+                    .style('align-items', 'center')
                     .transition()
                     .duration(300)
                     .style('opacity', 1);
@@ -183,9 +240,7 @@ function plotPoints(month, day) {
     
 }
 
-const svg = d3.select('body').append('svg')
-        .attr('height', height)
-        .attr('width', width);
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.getElementById('time-slider');
