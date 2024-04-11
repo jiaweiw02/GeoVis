@@ -39,6 +39,6 @@ def convert_county_ids(csv_file, output_csv_file):
             
 
 # Example usage
-input_csv_file = 'scripts/data/data.csv'
-output_csv_file = 'scripts/data/newData.csv'
+input_csv_file = 'scripts/data/alaskaTempData.csv'
+output_csv_file = 'scripts/data/newAlaskaTempData.csv'
 convert_county_ids(input_csv_file, output_csv_file)

@@ -66,6 +66,36 @@ ID,Name,State,Value,Anomaly (1901-2000 base period),Rank,1901-2000 Mean
 01129,Washington County,Alabama,55.5,3.9,107,51.6
 01131,Wilcox County,Alabama,54,3.7,105,50.3
 01133,Winston County,Alabama,49.8,6,119,43.8
+02013,Aleutians East Borough,Alaska,3.81,0.76,71,3.05
+02016,Aleutians West Census Area,Alaska,4.1,-1.26,42,5.36
+02020,Anchorage Municipality,Alaska,2.63,-1.69,24,4.32
+02050,Bethel Census Area,Alaska,1.41,0.3,71,1.11
+02060,Bristol Bay Borough,Alaska,1.35,0.32,72,1.03
+02063,Chugach Census Area,Alaska,13.72,3.15,80,10.57
+02066,Copper River Census Area,Alaska,4.43,1.98,92,2.45
+02068,Denali Borough,Alaska,0.62,-0.47,31,1.09
+02070,Dillingham Census Area,Alaska,2.46,0.5,71,1.96
+02090,Fairbanks North Star Borough,Alaska,0.32,-0.25,30,0.57
+02100,Haines Borough,Alaska,6.13,0.19,56,5.94
+02105,Hoonah-Angoon Census Area,Alaska,8.66,-0.82,44,9.48
+02110,Juneau City and Borough,Alaska,8.86,-2.74,27,11.6
+02122,Kenai Peninsula Borough,Alaska,2.64,-1.43,25,4.07
+02130,Ketchikan Gateway Borough,Alaska,9.71,-1.64,36,11.35
+02150,Kodiak Island Borough,Alaska,4.01,-0.56,46,4.57
+02158,Kusilvak Census Area,Alaska,1.71,0.77,86,0.94
+02164,Lake and Peninsula Borough,Alaska,2.38,0.16,58,2.22
+02170,Matanuska-Susitna Borough,Alaska,1.34,-0.62,31,1.96
+02180,Nome Census Area,Alaska,2,1.05,89,0.95
+02185,North Slope Borough,Alaska,0.52,0.16,79,0.36
+02188,Northwest Arctic Borough,Alaska,1.13,0.42,79,0.71
+02195,Petersburg Borough,Alaska,9.79,-2.71,30,12.5
+02198,Prince of Wales-Hyder Census Area,Alaska,6.96,-2.31,27,9.27
+02220,Sitka City and Borough,Alaska,10.86,-1.22,46,12.08
+02230,Skagway Municipality,Alaska,5.89,0.07,55,5.82
+02240,Southeast Fairbanks Census Area,Alaska,0.58,-0.07,52,0.65
+02275,Wrangell City and Borough,Alaska,10.47,0.12,47,10.35
+02282,Yakutat City and Borough,Alaska,15.3,1.9,75,13.4
+02290,Yukon-Koyukuk Census Area,Alaska,0.45,-0.23,40,0.68
 04001,Apache County,Arizona,37.6,3.1,106,34.5
 04003,Cochise County,Arizona,48.9,2,94,46.9
 04005,Coconino County,Arizona,39.1,2.6,98,36.5
@@ -1181,7 +1211,7 @@ ID,Name,State,Value,Anomaly (1901-2000 base period),Rank,1901-2000 Mean
 24045,Wicomico County,Maryland,41.4,5.3,113,36.1
 24047,Worcester County,Maryland,41.6,4.9,110,36.7
 24510,Baltimore City,Maryland,40.9,6.4,119,34.5
-24511,Washington, D.C.,Washington, D.C.,42.6,7.2,125,35.4
+24511,Washington D.C.,Washington D.C.,42.6,7.2,125,35.4
 25001,Barnstable County,Massachusetts,35.1,5.7,120,29.4
 25003,Berkshire County,Massachusetts,29.7,8.4,125,21.3
 25005,Bristol County,Massachusetts,33.9,5.4,114,28.5

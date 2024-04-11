@@ -51,7 +51,7 @@ function renderUSA(svg, month, day) {
             .attr('d', path(topojson.feature(us, us.objects.nation)));
 
         // Load the CSV file
-        d3.csv("scripts/data/newData.csv", (function(error2, data) {
+        d3.csv("scripts/data/newPrecData.csv", (function(error2, data) {
             if (error2) throw error2;
             // Store the data in the variable
             const countyValueMap = {};
@@ -59,9 +59,21 @@ function renderUSA(svg, month, day) {
                 countyValueMap[d.ID] = +d.Value;
             });
 
+            var max = d3.max(data, function(d) { return d.Value; } );
+            console.log("max: "+max);
+            var min = d3.min(data, function(d) { return d.Value; } );
+            console.log("min: "+min);
+            var half = (Number(max)+Number(min))/2;
+            console.log("half: "+half);
+
+
             const colorScale = d3.scaleLinear()
-            .domain([0, 45, 90])
-            .range(["blue", "beige", "red"]);
+            .domain([min, max])
+            .range(["white", "teal"]);
+
+            // const colorScale = d3.scaleLinear()
+            // .domain([0, half, max])
+            // .range(["blue", "beige", "red"]);
 
             const counties = svg.append("g")
                 .selectAll("path")
@@ -72,7 +84,7 @@ function renderUSA(svg, month, day) {
                             return "black";
                         return colorScale(countyValueMap[d.id]);
                     })
-                    .attr("stroke", "white")
+                    .attr("stroke", "none")
                     .attr("d", path);
         }));
 
