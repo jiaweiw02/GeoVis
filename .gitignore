@@ -2,4 +2,4 @@ node_modules
 scripts/updated_weather.csv
 scripts/us-airports.csv
 scripts/weather.csv
-scripts/weatherdata.json
+weatherdata

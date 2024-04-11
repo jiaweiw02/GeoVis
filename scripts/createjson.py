@@ -13,17 +13,11 @@ if __name__ == "__main__":
 
     groupData = df.groupby(["Month", "Day"])
 
-    formattedData = []
-
     monthsDone = set()
 
     for (month, day), group in groupData:
         
-        thisDay = {
-            "Month": month,
-            "Day": str(day),
-            "Data": []
-        }
+        thisDay = []
 
         for index, row in group.iterrows():
             date = datetime(2008, month_str_to_num(month), day)
@@ -44,20 +38,18 @@ if __name__ == "__main__":
 
             info.reverse()
                 
-            thisDay["Data"].append({
+            thisDay.append({
                 "Location": row["Location"],
                 "Longitude": row["Longitude"],
                 "Latitude": row["Latitude"],
                 "WS": row["Wind Speed (mph)"],
                 "LastWeek": info
             })
-        
-        formattedData.append(thisDay)
 
-        if month not in monthsDone:
-            monthsDone.add(month)
-            print(f"Finished {month}")
+        filename = "./weatherdata/{}{}.json".format(month, day)
+
+        with open(filename, "w") as outfile:
+            json.dump(thisDay, outfile, indent=4)
     
-    with open("weatherdata.json", "w") as outfile:
-        json.dump(formattedData, outfile, indent=4)
+   
     
