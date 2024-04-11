@@ -55,16 +55,8 @@ function renderUSA(svg) {
             .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
 
-            
-        // const counties = svg.append("path")
-        //     .datum(topojson.mesh(us, us.objects.counties))
-        //     .attr("fill", "none")
-        //     .attr("stroke", "white")
-        //     .attr("stroke-linejoin", "round")
-        //     .attr("d", path);
-
         // Load the CSV file
-        d3.csv("scripts/data/newData.csv", (function(error2, data) {
+        d3.csv("scripts/data/newTempData.csv", (function(error2, data) {
             if (error2) throw error2;
             // Store the data in the variable
             const countyValueMap = {};
@@ -85,7 +77,7 @@ function renderUSA(svg) {
                             return "black";
                         return colorScale(countyValueMap[d.id]);
                     })
-                    .attr("stroke", "white")
+                    .attr("stroke", "none")
                     .attr("d", path);
         }));
 
