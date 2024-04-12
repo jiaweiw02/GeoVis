@@ -2,7 +2,10 @@ const width = 975;
 const height = 615;
 const circleSize = 5;
 const hoveringCircleSize = 10;
-
+const tempFile = "scripts/data/newTempData.csv";
+const precFile = "scripts/data/newPrecData.csv";
+const tempNum = 1;
+const precNum = 2;
 
 function renderLineChart(data, selector) {
     const margin = {top: 20, right: 30, bottom: 30, left: 40},
@@ -36,11 +39,15 @@ function renderLineChart(data, selector) {
         .attr('d', line);
 }
 
+var usData;
 
 function renderUSA(svg, month, day) {
     d3.json("./counties-albers-10m.json", function(error, us) {
 
         if (error) throw error;
+        usData = us;
+
+
         const color = d3.scaleSequential(d3.interpolateRdYlBu);
     
         const path = d3.geoPath();
@@ -49,44 +56,9 @@ function renderUSA(svg, month, day) {
             .attr('fill', 'grey')
             .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
-
-        // Load the CSV file
-        d3.csv("scripts/data/newPrecData.csv", (function(error2, data) {
-            if (error2) throw error2;
-            // Store the data in the variable
-            const countyValueMap = {};
-            data.forEach(function(d) {
-                countyValueMap[d.ID] = +d.Value;
-            });
-
-            var max = d3.max(data, function(d) { return d.Value; } );
-            console.log("max: "+max);
-            var min = d3.min(data, function(d) { return d.Value; } );
-            console.log("min: "+min);
-            var half = (Number(max)+Number(min))/2;
-            console.log("half: "+half);
-
-
-            const colorScale = d3.scaleLinear()
-            .domain([min, max])
-            .range(["white", "teal"]);
-
-            // const colorScale = d3.scaleLinear()
-            // .domain([0, half, max])
-            // .range(["blue", "beige", "red"]);
-
-            const counties = svg.append("g")
-                .selectAll("path")
-                .data(topojson.feature(us, us.objects.counties).features)
-                .enter().append('path')
-                    .attr("fill", function(d) { 
-                        if(countyValueMap[d.id] == undefined || countyValueMap[d.id] == null)
-                            return "black";
-                        return colorScale(countyValueMap[d.id]);
-                    })
-                    .attr("stroke", "none")
-                    .attr("d", path);
-        }));
+        
+        var dataType = tempNum;
+        colorCounties(dataType);
 
         const states = svg.append("path")
             .datum(topojson.mesh(us, us.objects.states))
@@ -96,10 +68,89 @@ function renderUSA(svg, month, day) {
               .attr("d", path);
         
         // edit tooltip style here
-       
+        var quantize = d3.scaleQuantize()
+        .domain([ 0, 0.15 ])
+        .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+            
+        svg.append("g")
+            .attr("class", "legendQuant")
+            .attr("transform", "translate(20,20)");
+        
+        var legend = d3.legendColor()
+            .labelFormat(d3.format(".2f"))
+            .useClass(true)
+            .title("A really really really really really long title")
+            .titleWidth(100)
+            .scale(quantize);
+        
+        svg.select(".legendQuant")
+            .call(legend);
         
         plotPoints(month, day);
     })
+}
+
+function colorCounties(dataType){
+    var fileType = "";
+    if(dataType == tempNum){
+        fileType = tempFile;
+    }
+    if(dataType == precNum){
+        fileType = precFile;
+    }
+
+    // Load the CSV file
+    d3.csv(fileType, (function(error2, data) {
+        if (error2) throw error2;
+        // Store the data in the variable
+        const countyValueMap = {};
+        data.forEach(function(d) {
+            countyValueMap[d.ID] = +d.Value;
+        });
+
+        var max = d3.max(data, function(d) { return d.Value; } );
+        console.log("max: "+max);
+        var min = d3.min(data, function(d) { return d.Value; } );
+        console.log("min: "+min);
+        var half = (Number(max)+Number(min))/2;
+        console.log("half: "+half);
+        // TODO: for some reason on temp, it's giving me min and max as only alaska
+
+
+        var colorScale = d3.scaleLinear()
+        .domain([min, max])
+        .range(["white", "black"]);
+
+        if(dataType == tempNum){
+            colorScale = d3.scaleLinear()
+            .domain([0, 45, 90])
+            .range(["blue", "beige", "red"]);
+            console.log("temperature");
+        }
+        if(dataType == precNum){
+            colorScale = d3.scaleLinear()
+            .domain([min, max])
+            .range(["white", "teal"]);
+            console.log("Precipitation");
+        }
+
+        console.log(fileType);
+        console.log(dataType);
+        
+        const path = d3.geoPath();
+
+        const counties = svg.append("g")
+            .selectAll("path")
+            .data(topojson.feature(usData, usData.objects.counties).features)
+            .enter().append('path')
+                .attr("fill", function(d) { 
+                    if(countyValueMap[d.id] == undefined || countyValueMap[d.id] == null)
+                        return "black";
+                    return colorScale(countyValueMap[d.id]);
+                })
+                .attr("stroke", "none")
+                .attr("d", path);
+    }));
 }
 
 function plotPoints(month, day) {
@@ -232,6 +283,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
+d3.select('#map-options')
+  .on('change', function() {
+    var newData = eval(d3.select(this).property('value'));
+    colorCounties(newData);
+});
 
 renderUSA(svg, "Jan", "1");
 

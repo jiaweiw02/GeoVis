@@ -8,8 +8,16 @@
   </head>
   <body>
     <div id="slider-container">
-        <input type="range" id="time-slider" min="0" max="364" value="0" style="width: 100%;">
+        <input type="range" id="time-slider" min="0" max="364" value="0" style="width: 60%;">
         <p>Date: <span id="slider-date"></span></p>
+    </div>
+    <div id="swap-container">
+        Average 
+        <select id="map-options">
+            <option value="1">Temperature</option>
+            <option value="2">Precipitation</option>
+        </select>
+        per the month of March:
     </div>
     <script src="app.js"></script>
     <div id="hover_div"></div>
