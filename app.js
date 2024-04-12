@@ -2,7 +2,10 @@ const width = 975;
 const height = 615;
 const circleSize = 5;
 const hoveringCircleSize = 10;
-
+const tempFile = "scripts/data/newTempData.csv";
+const precFile = "scripts/data/newPrecData.csv";
+const tempNum = 1;
+const precNum = 2;
 const svg = d3.select('#svg-container').append('svg')
         .attr('height', height)
         .attr('width', width);
@@ -80,11 +83,15 @@ function renderLineChart(data, selector) {
         .style("font-family", "Roboto");
 }
 
+var usData;
 
 function renderUSA(svg, month, day) {
     d3.json("./counties-albers-10m.json", function(error, us) {
 
         if (error) throw error;
+        usData = us;
+
+
         const color = d3.scaleSequential(d3.interpolateRdYlBu);
     
         const path = d3.geoPath();
@@ -93,32 +100,9 @@ function renderUSA(svg, month, day) {
             .attr('fill', 'grey')
             .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
-
-        // Load the CSV file
-        d3.csv("scripts/data/newData.csv", (function(error2, data) {
-            if (error2) throw error2;
-            // Store the data in the variable
-            const countyValueMap = {};
-            data.forEach(function(d) {
-                countyValueMap[d.ID] = +d.Value;
-            });
-
-            const colorScale = d3.scaleLinear()
-            .domain([0, 45, 90])
-            .range(["blue", "beige", "red"]);
-
-            const counties = svg.append("g")
-                .selectAll("path")
-                .data(topojson.feature(us, us.objects.counties).features)
-                .enter().append('path')
-                    .attr("fill", function(d) { 
-                        if(countyValueMap[d.id] == undefined || countyValueMap[d.id] == null)
-                            return "black";
-                        return colorScale(countyValueMap[d.id]);
-                    })
-                    .attr("stroke", "white")
-                    .attr("d", path);
-        }));
+        
+        var dataType = tempNum;
+        colorCounties(dataType);
 
         const states = svg.append("path")
             .datum(topojson.mesh(us, us.objects.states))
@@ -129,6 +113,72 @@ function renderUSA(svg, month, day) {
         
         plotPoints(month, day);
     })
+}
+
+function colorCounties(dataType){
+    var fileType = "";
+    if(dataType == tempNum){
+        fileType = tempFile;
+    }
+    if(dataType == precNum){
+        fileType = precFile;
+    }
+
+    // Load the CSV file
+    d3.csv(fileType, (function(error2, data) {
+        if (error2) throw error2;
+        // Store the data in the variable
+        const countyValueMap = {};
+        data.forEach(function(d) {
+            countyValueMap[d.ID] = +d.Value;
+        });
+
+        var max = d3.max(data, function(d) { return d.Value; } );
+        console.log("max: "+max);
+        var min = d3.min(data, function(d) { return d.Value; } );
+        console.log("min: "+min);
+        var half = (Number(max)+Number(min))/2;
+        console.log("half: "+half);
+        // TODO: for some reason on temp, it's giving me min and max as only alaska
+
+
+        var colorScale = d3.scaleLinear()
+        .domain([min, max])
+        .range(["white", "black"]);
+
+        if(dataType == tempNum){
+            colorScale = d3.scaleLinear()
+            .domain([0, 45, 90])
+            .range(["blue", "beige", "red"]);
+            console.log("temperature");
+        }
+        if(dataType == precNum){
+            colorScale = d3.scaleLinear()
+            .domain([min, max])
+            .range(["white", "teal"]);
+            console.log("Precipitation");
+        }
+
+        console.log(fileType);
+        console.log(dataType);
+        
+        const path = d3.geoPath();
+
+        const counties = svg.append("g")
+            .selectAll("path")
+            .data(topojson.feature(usData, usData.objects.counties).features)
+            .enter().append('path')
+                .attr("fill", function(d) { 
+                    if(countyValueMap[d.id] == undefined || countyValueMap[d.id] == null)
+                        return "black";
+                    return colorScale(countyValueMap[d.id]);
+                })
+                .attr("stroke", "none")
+                .attr("d", path);
+        
+                
+        renderLegend(colorScale, dataType);
+    }));
 }
 
 function plotPoints(month, day) {
@@ -240,7 +290,76 @@ function plotPoints(month, day) {
     
 }
 
+function renderLegend(colorScale, dataType) {
+    const legendWidth = 200;
+    const legendHeight = 20;
+    
+    // Remove any existing legend
+    svg.selectAll(".legend").remove();
+    
+    const legend = svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(550, 570)");
 
+    const legendTitle = legend.append("text")
+        .attr("x", 0)
+        .attr("y", -10)
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .text(dataType === tempNum ? "Temperature Legend" : "Precipitation Legend");
+
+    // const legendMin = legend.append("text")
+    //     .attr("x", -10)
+    //     .attr("y", 10)
+    //     .style("font-size", "12px")
+    //     .style("font-weight", "bold")
+    //     .text("0");
+
+    // const legendMax = legend.append("text")
+    //     .attr("x", 205)
+    //     .attr("y", 10)
+    //     .style("font-size", "12px")
+    //     .style("font-weight", "bold")
+    //     .text(dataType === tempNum ? "90" : "10");
+
+    const defs = legend.append("defs");
+
+    const linearGradient = defs.append("linearGradient")
+        .attr("id", "linear-gradient")
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+
+    linearGradient.selectAll("stop")
+        .data(colorScale.range())
+        .enter().append("stop")
+        .attr("offset", function(d, i) {
+            return i / (colorScale.range().length - 1);
+        })
+        .attr("stop-color", function(d) {
+            return d;
+        });
+
+    legend.append("rect")
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#linear-gradient)");
+
+    const legendScale = d3.scaleLinear()
+        .domain([colorScale.domain()[0], colorScale.domain()[colorScale.domain().length - 1]])
+        .range([0, legendWidth]);
+
+    const legendAxis = d3.axisBottom(legendScale)
+        .tickSize(6)
+        .tickValues(colorScale.domain())
+        .tickFormat(d3.format(".1f"));
+
+    legend.append("g")
+        .attr("class", "legend-axis")
+        .attr("transform", "translate(0," + legendHeight + ")")
+        .call(legendAxis);
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.getElementById('time-slider');
@@ -275,9 +394,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
+d3.select('#map-options')
+  .on('change', function() {
+    var newData = eval(d3.select(this).property('value'));
+    colorCounties(newData);
+});
 
 renderUSA(svg, "Jan", "1");
-
 
 document.body.appendChild(svg.node());
 
