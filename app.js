@@ -175,6 +175,9 @@ function colorCounties(dataType){
                 })
                 .attr("stroke", "none")
                 .attr("d", path);
+        
+                
+        renderLegend(colorScale, dataType);
     }));
 }
 
@@ -287,7 +290,76 @@ function plotPoints(month, day) {
     
 }
 
+function renderLegend(colorScale, dataType) {
+    const legendWidth = 200;
+    const legendHeight = 20;
+    
+    // Remove any existing legend
+    svg.selectAll(".legend").remove();
+    
+    const legend = svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(550, 570)");
 
+    const legendTitle = legend.append("text")
+        .attr("x", 0)
+        .attr("y", -10)
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .text(dataType === tempNum ? "Temperature Legend" : "Precipitation Legend");
+
+    // const legendMin = legend.append("text")
+    //     .attr("x", -10)
+    //     .attr("y", 10)
+    //     .style("font-size", "12px")
+    //     .style("font-weight", "bold")
+    //     .text("0");
+
+    // const legendMax = legend.append("text")
+    //     .attr("x", 205)
+    //     .attr("y", 10)
+    //     .style("font-size", "12px")
+    //     .style("font-weight", "bold")
+    //     .text(dataType === tempNum ? "90" : "10");
+
+    const defs = legend.append("defs");
+
+    const linearGradient = defs.append("linearGradient")
+        .attr("id", "linear-gradient")
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+
+    linearGradient.selectAll("stop")
+        .data(colorScale.range())
+        .enter().append("stop")
+        .attr("offset", function(d, i) {
+            return i / (colorScale.range().length - 1);
+        })
+        .attr("stop-color", function(d) {
+            return d;
+        });
+
+    legend.append("rect")
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#linear-gradient)");
+
+    const legendScale = d3.scaleLinear()
+        .domain([colorScale.domain()[0], colorScale.domain()[colorScale.domain().length - 1]])
+        .range([0, legendWidth]);
+
+    const legendAxis = d3.axisBottom(legendScale)
+        .tickSize(6)
+        .tickValues(colorScale.domain())
+        .tickFormat(d3.format(".1f"));
+
+    legend.append("g")
+        .attr("class", "legend-axis")
+        .attr("transform", "translate(0," + legendHeight + ")")
+        .call(legendAxis);
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.getElementById('time-slider');
@@ -329,7 +401,6 @@ d3.select('#map-options')
 });
 
 renderUSA(svg, "Jan", "1");
-
 
 document.body.appendChild(svg.node());
 
