@@ -97,7 +97,7 @@ function renderUSA(svg, month, day) {
         const path = d3.geoPath();
         
         const USbackground = svg.append('path')
-            .attr('fill', 'grey')
+            .attr('fill', 'white')
             .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
         
@@ -124,10 +124,8 @@ function colorCounties(dataType){
         fileType = precFile;
     }
 
-    // Load the CSV file
     d3.csv(fileType, (function(error2, data) {
         if (error2) throw error2;
-        // Store the data in the variable
         const countyValueMap = {};
         data.forEach(function(d) {
             countyValueMap[d.ID] = +d.Value;
@@ -294,7 +292,6 @@ function renderLegend(colorScale, dataType) {
     const legendWidth = 200;
     const legendHeight = 20;
     
-    // Remove any existing legend
     svg.selectAll(".legend").remove();
     
     const legend = svg.append("g")
@@ -308,19 +305,19 @@ function renderLegend(colorScale, dataType) {
         .style("font-weight", "bold")
         .text(dataType === tempNum ? "Temperature Legend" : "Precipitation Legend");
 
-    // const legendMin = legend.append("text")
-    //     .attr("x", -10)
-    //     .attr("y", 10)
-    //     .style("font-size", "12px")
-    //     .style("font-weight", "bold")
-    //     .text("0");
+    const legendMin = legend.append("text")
+        .attr("x", -10)
+        .attr("y", 10)
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .text("0");
 
-    // const legendMax = legend.append("text")
-    //     .attr("x", 205)
-    //     .attr("y", 10)
-    //     .style("font-size", "12px")
-    //     .style("font-weight", "bold")
-    //     .text(dataType === tempNum ? "90" : "10");
+    const legendMax = legend.append("text")
+        .attr("x", 205)
+        .attr("y", 10)
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .text(dataType === tempNum ? "90" : "10");
 
     const defs = legend.append("defs");
 
