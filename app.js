@@ -205,8 +205,11 @@ function plotPoints(month, day) {
             .style('padding', '10px');
     }
 
+    // clear all previously plotted points
+    svg.selectAll("circle").remove();
+
     // plot the points
-    fileName = `./scripts/weatherdata/${month}${day}.json`
+    fileName = `./scripts/wind_data/${month}${day}.json`
     d3.json(fileName, function(error, data) {
         if (error) throw error;
 
@@ -227,6 +230,50 @@ function plotPoints(month, day) {
         const colorScale = d3.scaleLinear()
             .domain(domain)
             .range(colors);
+
+        const maxWindSpeed = d3.max(data, d => d.WS);
+        const maxWindSpeedPoints = data.filter(d => d.WS === maxWindSpeed);
+
+        console.log(maxWindSpeedPoints);
+
+        const stats = d3.select("#stats");
+        stats.html("");
+
+        stats.append("p").text("Information about today:");
+        maxWindSpeedPoints.forEach(point => {
+            stats.append("p").text(`Location: ${point.Location}`);
+            stats.append("p").text(`Wind speed: ${point.WS} mph`);
+        })
+
+
+        const pointLegendContainer = d3.select("#legend");
+        pointLegendContainer.html("");
+
+        pointLegendContainer.append("p")
+            .style("font-size", "12px")
+            .style("font-weight", "bold")
+            .text("Wind speed (MPH) legend");
+
+        // Create color scale gradient bar
+        const legendScaleBar = pointLegendContainer.append("div")
+            .style("width", "200px")
+            .style("height", "20px")
+            .style("background", "linear-gradient(to right, " + colorScale.range().join(", ") + ")");
+        
+        // Create legend scale labels
+        const keyLabels = [0, 5, 10, 15, 20];
+
+        const labelsContainer = pointLegendContainer.append("div")
+            .style("display", "flex")
+            .style("justify-content", "space-between")
+            .style("width", "200px");
+
+        labelsContainer.selectAll("span")
+            .data(keyLabels)
+            .enter().append("span")
+            .style("font-size", "10px")
+            .style("font-weight", "bold")
+            .text(d => d);
 
         svg.selectAll("circle")
             .data(data)

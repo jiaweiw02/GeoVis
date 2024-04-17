@@ -14,7 +14,6 @@
         <h1 id="date-text"><p>Date: <span id="slider-date"></span></p></h1>
         
         <input type="range" id="time-slider" min="0" max="364" value="0" style="width: 100%;">
-        
     </div>
     <div id="swap-container">
         Average 
@@ -25,9 +24,14 @@
         per the month of March:
     </div>
 
-    <div id="svg-container"></div>
-    <script src="app.js"></script>
-    <p id="p1">Hello World!</p>
+    <div id="svg-container"><script src="app.js"></script></div>
+
+    <div id="bottom-div">
+        <div id="stats"></div>
+        <div id="legend"></div>
+    </div>
+    
+
   </body>
 </html>
 
@@ -44,7 +48,7 @@
     #svg-container {
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     #slider-container {
@@ -54,5 +58,26 @@
         width: 75%;
         text-align: center;
         letter-spacing: 0.25em;
+    }
+
+    #legend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #legend div {
+        text-align: center;
+    }
+
+    #bottom-div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
 </style>
