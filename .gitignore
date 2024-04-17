@@ -4,3 +4,6 @@ scripts/us-airports.csv
 scripts/weather.csv
 weatherdata
 .*
+finalreport/*.aux
+finalreport/*.log
+finalreport/*.gz
