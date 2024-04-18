@@ -10,13 +10,14 @@
     <script src="https://unpkg.com/topojson-client@3"></script>
   </head>
   <body>
+
     <div id="slider-container">
         <h1 id="date-text"><p>Date: <span id="slider-date"></span></p></h1>
         
         <input type="range" id="time-slider" min="0" max="364" value="0" style="width: 100%;">
-        
     </div>
-    <div id="swap-container">
+
+    <div>
         Average 
         <select id="map-options">
             <option value="1">Temperature</option>
@@ -25,9 +26,26 @@
         per the month of March:
     </div>
 
-    <div id="svg-container"></div>
-    <script src="app.js"></script>
-    <p id="p1">Hello World!</p>
+    <div>
+        Point Information:
+        <select id="point-options">
+            <option value="3">Temperature (F)</option>
+            <option value="4">Dew Point (F)</option>
+            <option value="5">Wind Speed (mph)</option>
+            <option value="6">Humidity (%)</option>
+            <option value="7">Pressure (in)</option>
+        </select>
+    </div>
+
+
+
+    <div id="svg-container"><script src="app.js"></script></div>
+
+    <div id="bottom-div">
+        <div id="stats"></div>
+        <div id="legend"></div>
+    </div>    
+
   </body>
 </html>
 
@@ -44,7 +62,7 @@
     #svg-container {
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     #slider-container {
@@ -54,5 +72,35 @@
         width: 75%;
         text-align: center;
         letter-spacing: 0.25em;
+    }
+
+    #legend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #legend div {
+        text-align: center;
+    }
+
+    #bottom-div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 50vw;
+    }
+
+    #stats {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 </style>

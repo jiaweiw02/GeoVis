@@ -19,6 +19,7 @@ if __name__ == "__main__":
     
     df['Longitude'] = df['Location'].map(lambda x: codeToLongLat.get(x, (None, None))[0])
     df['Latitude'] = df['Location'].map(lambda x: codeToLongLat.get(x, (None, None))[1])
+    df['Airport_Name'] = df['Location'].map(lambda x: df1[df1["iata_code"] == x]["name"].values[0] if x in df1["iata_code"].values else None)
 
     weatherWithLongLat = "updated_weather.csv"
     df.to_csv(weatherWithLongLat, index=False)
