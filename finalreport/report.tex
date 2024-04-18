@@ -26,9 +26,15 @@
 \affil[3]{email: wuj22@rpi.edu}
 
 \begin{abstract}
-    Geovis is a map rendering of the United States that aims to provide climate enthusiasts or curious individuals with an interactive webpage to visualize common climate indicators such as wind speed, precipitation, and temperature. With the increase in greenhouse gas emissions around the world, it is crucial to visualize such trends that leverages ones understand in climate change. To compile this project, we utilized datasets from \href{https://www.kaggle.com/datasets}{Kaggle}, gathering our weather data from \href{https://www.kaggle.com/datasets/srinathnanduri97/weather-data-for-265-airports-in-the-united-states}{here} while incorporating it other types of datasets. Our visualization garnered much important feedback, with many feedback being appreciative of our minimalistic and intuitive design. We found that many testers were curious at our web application because they were found to be clicking on multiple things for the sake of visualizing the data.
-
-% This template can be used to approximate final page count for submission to Optica Publishing Group’s journals \emph{Applied Optics}, \emph{Journal of Optical Communications and Networking}, JOSA A, JOSA B, \emph{Optics Letters}, \emph{Optica}, \emph{Optica Quantum}, and \emph{Photonics Research}. Use the shortarticle/true option for \emph{Optics Letters} and short \emph{Optica} articles.  Authors may also \href{https://opticaopen.org}{submit articles} prepared using this template to the Optica Publishing Group preprint server, \href{https://preprints.opticaopen.org}{Optica Open}. However, doing so is optional. Please refer to the submission guidelines found there. You may find it helpful to use our optional \href{https://preflight.paperpal.com/partner/optica/opticapublishinggroupjournals}{Paperpal manuscript readiness check} and \href{https://languageediting.optica.org/}{language polishing service}. Note that copyright and licensing information should no longer be added to your Journal or Optica Open manuscript. If needed for page-length information, please allow 1-2 lines at the end of the abstract to account for the appropriate \href{https://opg.optica.org/content/author/portal/item/review-copyright-permissions/cpyrt-lic-statements}{copyright licensing statement}.
+    Geovis is a map rendering of the United States that aims to provide 
+    climate enthusiasts or curious individuals with an interactive webpage 
+    to visualize common climate indicators such as wind speed, precipitation, 
+    and temperature. With the increase in greenhouse gas emissions around the world, 
+    it is crucial to visualize such trends that leverages ones understand in climate 
+    change. To compile this project, we utilized datasets from \href{https://www.kaggle.com/datasets}{Kaggle}.
+    Our visualization garnered much important feedback, with many feedback being appreciative of our minimalistic and intuitive design. 
+    We found that many testers were curious at our web application because they were found to 
+    be clicking on multiple things for the sake of visualizing the data.
 \end{abstract}
 
 \setboolean{displaycopyright}{false} % Do not include copyright or licensing information in submission.
@@ -39,41 +45,54 @@
 
 \section{Introduction and Background}
 
-See \href{https://opg.optica.org/submit/templates/default.cfm}{Style Guide} and \href{https://opg.optica.org/submit/templates/default.cfm}{Manuscript Templates} pages for more details. 
+We are both climate enthusiasts, which is why we decided to pursue a 
+project that was closely related to visualizing climate. Our intention 
+of creating this project was to provide a platform for individuals to 
+visualize common climate indicators such as wind speed, precipitation, 
+and temperature. We believe that with the increase in greenhouse gas 
+emissions around the world, it is crucial to visualize such trends that 
+leverages ones understand in climate change. Creating a map visualization 
+was what we believed to be the most intuitive way to visualize data, we were 
+inspired by \href{http://hint.fm/wind/}{wind fm} and \href{https://earth.nullschool.net/}
+{earth nullschool}. These sites provide the user with great flexibility in 
+manipulating and showing specific climate indicators, something that we took 
+inspiration in creating our own.
 
-If you have a question while using this template on {Overleaf}, please use the help menu (``?'') on the top bar to search for help or ask us a question using our \href{https://www.overleaf.com/contact}{contact form}.
+\section{Data Collection}
 
-\section{Corresponding author}
+To compile this project, we primarily utilized datasets of type csv. 
+There are two types of data that we had to process, one is for every 
+airport, and another for every county.
 
-We require manuscripts to identify a single corresponding author. The corresponding author typically is the person who submits the manuscript and handles correspondence throughout the peer review and publication process. If other statements about author contribution and contact are needed, they can be added in addition to the corresponding author designation.
+\subsection{Airport Data}
 
-%Example with the corresponding author designated by an asterisk:
+Utilizing airports was the most intuitive way to gather weather data. Initially we had planned to use large global datasets, such as \href{https://www.kaggle.com/datasets/noaa/noaa-icoads?select=icoads_core_2017}{NOAA ICOADS}, but we found it expensive, given the size of the dataset being 31 million rows and 75 columns. Not only that, but the points that were collected over the United States were so abundant, that it was difficult to visualize and also hindered our efforts to make it interactive. Instead, we pivoted over to a dataset that was more manageable, which was the \href{https://www.kaggle.com/datasets/srinathnanduri97/weather-data-for-265-airports-in-the-united-states}{weather data for 265 airports in the United States}. This dataset was much more manageable, with 265 airports. Airports resembled a cleaner visualization as well, as some states have at most 3 major airports, making it simple to visualize the difference.
 
-%\author{Author One\authormark{1} and Author Two\authormark{2,*}}
+\textbf{Processing the data} was by no means simple. There wasn't a dataset that was "perfect" for our project, so we had to look for multiple datasets. The datasets we found was always missing some key features. Our airport weather data, while it was useful in providing us with the weather data, it was missing the latitude and longitude of the airports. We had to find \href{https://www.kaggle.com/datasets/nancyalaswad90/us-airports}{another} dataset that provided us with the latitude and longitude of the airports. We had to merge these two datasets together to create a dataset that had both the weather data and the latitude and longitude of the airports. However, it would be simple if we could just merge the two datasets together to create one, but we ran into one problem. The airport dataset providing us with climate information contained only 265 airports, while our other dataset contained over 3375 datapoints, which are all the airports in the United States.
 
-%\address{\authormark{1}Peer Review, Publications Department,
-%Optica Publishing Group, 2010 Massachusetts Avenue NW,
-%Washington, DC 20036, USA\\
-%\authormark{2}Publications Department, Optica Publishing Group,
-%2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
-%%\authormark{3}xyz@optica.org}
 
-%\email{\authormark{*}xyz@optica.org}}
+\section {Visualization and Choices}
 
-%Example with the corresponding author designated by an asterisk and a note indicating equal contributions by two authors.
+Here is visualization and choices
 
-%\author{Author One\authormark{1,3} and Author %Two\authormark{2,3,*}}
+\section {Feedback}
 
-%\address{\authormark{1}Peer Review, Publications Department,
-%Optica Publishing Group, 2010 Massachusetts Avenue NW, %Washington, DC 20036, USA\\
-%\authormark{2}Publications Department, Optica Publishing Group, %2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
-%\authormark{3}The authors contributed equally to this work.\\
-%\authormark{*}xyz@optica.org}}
+\section {Feature Contribution}
 
-%\section{Examples of Article Components}
-%\label{sec:examples}
+\section {Challenges}
 
-The sections below show examples of different article components.
+\section {Work Distribution}
+
+\subsection {Muhammad Alafifi}
+
+\subsection {Jiawei Wu}
+
+\textbf{For our visualization}, I was responsible for gathering and processing all the datasets relating to the airports as well as the climate data on each airport. I was responsible for implementing the time slider and its functionalities, creating the rendering of the US map, plotting the airports in their respective location, selecting colors for their respective climate indicators, and creating the pop-up window that shows the climate data of each airport. I was also responsible for creating the legend that shows the range of values for each climate indicator. In addition, I also implemented a selection for the climate indicators for the airport points for users to switch between temperature, dew point, wind speed, humidity, and air pressure.
+
+\textbf{For our project write up}, I was responsible for writing the abstract, [1] introduction and background, [2a] data collection for the airport data.
+
+
+% HERE ENDS WHAT IS WRITTEN BY US
 
 \section{Figures and Tables}
 
