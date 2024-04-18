@@ -15,7 +15,6 @@ if __name__ == "__main__":
             continue
         long = df1[df1["iata_code"] == iata]["longitude_deg"].values[0]
         lat = df1[df1["iata_code"] == iata]["latitude_deg"].values[0]
-        name = df1[df1["iata_code"] == iata]["name"].values[0]
         codeToLongLat[iata] = (long, lat)
     
     df['Longitude'] = df['Location'].map(lambda x: codeToLongLat.get(x, (None, None))[0])

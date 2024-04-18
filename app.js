@@ -1,3 +1,5 @@
+
+// MAIN VARIABLES
 const width = 975;
 const height = 615;
 const circleSize = 5;
@@ -6,6 +8,13 @@ const tempFile = "scripts/data/newTempData.csv";
 const precFile = "scripts/data/newPrecData.csv";
 const tempNum = 1;
 const precNum = 2;
+const POINT_TEMP = 3;
+const POINT_DEW = 4;
+const POINT_WIND = 5;
+const POINT_HUMIDITY = 6;
+const POINT_PRESSURE = 7;
+
+// MAIN SVG
 const svg = d3.select('#svg-container').append('svg')
         .attr('height', height)
         .attr('width', width);
@@ -14,6 +23,8 @@ const dateText = d3.select("#date-text")
     .style("font-family", "Roboto")
     .style("letter")
 
+
+// FUNCTIONS
 function renderLineChart(data, selector) {
     const margin = {top: 20, right: 20, bottom: 50, left: 40},
         width = 275 - margin.left - margin.right,
@@ -79,7 +90,7 @@ function renderLineChart(data, selector) {
         .attr("dy", "1em")
         .style("font-size", "15px")
         .style("text-anchor", "middle")
-        .text("Wind Speed (mph)")
+        .text(getNameByType(eval(d3.select('#point-options').property('value'))))
         .style("font-family", "Roboto");
 }
 
@@ -157,8 +168,8 @@ function colorCounties(dataType){
             console.log("Precipitation");
         }
 
-        console.log(fileType);
-        console.log(dataType);
+        // console.log(fileType);
+        // console.log(dataType);
         
         const path = d3.geoPath();
 
@@ -179,6 +190,126 @@ function colorCounties(dataType){
     }));
 }
 
+// function getLastSevenDays(month, day) {
+//     // Array of month abbreviations and the number of days in each month
+//     const months = [
+//         { name: "Jan", days: 31 },
+//         { name: "Feb", days: 28 },
+//         { name: "Mar", days: 31 },
+//         { name: "Apr", days: 30 },
+//         { name: "May", days: 31 },
+//         { name: "Jun", days: 30 },
+//         { name: "Jul", days: 31 },
+//         { name: "Aug", days: 31 },
+//         { name: "Sep", days: 30 },
+//         { name: "Oct", days: 31 },
+//         { name: "Nov", days: 30 },
+//         { name: "Dec", days: 31 }
+//     ];
+
+//     const monthIndex = months.findIndex(m => m.name === month);
+//     let result = [];
+
+//     for (let i = 0; i < 7; i++) {
+//         let newDay = day - i;
+//         let newMonthIndex = monthIndex;
+
+//         while (newDay < 1) {
+//             newMonthIndex = newMonthIndex - 1;
+//             if (newMonthIndex < 0) {
+//                 newMonthIndex = 11;
+//             }
+//             newDay += months[newMonthIndex].days;
+//         }
+
+//         result.push(`${months[newMonthIndex].name}${newDay}`);
+//     }
+
+//     return result.reverse();
+// }
+
+// function getLastWeekWeatherData(days, location, type) {
+
+//     let lineChart = {'x': [], 'y': []};
+
+//     for (let i = 0; i < days.length; i++) {
+//         const url = `lastweek/${location}/${days[i]}.json`
+
+//         d3.json(url, function(error, data) {
+//             if (error) throw error;
+
+//             lineChart.push(data[type])
+//         })
+//     }
+
+//     return lineChart
+// }
+
+function getNameByType(type) {
+    if (type === POINT_TEMP) {
+        return "Temperature (F)";
+    } else if (type === POINT_DEW) {
+        return "Dew Point (F)";
+    } else if (type === POINT_WIND) {
+        return "Wind Speed (mph)";
+    } else if (type === POINT_HUMIDITY) {
+        return "Humidity (%)";
+    } else if (type === POINT_PRESSURE) {
+        return "Pressure (in)";
+    }
+}
+
+function getMinValue(data, type) {
+    if (type === POINT_TEMP) {
+        return d3.min(data, d => d.Temperature);
+    } else if (type === POINT_DEW) {
+        return d3.min(data, d => d.DewPoint);
+    } else if (type === POINT_WIND) {
+        return d3.min(data, d => d.WindSpeed);
+    } else if (type === POINT_HUMIDITY) {
+        return d3.min(data, d => d.Humidity);
+    } else if (type === POINT_PRESSURE) {
+        return d3.min(data, d => d.Pressure);
+    }
+    alert("getMinValue: type is not defined.")
+    return 0;
+}
+
+function getMaxValue(data, type) {
+    if (type === POINT_TEMP) {
+        return d3.max(data, d => d.Temperature);
+    } else if (type === POINT_DEW) {
+        return d3.max(data, d => d.DewPoint);
+    } else if (type === POINT_WIND) {
+        return d3.max(data, d => d.WindSpeed);
+    } else if (type === POINT_HUMIDITY) {
+        return d3.max(data, d => d.Humidity);
+    } else if (type === POINT_PRESSURE) {
+        return d3.max(data, d => d.Pressure);
+    }
+    
+    alert("getMaxValue: type is not defined.")
+    return 0;
+}
+
+function maxPoints(data, type, maxValue) {
+
+    if (type === POINT_TEMP) {
+        return data.filter(d => d.Temperature === maxValue);
+    } else if (type === POINT_DEW) {
+        return data.filter(d => d.DewPoint === maxValue);
+    } else if (type === POINT_WIND) {
+        return data.filter(d => d.WindSpeed === maxValue);
+    } else if (type === POINT_HUMIDITY) {
+        return data.filter(d => d.Humidity === maxValue);
+    } else if (type === POINT_PRESSURE) {
+        return data.filter(d => d.Pressure === maxValue);
+    }
+
+    alert("maxPoints: type is not defined.")
+    return [];
+}
+
 function plotPoints(month, day) {
 
     const projection = d3.geoAlbersUsa()
@@ -190,8 +321,6 @@ function plotPoints(month, day) {
     if (tooltip.empty()) {
         tooltip = d3.select('body').append('div')
             .attr('class', 'tooltip')
-            .style('width', '300px')
-            .style('height', '300px')
             .style('display', 'block')
             .style('justify-content', 'center')
             .style('align-items', 'center')
@@ -209,7 +338,7 @@ function plotPoints(month, day) {
     svg.selectAll("circle").remove();
 
     // plot the points
-    fileName = `./scripts/wind_data/${month}${day}.json`
+    fileName = `./scripts/weatherdata/${month}${day}.json`
     d3.json(fileName, function(error, data) {
         if (error) throw error;
 
@@ -221,8 +350,10 @@ function plotPoints(month, day) {
             "#006837"
         ];
 
-        minVal = 0
-        maxVal = 20
+        const type = eval(d3.select('#point-options').property('value'));
+
+        const minVal = getMinValue(data, type);
+        const maxVal = getMaxValue(data, type);
 
         const step = maxVal / (colors.length - 1);
         const domain = d3.range(minVal, maxVal + step, step);
@@ -230,20 +361,32 @@ function plotPoints(month, day) {
         const colorScale = d3.scaleLinear()
             .domain(domain)
             .range(colors);
-
-        const maxWindSpeed = d3.max(data, d => d.WS);
-        const maxWindSpeedPoints = data.filter(d => d.WS === maxWindSpeed);
-
-        console.log(maxWindSpeedPoints);
+        
+        const pointsWMax = maxPoints(data, type, maxVal);
 
         const stats = d3.select("#stats");
         stats.html("");
 
-        stats.append("p").text("Information about today:");
-        maxWindSpeedPoints.forEach(point => {
-            stats.append("p").text(`Location: ${point.Location}`);
-            stats.append("p").text(`Wind speed: ${point.WS} mph`);
+        stats.append("p").text(`Highest ${getNameByType(type)}:`);
+        pointsWMax.forEach(point => {
+            stats.append("p").text(`Location: ${point.Name}`);
         })
+
+        const point = pointsWMax[0];
+
+        stats.append("p").text(`${getNameByType(type)}: ${
+            type === POINT_TEMP ? point.Temperature :
+            type === POINT_DEW ? point.DewPoint :
+            type === POINT_WIND ? point.WindSpeed :
+            type === POINT_HUMIDITY ? point.Humidity :
+            type === POINT_PRESSURE ? point.Pressure : ""
+        } ${
+            type === POINT_TEMP ? "F" :
+            type === POINT_DEW ? "F" :
+            type === POINT_WIND ? "mph" :
+            type === POINT_HUMIDITY ? "%" :
+            type === POINT_PRESSURE ? "in" : ""
+        }`);
 
 
         const pointLegendContainer = d3.select("#legend");
@@ -252,7 +395,7 @@ function plotPoints(month, day) {
         pointLegendContainer.append("p")
             .style("font-size", "12px")
             .style("font-weight", "bold")
-            .text("Wind speed (MPH) legend");
+            .text(getNameByType(type));
 
         // Create color scale gradient bar
         const legendScaleBar = pointLegendContainer.append("div")
@@ -261,7 +404,20 @@ function plotPoints(month, day) {
             .style("background", "linear-gradient(to right, " + colorScale.range().join(", ") + ")");
         
         // Create legend scale labels
-        const keyLabels = [0, 5, 10, 15, 20];
+        let keyLabels = [];
+
+        if (type === POINT_TEMP) {
+            keyLabels = [0, 15, 30, 45, 60, 75, 90, 105];
+        } else if (type === POINT_DEW) {
+            keyLabels = [0, 10, 20, 30, 40, 50, 60];
+        } else if (type === POINT_WIND) {
+            keyLabels = [0, 5, 10, 15, 20, 25, 30];
+        } else if (type === POINT_HUMIDITY) {
+            keyLabels = [0, 10, 20, 30, 40, 50, 60];
+        } else if (type === POINT_PRESSURE) {
+            keyLabels = [0, 10, 20, 30, 40, 50, 60];
+        }
+
 
         const labelsContainer = pointLegendContainer.append("div")
             .style("display", "flex")
@@ -281,7 +437,19 @@ function plotPoints(month, day) {
             .attr("cx", function(d) { return projection([d.Longitude, d.Latitude])[0]; })
             .attr("cy", function(d) { return projection([d.Longitude, d.Latitude])[1]; })
             .attr("r", circleSize)
-            .attr("fill", function(d) { return colorScale(d.WS); }) // change the point color
+            .attr("fill", function(d) {
+                if (type === POINT_TEMP) {
+                    return colorScale(d.Temperature);
+                } else if (type === POINT_DEW) {
+                    return colorScale(d.DewPoint);
+                } else if (type === POINT_WIND) {
+                    return colorScale(d.WindSpeed);
+                } else if (type === POINT_HUMIDITY) {
+                    return colorScale(d.Humidity);
+                } else if (type === POINT_PRESSURE) {
+                    return colorScale(d.Pressure);
+                }
+            }) // change the point color
             .attr("stroke", "black")
             .attr("stroke-width", "1px")
             .on("mouseover", function() {
@@ -311,9 +479,19 @@ function plotPoints(month, day) {
                 const chartID = 'line-chart';
                 tooltip.html(`
                 <div>
-                    <text>AIRPORT CODE: ${d.Location}</text>
+                    <text>${d.Name}</text>
                     <br/>
-                    <text>WIND SPEED (TODAY): ${d.WS} mph</text>
+                    <text>Airport Code: ${d.Location}</text>
+                    <br/>
+                    <text>Wind Speed (mph): ${d.WindSpeed} mph</text>
+                    <br/>
+                    <text>Temperature (F): ${d.Temperature} F</text>
+                    <br/>
+                    <text>Dew Point (F): ${d.DewPoint} F</text>
+                    <br/>
+                    <text>Humidity (%): ${d.Humidity} %</text>
+                    <br/>
+                    <text>Pressure (in): ${d.Pressure} in</text>
                     <div id="${chartID}"></div>
                 </div>`)
                     .style('visibility', 'visible')
@@ -326,9 +504,27 @@ function plotPoints(month, day) {
                     .transition()
                     .duration(300)
                     .style('opacity', 1);
-                
-                const lineChartData = d.LastWeek;
 
+                let lineChartData;
+
+                const selectedType = eval(d3.select('#point-options').property('value'));
+
+                if (selectedType === POINT_TEMP) {
+                    lineChartData = d.LastWeekTemperature;
+                } else if (selectedType === POINT_DEW) {
+                    lineChartData = d.LastWeekDewPoint;
+                } else if (selectedType === POINT_WIND) {
+                    lineChartData = d.LastWeekWindSpeed;
+                } else if (selectedType === POINT_HUMIDITY) {
+                    lineChartData = d.LastWeekHumidity;
+                } else if (selectedType === POINT_PRESSURE){
+                    lineChartData = d.LastWeekPressure;
+                }
+                
+                if (!lineChartData) {
+                    alert("lineChartData is not defined.");
+                    return;
+                }
                 renderLineChart(lineChartData, `#${chartID}`);
             })
     });
@@ -405,6 +601,8 @@ function renderLegend(colorScale, dataType) {
         .call(legendAxis);
 }
 
+
+// HTML RELATED
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.getElementById('time-slider');
     const sliderDateDisplay = document.getElementById('slider-date');
@@ -419,7 +617,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderDateDisplay.textContent = date.toISOString().substring(0, 10);
     }
 
-    function updateVisualizationForDate(date) {
+    function updateVisualization(date) {
         svg.selectAll("circle").remove();
         dateToMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         month =  dateToMonth[date.getMonth()];
@@ -432,10 +630,13 @@ document.addEventListener("DOMContentLoaded", function() {
     slider.addEventListener('change', function() {
         const selectedDate = sliderValueToDate(this.value);
         updateDisplayedDate(selectedDate);
-        updateVisualizationForDate(selectedDate);
+        updateVisualization(selectedDate);
     });
 
-    
+    d3.select('#point-options')
+        .on('change', function() {
+            updateVisualization(sliderValueToDate(slider.value));
+        })
 });
 
 d3.select('#map-options')
@@ -447,5 +648,3 @@ d3.select('#map-options')
 renderUSA(svg, "Jan", "1");
 
 document.body.appendChild(svg.node());
-
-

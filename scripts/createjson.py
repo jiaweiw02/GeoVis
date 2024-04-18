@@ -11,28 +11,28 @@ def month_str_to_num(month):
 
 
 if __name__ == "__main__":
-    print("SELECT WHICH TYPE OF DATA YOU WANT TO ADD")
-    print("(1) Temperature (F)")
-    print("(2) Dew Point (F)")
-    print("(3) Humidity (%)")
-    print("(4) Wind Speed (mph)")
-    print("(5) Pressure (in)")
+    # print("SELECT WHICH TYPE OF DATA YOU WANT TO ADD")
+    # print("(1) Temperature (F)")
+    # print("(2) Dew Point (F)")
+    # print("(3) Humidity (%)")
+    # print("(4) Wind Speed (mph)")
+    # print("(5) Pressure (in)")
     
-    selection = int(input("Enter the number of the data you want to add: "))
-    if selection == 1:
-        selection = "Temperature (F)"
-    elif selection == 2:
-        selection = "Dew Point (F)"
-    elif selection == 3:
-        selection = "Humidity (%)"
-    elif selection == 4:
-        selection = "Wind Speed (mph)"
-    elif selection == 5:
-        selection = "Pressure (in)"
+    # selection = int(input("Enter the number of the data you want to add: "))
+    # if selection == 1:
+    #     selection = "Temperature (F)"
+    # elif selection == 2:
+    #     selection = "Dew Point (F)"
+    # elif selection == 3:
+    #     selection = "Humidity (%)"
+    # elif selection == 4:
+    #     selection = "Wind Speed (mph)"
+    # elif selection == 5:
+    #     selection = "Pressure (in)"
     
-    if type(selection) == int:
-        print("Invalid selection")
-        exit()
+    # if type(selection) == int:
+    #     print("Invalid selection")
+    #     exit()
 
     filename = "updated_weather.csv"
     df = pd.read_csv(filename)
@@ -45,46 +45,80 @@ if __name__ == "__main__":
 
         for index, row in group.iterrows():
             date = datetime(2008, month_str_to_num(month), day)
-
             location_df = df[df["Location"] == row["Location"]]
-            info = []
+
+            lw_temp = []
+            lw_dp = []
+            lw_hum = []
+            lw_ws = []
+            lw_ps = []
+
             x = 0
             for i in range(1, 8):
                 prev = date - timedelta(days=i)
                 m, d = prev.strftime('%b'), prev.day
                 data = location_df[(location_df["Month"] == m) & (location_df["Day"] == d)]
-                dataValue = data[selection].values[0] if len(data) > 0 else 0
-                info.append({
+
+                tempValue = data["Temperature (F)"].values[0] if len(data) > 0 else 0
+                dpValue = data["Dew Point (F)"].values[0] if len(data) > 0 else 0
+                humValue = data["Humidity (%)"].values[0] if len(data) > 0 else 0
+                wsValue = data["Wind Speed (mph)"].values[0] if len(data) > 0 else 0
+                psValue = data["Pressure (in)"].values[0] if len(data) > 0 else 0
+
+                lw_temp.append({
                     "x": x,
-                    "y": dataValue
+                    "y": tempValue
                 })
+
+                lw_dp.append({
+                    "x": x,
+                    "y": dpValue
+                })
+
+                lw_hum.append({
+                    "x": x,
+                    "y": humValue
+                })
+
+                lw_ws.append({
+                    "x": x,
+                    "y": wsValue
+                })
+
+                lw_ps.append({
+                    "x": x,
+                    "y": psValue
+                })
+
                 x += 1
 
-            info.reverse()
+            lw_temp.reverse()
+            lw_dp.reverse()
+            lw_hum.reverse()
+            lw_ws.reverse()
+            lw_ps.reverse()
 
             thisDay.append({
                 "Location": row["Location"],
+                "Name": row["Airport_Name"],
                 "Longitude": row["Longitude"],
                 "Latitude": row["Latitude"],
-                "data": row[selection],
-                "LastWeek": info
+                "Temperature": row["Temperature (F)"],
+                "DewPoint": row["Dew Point (F)"],
+                "Humidity": row["Humidity (%)"],
+                "WindSpeed": row["Wind Speed (mph)"],
+                "Pressure": row["Pressure (in)"],
+                "LastWeekTemperature": lw_temp,
+                "LastWeekDewPoint": lw_dp,
+                "LastWeekHumidity": lw_hum,
+                "LastWeekWindSpeed": lw_ws,
+                "LastWeekPressure": lw_ps
             })
 
-        directory = None
-        if selection == "Temperature (F)":
-            directory = "./temperature_data"
-        elif selection == "Dew Point (F)": 
-            directory = "./dewpoint_data"
-        elif selection == "Humidity (%)":
-            directory = "./humidity_data"
-        elif selection == "Wind Speed (mph)":
-            directory = "./windspeed_data"
-        elif selection == "Pressure (in)":
-            directory = "./pressure_data"
+        directory = "./weatherdata/"
 
         if not os.path.exists(directory):
             os.makedirs(directory)
-        
 
         filename = "{}/{}{}.json".format(directory, month, day)
 
