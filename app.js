@@ -14,6 +14,9 @@ const POINT_WIND = 5;
 const POINT_HUMIDITY = 6;
 const POINT_PRESSURE = 7;
 
+var global_month = "Jan";
+var global_day = "1";
+
 // MAIN SVG
 const svg = d3.select('#svg-container').append('svg')
         .attr('height', height)
@@ -113,7 +116,7 @@ function renderUSA(svg, month, day) {
             .attr('d', path(topojson.feature(us, us.objects.nation)));
         
         var dataType = tempNum;
-        colorCounties(dataType);
+        colorCounties(dataType, month, day);
 
         const states = svg.append("path")
             .datum(topojson.mesh(us, us.objects.states))
@@ -126,7 +129,7 @@ function renderUSA(svg, month, day) {
     })
 }
 
-function colorCounties(dataType){
+function colorCounties(dataType, month, day){
     var fileType = "";
     if(dataType == tempNum){
         fileType = tempFile;
@@ -134,6 +137,7 @@ function colorCounties(dataType){
     if(dataType == precNum){
         fileType = precFile;
     }
+    svg.selectAll("counties").remove();
 
     d3.csv(fileType, (function(error2, data) {
         if (error2) throw error2;
@@ -188,6 +192,8 @@ function colorCounties(dataType){
                 
         renderLegend(colorScale, dataType);
     }));
+    // console.log("month: "+ month+"; day: "+day);
+    plotPoints(month, day);
 }
 
 // function getLastSevenDays(month, day) {
@@ -622,6 +628,8 @@ document.addEventListener("DOMContentLoaded", function() {
         dateToMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         month =  dateToMonth[date.getMonth()];
         day = date.getDate();
+        global_month = month;
+        global_day = day;
         plotPoints(month, day);
     }
 
@@ -642,7 +650,7 @@ document.addEventListener("DOMContentLoaded", function() {
 d3.select('#map-options')
   .on('change', function() {
     var newData = eval(d3.select(this).property('value'));
-    colorCounties(newData);
+    colorCounties(newData, global_month, global_day);
 });
 
 renderUSA(svg, "Jan", "1");
