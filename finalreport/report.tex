@@ -70,16 +70,121 @@ Utilizing airports was the most intuitive way to gather weather data. Initially 
 
 \textbf{Processing the data} was by no means simple. There wasn't a dataset that was "perfect" for our project, so we had to look for multiple datasets. The datasets we found was always missing some key features. Our airport weather data, while it was useful in providing us with the weather data, it was missing the latitude and longitude of the airports. We had to find \href{https://www.kaggle.com/datasets/nancyalaswad90/us-airports}{another} dataset that provided us with the latitude and longitude of the airports. We had to merge these two datasets together to create a dataset that had both the weather data and the latitude and longitude of the airports. However, it would be simple if we could just merge the two datasets together to create one, but we ran into one problem. The airport dataset providing us with climate information contained only 265 airports, while our other dataset contained over 3375 datapoints, which are all the airports in the United States.
 
+Our final dataset came out to contain the following columns: \textbf{Month, Day, Temperature (F), Dew Point (F), Humidity (\%), Wind Speed (mph), Pressure (in), Precipitation (in), IATA code, Name of airport, Longitude, Latitude}. With all this data, we were able to begin creating our intended visualization.
 
-\section {Visualization and Choices}
+\subsection{County Data}
 
-Here is visualization and choices
+Muhammad explains here how he processed the county data.
+
+\section {Visualization and Progress}
+
+For our visualization, our intention was to create a map of the United States that allows individuals to be able to access climate data in our chosen airports. 
+
+\subsection{Progress Report 1: Map Rendering}
+
+Map rendering is a key feature of our project. Rendering a map of the United States allowed us to begin learning the D3 stack and also envision the data that we will need to plot the points onto the map. We use \href{https://github.com/topojson/topojson}{topojson} and follow \href{https://observablehq.com/@d3/u-s-map}{this D3 guide} to create and render our intended US map.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{images/img1.png}
+    \caption{Our first map rendering of the United States}
+\end{figure}
+
+While topojson is our choice, it is not the only way to render a map. We also considered using \href{https://geojson.org/}{geojson}, but we found that topojson was more efficient in terms of file size, that is to say, they claim that their file sizes are over 80\% smaller than geojson files, as claimed on their \href{https://github.com/topojson/topojson}{Github project description}.
+
+\subsection{Progress Report 2: Plotting the Airports}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{images/img2.png}
+    \caption{Plotting the airports on the US map}
+\end{figure}
+
+Fig 1 provides us with a starting point to plot the airports. For our dataset, we have information like the latitude and longitude of the airports, which is crucial for plotting them in topojson. Fig 2 shows the 265 airports all plotted out onto our map of the United States. An additional feature that we included was a slight hover effect. Hovering over each airport would enlarge the airport point, this decision was done so that it would be easier for users to see which airport they are hovering over. At this point, if you decide to select on an airport by clicking on it, it would display information about that airport. More specifically, the airport name, the wind speed for that airport, and also a line chart to show the trend of the wind speed over the last 7 days.
+
+While this provides a starting point to what we want to do, there are still many things missing. For example, the line chart that we have included for each point's tooltips was unlabeled, it had no axis, making it difficult for the user to intuitively understand what chart is displaying. Not only that, but the points are all colored blue, which is not very intuitive. We need to color the points based on the climate indicator that we want to display.
+
+\subsection {Progress Report 3: Implementing the Time Slider}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.10]{images/img3.png}
+    \caption{Implementing the time slider}
+\end{figure}
+
+Time slider implementation was a crucial feature that we wanted to implement. We wanted to allow users to be able to select a specific date and see the climate data for that specific date. Fig 3 shows the implementation of the time slider. The time slider allows users to select a specific date, and the points on the map would update to show the climate data for that specific date. This was done on client-side rendering with an event listener.
+
+\begin{algorithm}
+    \caption{Time Slider Implementation}
+    \begin{algorithmic}[1]
+    \Procedure{TimeSlider}{}
+    \State $selectedDate \gets sliderValueToDate(this.value)$
+    \State $updateDisplayedDate(selectedDate)$
+    \State $updateVisualization(selectedDate)$
+    \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+This algorithm is called with a 'onchange' event listener, which is triggered whenever the user changes the value of this slider. To remove excessive rendering, we implemented the slider in a way that it only re-renders when you release the point, not when you move it along the slider. We made this decision because our dataset is about 70mb in total, and re-rendering the data when you slide along 365 days caused some delays and lags in rendering. So rendering it only when you release the point was a good compromise.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.45]{images/img5.png}
+    \includegraphics[scale=0.45]{images/img4.png}
+    \caption{Color choice on the airports based on wind speed}
+\end{figure}
+
+Fig 4 shows the choice made in coloring each airport. We decided to select a sequential green hue coloring for our color representation. On the left side, we have filled the circle with the color respective to their wind speed, however, for the lighter colors such as on the south west side, it became more difficult to distinguish between the point and the background. The choice that we decided to make to fix this issue was by implementing a border. The effects of the border is shown in the right image, which makes it easier to distinguish between the points and the background of the map.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/img6.png}
+    \caption{Tooltip improvements}
+\end{figure}
+
+Fig 5 shows the improved tooltip. It shows you the airport IATA code, the wind speed for the day, and also the improvement line chart from progress update 2. Since it was a line chart, we made the decision to flip the x-axis so it would easier to visualize the trend, with the right side being the nearest day, and the left side being the further day.
+
+\subsection {Final Visualization}
+
+For our final visualization, we included not only a legend for the points, but also a toggle for users to switch between the climate indicators such as temperature, dew point, and wind speed. Fig 6 shows the final implementation. We have the time slider on the top, the legend for the airport on the bottom right, and a stats box that on the bottom left, indicating the highest selected climate indicator for that day, along with the location in which it occurred as shown in Fig 7.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{images/img7.png}
+    \caption{Final Visualization}
+
+    \includegraphics[scale=0.5]{images/img8.png}
+    \caption{Multiple Airports have the Highest Pressure for the selected date}
+\end{figure}
+
+In addition, one of the crucial improvements that we wanted to implement was the tooltip for each of the airports. Our final tooltip (Fig 8) shows the full name of the airport that you selected. This felt more intutiive in the audience knowing which airport it is, given that airports with an unfamiliar airport code were unknown to users. In addition, since we had data on all the climate indicators, we thought it would also be the best to include statistics on all the weather indicators, and the line chart should only show the climate indicator selected. In Fig 8, temperature was selected as the toggle for Point Information, and the line chart reflects by graphing the temperature data for the past 7 days.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{images/img9.png}
+    \caption{Final tooltip design}
+\end{figure}
 
 \section {Feedback}
 
-\section {Feature Contribution}
+\subsection{Jiawei's Feedback}
+I was fortunate enough to receive a lot of useful feedback. My question during the feedback process was to ask about what should be placed in the blank spaces in the webpage, as the left and right sides were mostly empty and we could implement some sort of left and right rail to fill up to gaps. Our most common feedback was to implement a stats box that allows the user to view some of the highest climate indicators for that day. I thought this was a great idea, which is why we implemented this into our application for the final version.
+
+A legend for the wind speed was also important, many users were confused about what the colors of the points represented, some of them believed the colors are indications of how "large" an airport is, with darker colors meaning a larger airport, and lighter colors meaning a smaller airport. This was a great suggestion, and we implemented this by adding a legend for our points.
+
+Another suggestion was to add a toggle for the climate indicators. Some people may not only be interested in wind speed, but also other types of climate indicators. This was a great suggestion, mostly because we already had the data for other climate indicators, so it would be simple to implement it onto our application. We went with a toggle version to select different climate indicators. To do so, we needed to improve our python script to include the other climate indicators and create a new final dataset that includes all the climate indicators along with their respective values. 
+
+\textbf{We were not able to implement all the feedback that we received.} One of the important feedbacks that we got was to find a way to color the points to represent which airport is classified as a "large airport" and "medium airport". Since we are using colors of the points to represent the values for the chosen climate indicator, it was difficult to find a common ground on trying to represent the size of the airport. Some of the thoughts that we considered was making it a different shape, perhaps large airports would be a triangle instead of a circle. But this was never added to our final visualization.
+
+\textbf{Another feedback} that we attempted to implement was a comparison between dates. Users could select a specific date, and then select another date, and the points would update to show the difference between the two dates. This was a great suggestion, but we were not able to implement this feature due to time constraints and also difficult bugs that we struggled to fix, so it never made it to our final visualization.
 
 \section {Challenges}
+
+\textbf{Data collection} was definitely one of the more significant barriers to our success. We struggled with finding a dataset with all the information that we needed, so we ended up having to combine different datasets for the airport data.
+
+\textbf{Stack} also posed a challenge for us. We were not familiar with the D3 stack, and we had to rely heavily on trying to map the examples given on the \href{https://observablehq.com/@d3/gallery}{D3 gallery} to our own project.
+
+\textbf{Time} was also a significant challenge. Our initial proposal was a similar idea, but we wanted to apply it globally. We would first render a map of the entire globe with scrolling and zooming in features, and then plot the points as seen in the United States map. However, we quickly realized that the data collection was going to be exponentially more difficult and time-consuming. We struggled to find the data that we needed. We later realized after a week that this was not going to be feasible given the time that we had, so we pivoted to a more manageable dataset and focused instead on the United States.
 
 \section {Work Distribution}
 
@@ -89,194 +194,195 @@ Here is visualization and choices
 
 \textbf{For our visualization}, I was responsible for gathering and processing all the datasets relating to the airports as well as the climate data on each airport. I was responsible for implementing the time slider and its functionalities, creating the rendering of the US map, plotting the airports in their respective location, selecting colors for their respective climate indicators, and creating the pop-up window that shows the climate data of each airport. I was also responsible for creating the legend that shows the range of values for each climate indicator. In addition, I also implemented a selection for the climate indicators for the airport points for users to switch between temperature, dew point, wind speed, humidity, and air pressure.
 
-\textbf{For our project write up}, I was responsible for writing the abstract, [1] introduction and background, [2a] data collection for the airport data.
+\textbf{For our project write up}, I was responsible for writing the abstract, [1] introduction and background, [2a] data collection for the airport data. I was responsible for writing the progress report for anything relating to aiport data and visualization with the points.
 
+\section {Citations}
 
 % HERE ENDS WHAT IS WRITTEN BY US
 
-\section{Figures and Tables}
+% \section{Figures and Tables}
 
-Do not place figures and tables at the back of the manuscript. Figures and tables should be placed and sized as they are likely to appear in the final article. 
+% Do not place figures and tables at the back of the manuscript. Figures and tables should be placed and sized as they are likely to appear in the final article. 
 
-Figures and Tables should be labelled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
+% Figures and Tables should be labelled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
 
-\subsection{Sample Figure}
+% \subsection{Sample Figure}
 
-Figure \ref{fig:false-color} shows an example figure.
+% Figure \ref{fig:false-color} shows an example figure.
 
-\begin{figure}[ht]
-\centering
-% \fbox{\includegraphics[width=\linewidth]{opticafig1}}
-\caption{Dark-field image of a point absorber.}
-\label{fig:false-color}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% % \fbox{\includegraphics[width=\linewidth]{opticafig1}}
+% \caption{Dark-field image of a point absorber.}
+% \label{fig:false-color}
+% \end{figure}
 
-\subsection{Sample Table}
+% \subsection{Sample Table}
 
-Table \ref{tab:shape-functions} shows an example table.
+% Table \ref{tab:shape-functions} shows an example table.
 
-\begin{table}[htbp]
-\centering
-\caption{\bf Shape Functions for Quadratic Line Elements}
-\begin{tabular}{ccc}
-\hline
-local node & $\{N\}_m$ & $\{\Phi_i\}_m$ $(i=x,y,z)$ \\
-\hline
-$m = 1$ & $L_1(2L_1-1)$ & $\Phi_{i1}$ \\
-$m = 2$ & $L_2(2L_2-1)$ & $\Phi_{i2}$ \\
-$m = 3$ & $L_3=4L_1L_2$ & $\Phi_{i3}$ \\
-\hline
-\end{tabular}
-  \label{tab:shape-functions}
-\end{table}
+% \begin{table}[htbp]
+% \centering
+% \caption{\bf Shape Functions for Quadratic Line Elements}
+% \begin{tabular}{ccc}
+% \hline
+% local node & $\{N\}_m$ & $\{\Phi_i\}_m$ $(i=x,y,z)$ \\
+% \hline
+% $m = 1$ & $L_1(2L_1-1)$ & $\Phi_{i1}$ \\
+% $m = 2$ & $L_2(2L_2-1)$ & $\Phi_{i2}$ \\
+% $m = 3$ & $L_3=4L_1L_2$ & $\Phi_{i3}$ \\
+% \hline
+% \end{tabular}
+%   \label{tab:shape-functions}
+% \end{table}
 
-\section{Sample Equation}
+% \section{Sample Equation}
 
-Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-\begin{equation}
-S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i
-\label{eq:refname1}
-\end{equation}
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+% Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+% \begin{equation}
+% S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+%       = \frac{1}{n}\sum_{i}^{n} X_i
+% \label{eq:refname1}
+% \end{equation}
+% denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
 
-\section{Sample Algorithm}
+% \section{Sample Algorithm}
 
-Algorithms can be included using the commands as shown in algorithm \ref{alg:euclid}.
+% Algorithms can be included using the commands as shown in algorithm \ref{alg:euclid}.
 
-\begin{algorithm}
-\caption{Euclid’s algorithm}\label{alg:euclid}
-\begin{algorithmic}[1]
-\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
-\State $r\gets a\bmod b$
-\While{$r\not=0$}\Comment{We have the answer if r is 0}
-\State $a\gets b$
-\State $b\gets r$
-\State $r\gets a\bmod b$
-\EndWhile\label{euclidendwhile}
-\State \textbf{return} $b$\Comment{The gcd is b}
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
+% \begin{algorithm}
+% \caption{Euclid’s algorithm}\label{alg:euclid}
+% \begin{algorithmic}[1]
+% \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+% \State $r\gets a\bmod b$
+% \While{$r\not=0$}\Comment{We have the answer if r is 0}
+% \State $a\gets b$
+% \State $b\gets r$
+% \State $r\gets a\bmod b$
+% \EndWhile\label{euclidendwhile}
+% \State \textbf{return} $b$\Comment{The gcd is b}
+% \EndProcedure
+% \end{algorithmic}
+% \end{algorithm}
 
-\subsection{Supplementary materials in Optica Publishing Group journals}
-Optica Publishing Group journals allow authors to include supplementary materials as integral parts of a manuscript. Such materials are subject to peer-review procedures along with the rest of the paper and should be uploaded and described using the Prism manuscript system. Please refer to the \href{https://opg.optica.org/submit/style/supplementary_materials.cfm}{Author Guidelines for Supplementary Materials in Optica Publishing Group Journals} for more detailed instructions on labeling supplementary materials and your manuscript. For preprints submitted to Optica Open a link to supplemental material should be included in the submission.
+% \subsection{Supplementary materials in Optica Publishing Group journals}
+% Optica Publishing Group journals allow authors to include supplementary materials as integral parts of a manuscript. Such materials are subject to peer-review procedures along with the rest of the paper and should be uploaded and described using the Prism manuscript system. Please refer to the \href{https://opg.optica.org/submit/style/supplementary_materials.cfm}{Author Guidelines for Supplementary Materials in Optica Publishing Group Journals} for more detailed instructions on labeling supplementary materials and your manuscript. For preprints submitted to Optica Open a link to supplemental material should be included in the submission.
 
-\textbf{Authors may also include Supplemental Documents} (PDF documents with expanded descriptions or methods) with the primary manuscript. At this time, supplemental PDF files are not accepted for JOCN or PRJ. To reference the supplementary document, the statement ``See Supplement 1 for supporting content.'' should appear at the bottom of the manuscript (above the References heading). 
+% \textbf{Authors may also include Supplemental Documents} (PDF documents with expanded descriptions or methods) with the primary manuscript. At this time, supplemental PDF files are not accepted for JOCN or PRJ. To reference the supplementary document, the statement ``See Supplement 1 for supporting content.'' should appear at the bottom of the manuscript (above the References heading). 
 
-\begin{figure}[ht!]
-% \centering\includegraphics{opticafig2}
-\caption{Terahertz focusing metalens.}
-\end{figure}
-
-
-\subsection{Sample Dataset Citation}
-
-1. M. Partridge, "Spectra evolution during coating," figshare (2014), http://dx.doi.org/10.6084/m9.figshare.1004612.
-
-\subsection{Sample Code Citation}
-
-2. C. Rivers, "Epipy: Python tools for epidemiology," Figshare (2014) [retrieved 13 May 2015], http://dx.doi.org/10.6084/m9.figshare.1005064.
-
-\section{Backmatter}
-Backmatter sections should be listed in the order Funding/Acknowledgment/Disclosures/Data Availability Statement/Supplemental Document section. An example of backmatter with each of these sections included is shown below.
-
-\begin{backmatter}
-\bmsection{Funding} Content in the funding section will be generated entirely from details submitted to Prism. Authors may add placeholder text in the manuscript to assess length, but any text added to this section in the manuscript will be replaced during production and will display official funder names along with any grant numbers provided. If additional details about a funder are required, they may be added to the Acknowledgments, even if this duplicates information in the funding section. See the example below in Acknowledgements. For preprint submissions, please include funder names and grant numbers in the manuscript.
-
-\bmsection{Acknowledgments} The section title should not follow the numbering scheme of the body of the paper. Additional information crediting individuals who contributed to the work being reported, clarifying who received funding from a particular source, or other information that does not fit the criteria for the funding block may also be included; for example, ``K. Flockhart thanks the National Science Foundation for help identifying collaborators for this work.''
-
-\bmsection{Disclosures} Disclosures should be listed in a separate section at the end of the manuscript. List the Disclosures codes identified on the \href{https://opg.optica.org/submit/review/conflicts-interest-policy.cfm}{Conflict of Interest policy page}. If there are no disclosures, then list ``The authors declare no conflicts of interest.''
-
-\smallskip
-
-\noindent Here are examples of disclosures:
+% \begin{figure}[ht!]
+% % \centering\includegraphics{opticafig2}
+% \caption{Terahertz focusing metalens.}
+% \end{figure}
 
 
-\bmsection{Disclosures} ABC: 123 Corporation (I,E,P), DEF: 456 Corporation (R,S). GHI: 789 Corporation (C).
+% \subsection{Sample Dataset Citation}
 
-\bmsection{Disclosures} The authors declare no conflicts of interest.
+% 1. M. Partridge, "Spectra evolution during coating," figshare (2014), http://dx.doi.org/10.6084/m9.figshare.1004612.
+
+% \subsection{Sample Code Citation}
+
+% 2. C. Rivers, "Epipy: Python tools for epidemiology," Figshare (2014) [retrieved 13 May 2015], http://dx.doi.org/10.6084/m9.figshare.1005064.
+
+% \section{Backmatter}
+% Backmatter sections should be listed in the order Funding/Acknowledgment/Disclosures/Data Availability Statement/Supplemental Document section. An example of backmatter with each of these sections included is shown below.
+
+% \begin{backmatter}
+% \bmsection{Funding} Content in the funding section will be generated entirely from details submitted to Prism. Authors may add placeholder text in the manuscript to assess length, but any text added to this section in the manuscript will be replaced during production and will display official funder names along with any grant numbers provided. If additional details about a funder are required, they may be added to the Acknowledgments, even if this duplicates information in the funding section. See the example below in Acknowledgements. For preprint submissions, please include funder names and grant numbers in the manuscript.
+
+% \bmsection{Acknowledgments} The section title should not follow the numbering scheme of the body of the paper. Additional information crediting individuals who contributed to the work being reported, clarifying who received funding from a particular source, or other information that does not fit the criteria for the funding block may also be included; for example, ``K. Flockhart thanks the National Science Foundation for help identifying collaborators for this work.''
+
+% \bmsection{Disclosures} Disclosures should be listed in a separate section at the end of the manuscript. List the Disclosures codes identified on the \href{https://opg.optica.org/submit/review/conflicts-interest-policy.cfm}{Conflict of Interest policy page}. If there are no disclosures, then list ``The authors declare no conflicts of interest.''
+
+% \smallskip
+
+% \noindent Here are examples of disclosures:
 
 
-\bmsection{Data Availability Statement} A Data Availability Statement (DAS) will be required for all submissions beginning 1 March 2021. The DAS should be an unnumbered separate section titled ``Data Availability'' that
-immediately follows the Disclosures section. See the \href{https://opg.optica.org/submit/review/data-availability-policy.cfm}{Data Availability Statement policy page} for more information.
+% \bmsection{Disclosures} ABC: 123 Corporation (I,E,P), DEF: 456 Corporation (R,S). GHI: 789 Corporation (C).
 
-There are four common (sometimes overlapping) situations that authors should use as guidance. These are provided as minimal models, and authors should feel free to
-include any additional details that may be relevant.
+% \bmsection{Disclosures} The authors declare no conflicts of interest.
 
 
+% \bmsection{Data Availability Statement} A Data Availability Statement (DAS) will be required for all submissions beginning 1 March 2021. The DAS should be an unnumbered separate section titled ``Data Availability'' that
+% immediately follows the Disclosures section. See the \href{https://opg.optica.org/submit/review/data-availability-policy.cfm}{Data Availability Statement policy page} for more information.
 
-\begin{enumerate}
-\item When datasets are included as integral supplementary material in the paper, they must be declared (e.g., as "Dataset 1" following our current supplementary materials policy) and cited in the DAS, and should appear in the references.
+% There are four common (sometimes overlapping) situations that authors should use as guidance. These are provided as minimal models, and authors should feel free to
+% include any additional details that may be relevant.
 
-\bmsection{Data availability} Data underlying the results presented in this paper are available in Dataset 1, Ref. [3].
 
-\item When datasets are cited but not submitted as integral supplementary material, they must be cited in the DAS and should appear in the references.
 
-\bmsection{Data availability} Data underlying the results presented in this paper are available in Ref. [3].
+% \begin{enumerate}
+% \item When datasets are included as integral supplementary material in the paper, they must be declared (e.g., as "Dataset 1" following our current supplementary materials policy) and cited in the DAS, and should appear in the references.
 
-\item If the data generated or analyzed as part of the research are not publicly available, that should be stated. Authors are encouraged to explain why (e.g.~the data may be restricted for privacy reasons), and how the data might be obtained or accessed in the future.
+% \bmsection{Data availability} Data underlying the results presented in this paper are available in Dataset 1, Ref. [3].
 
-\bmsection{Data availability} Data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.
+% \item When datasets are cited but not submitted as integral supplementary material, they must be cited in the DAS and should appear in the references.
 
-\item If no data were generated or analyzed in the presented research, that should be stated.
+% \bmsection{Data availability} Data underlying the results presented in this paper are available in Ref. [3].
 
-\bmsection{Data availability} No data were generated or analyzed in the presented research.
-\end{enumerate}
+% \item If the data generated or analyzed as part of the research are not publicly available, that should be stated. Authors are encouraged to explain why (e.g.~the data may be restricted for privacy reasons), and how the data might be obtained or accessed in the future.
 
-\bigskip
+% \bmsection{Data availability} Data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.
 
-\noindent Data availability statements are not required for preprint submissions.
+% \item If no data were generated or analyzed in the presented research, that should be stated.
 
-\bmsection{Supplemental document}
-See Supplement 1 for supporting content. 
+% \bmsection{Data availability} No data were generated or analyzed in the presented research.
+% \end{enumerate}
 
-\end{backmatter}
+% \bigskip
 
-\section{References}
+% \noindent Data availability statements are not required for preprint submissions.
 
-Note that \emph{Optics Letters} and \emph{Optica} short articles use an abbreviated reference style. Citations to journal articles should omit the article title and final page number; this abbreviated reference style is produced automatically when the \emph{Optics Letters} journal option is selected in the template, if you are using a .bib file for your references.
+% \bmsection{Supplemental document}
+% See Supplement 1 for supporting content. 
 
-\bigskip
-\noindent Add citations manually or use BibTeX. See \cite{Zhang:14,OPTICA,FORSTER2007,testthesis,manga_rao_single_2007}. List up to three author names in references, and if there are more than three authors use \emph{et al.} after that.
+% \end{backmatter}
 
-% Bibliography
-\bibliography{sample}
+% \section{References}
 
-% Full bibliography added automatically for Optics Letters submissions; the following line will simply be ignored if submitting to other journals.
-% Note that this extra page will not count against page length
-\bibliographyfullrefs{sample}
+% Note that \emph{Optics Letters} and \emph{Optica} short articles use an abbreviated reference style. Citations to journal articles should omit the article title and final page number; this abbreviated reference style is produced automatically when the \emph{Optics Letters} journal option is selected in the template, if you are using a .bib file for your references.
 
-%Manual citation list
-%\begin{thebibliography}{1}
-%\bibitem{Zhang:14}
-%Y.~Zhang, S.~Qiao, L.~Sun, Q.~W. Shi, W.~Huang, %L.~Li, and Z.~Yang,
- % \enquote{Photoinduced active terahertz metamaterials with nanostructured
-  %vanadium dioxide film deposited by sol-gel method,} Opt. Express \textbf{22},
-  %11070--11078 (2014).
-%\end{thebibliography}
+% \bigskip
+% \noindent Add citations manually or use BibTeX. See \cite{Zhang:14,OPTICA,FORSTER2007,testthesis,manga_rao_single_2007}. List up to three author names in references, and if there are more than three authors use \emph{et al.} after that.
 
-% Please include bios and photos of all authors for aop articles
-\ifthenelse{\equal{\journalref}{aop}}{%
-\section*{Author Biographies}
-\begingroup
-\setlength\intextsep{0pt}
-\begin{minipage}[t][6.3cm][t]{1.0\textwidth} % Adjust height [6.3cm] as required for separation of bio photos.
-  \begin{wrapfigure}{L}{0.25\textwidth}
-    \includegraphics[width=0.25\textwidth]{john_smith.eps}
-  \end{wrapfigure}
-  \noindent
-  {\bfseries John Smith} received his BSc (Mathematics) in 2000 from The University of Maryland. His research interests include lasers and optics.
-\end{minipage}
-\begin{minipage}{1.0\textwidth}
-  \begin{wrapfigure}{L}{0.25\textwidth}
-    \includegraphics[width=0.25\textwidth]{alice_smith.eps}
-  \end{wrapfigure}
-  \noindent
-  {\bfseries Alice Smith} also received her BSc (Mathematics) in 2000 from The University of Maryland. Her research interests also include lasers and optics.
-\end{minipage}
-\endgroup
-}{}
+% % Bibliography
+% \bibliography{sample}
+
+% % Full bibliography added automatically for Optics Letters submissions; the following line will simply be ignored if submitting to other journals.
+% % Note that this extra page will not count against page length
+% \bibliographyfullrefs{sample}
+
+% %Manual citation list
+% %\begin{thebibliography}{1}
+% %\bibitem{Zhang:14}
+% %Y.~Zhang, S.~Qiao, L.~Sun, Q.~W. Shi, W.~Huang, %L.~Li, and Z.~Yang,
+%  % \enquote{Photoinduced active terahertz metamaterials with nanostructured
+%   %vanadium dioxide film deposited by sol-gel method,} Opt. Express \textbf{22},
+%   %11070--11078 (2014).
+% %\end{thebibliography}
+
+% % Please include bios and photos of all authors for aop articles
+% \ifthenelse{\equal{\journalref}{aop}}{%
+% \section*{Author Biographies}
+% \begingroup
+% \setlength\intextsep{0pt}
+% \begin{minipage}[t][6.3cm][t]{1.0\textwidth} % Adjust height [6.3cm] as required for separation of bio photos.
+%   \begin{wrapfigure}{L}{0.25\textwidth}
+%     \includegraphics[width=0.25\textwidth]{john_smith.eps}
+%   \end{wrapfigure}
+%   \noindent
+%   {\bfseries John Smith} received his BSc (Mathematics) in 2000 from The University of Maryland. His research interests include lasers and optics.
+% \end{minipage}
+% \begin{minipage}{1.0\textwidth}
+%   \begin{wrapfigure}{L}{0.25\textwidth}
+%     \includegraphics[width=0.25\textwidth]{alice_smith.eps}
+%   \end{wrapfigure}
+%   \noindent
+%   {\bfseries Alice Smith} also received her BSc (Mathematics) in 2000 from The University of Maryland. Her research interests also include lasers and optics.
+% \end{minipage}
+% \endgroup
+% }{}
 
 
 \end{document}
