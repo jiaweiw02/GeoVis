@@ -29,6 +29,8 @@ def convert_county_ids(csv_file, output_csv_file):
     with open(csv_file, 'r') as infile, open(output_csv_file, 'w', newline='') as outfile:
         reader = csv.reader(infile)
         writer = csv.writer(outfile)
+        # ID,Name,State,Value,Anomaly (1901-2000 base period),Rank,1901-2000 Mean
+        writer.writerow(['ID','Name','State','Value','Anomaly (1901-2000 base period)','Rank,1901-2000 Mean'])
         
         for i, row in enumerate(reader):
             if i != 0:
@@ -38,7 +40,9 @@ def convert_county_ids(csv_file, output_csv_file):
                 writer.writerow(row)
             
 
-# Example usage
-input_csv_file = 'scripts/data/alaskaTempData.csv'
-output_csv_file = 'scripts/data/newAlaskaTempData.csv'
-convert_county_ids(input_csv_file, output_csv_file)
+# running
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+for mon in months:    
+    input_csv_file = 'scripts/mapdata/oldPrec/'+mon+'Prec.csv'
+    output_csv_file = 'scripts/mapdata/'+mon+'Prec.csv'
+    convert_county_ids(input_csv_file, output_csv_file)

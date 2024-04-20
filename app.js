@@ -16,6 +16,7 @@ const POINT_PRESSURE = 7;
 
 var global_month = "Jan";
 var global_day = "1";
+var dataType = tempNum;
 
 // MAIN SVG
 const svg = d3.select('#svg-container').append('svg')
@@ -115,7 +116,6 @@ function renderUSA(svg, month, day) {
             .attr("stroke", "black")
             .attr('d', path(topojson.feature(us, us.objects.nation)));
         
-        var dataType = tempNum;
         colorCounties(dataType, month, day);
 
         const states = svg.append("path")
@@ -125,17 +125,17 @@ function renderUSA(svg, month, day) {
               .attr("stroke-linejoin", "round")
               .attr("d", path);
         
-        plotPoints(month, day);
+        // plotPoints(month, day);
     })
 }
 
 function colorCounties(dataType, month, day){
     var fileType = "";
     if(dataType == tempNum){
-        fileType = tempFile;
+        fileType = "scripts/mapdata/"+month+"Temps.csv";
     }
     if(dataType == precNum){
-        fileType = precFile;
+        fileType = "scripts/mapdata/"+month+"Prec.csv";
     }
     svg.selectAll("counties").remove();
 
@@ -192,8 +192,9 @@ function colorCounties(dataType, month, day){
                 
         renderLegend(colorScale, dataType);
     }));
-    // console.log("month: "+ month+"; day: "+day);
+    console.log("month: "+ month+"; day: "+day);
     plotPoints(month, day);
+    console.log("printed points");
 }
 
 // function getLastSevenDays(month, day) {
@@ -552,7 +553,7 @@ function renderLegend(colorScale, dataType) {
         .attr("y", -10)
         .style("font-size", "12px")
         .style("font-weight", "bold")
-        .text(dataType === tempNum ? "Temperature Legend" : "Precipitation Legend");
+        .text(dataType === tempNum ? "Temperature Legend (F)" : "Precipitation Legend (Inches)");
 
     const legendMin = legend.append("text")
         .attr("x", -10)
@@ -630,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function() {
         day = date.getDate();
         global_month = month;
         global_day = day;
-        plotPoints(month, day);
+        colorCounties(dataType, month, day);
     }
 
     updateDisplayedDate(sliderValueToDate(slider.value));
@@ -650,7 +651,8 @@ document.addEventListener("DOMContentLoaded", function() {
 d3.select('#map-options')
   .on('change', function() {
     var newData = eval(d3.select(this).property('value'));
-    colorCounties(newData, global_month, global_day);
+    dataType = newData;
+    colorCounties(dataType, global_month, global_day);
 });
 
 renderUSA(svg, "Jan", "1");

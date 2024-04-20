@@ -1,0 +1,3108 @@
+ID,Name,State,Value,Anomaly (1901-2000 base period),Rank,1901-2000 Mean
+01001,Autauga County,Alabama,62.3,-1.3,37,63.6
+01003,Baldwin County,Alabama,64.9,-1.5,34,66.4
+01005,Barbour County,Alabama,62.4,-2.1,22,64.5
+01007,Bibb County,Alabama,61.2,-1.3,40,62.5
+01009,Blount County,Alabama,59.4,-0.9,43,60.3
+01011,Bullock County,Alabama,62.1,-1.7,29,63.8
+01013,Butler County,Alabama,62.2,-2.2,23,64.4
+01015,Calhoun County,Alabama,59.3,-1.4,34,60.7
+01017,Chambers County,Alabama,59.7,-1.6,34,61.3
+01019,Cherokee County,Alabama,59.2,-1.2,39,60.4
+01021,Chilton County,Alabama,61,-1.4,36,62.4
+01023,Choctaw County,Alabama,63.3,-1.1,50,64.4
+01025,Clarke County,Alabama,63.3,-1.4,40,64.7
+01027,Clay County,Alabama,58.7,-1.9,28,60.6
+01029,Cleburne County,Alabama,58.3,-1.4,37,59.7
+01031,Coffee County,Alabama,62.9,-2.2,21,65.1
+01033,Colbert County,Alabama,59.2,-0.6,51,59.8
+01035,Conecuh County,Alabama,62.9,-2.2,23,65.1
+01037,Coosa County,Alabama,60.3,-1.7,31,62
+01039,Covington County,Alabama,63,-2.3,20,65.3
+01041,Crenshaw County,Alabama,62.4,-1.9,28,64.3
+01043,Cullman County,Alabama,58.9,-1.2,40,60.1
+01045,Dale County,Alabama,63.1,-2.3,20,65.4
+01047,Dallas County,Alabama,62.2,-1.8,27,64
+01049,DeKalb County,Alabama,58,-1.2,39,59.2
+01051,Elmore County,Alabama,62,-1.3,39,63.3
+01053,Escambia County,Alabama,63.7,-2,26,65.7
+01055,Etowah County,Alabama,59.4,-1.2,37,60.6
+01057,Fayette County,Alabama,60.2,-1.5,32,61.7
+01059,Franklin County,Alabama,59,-0.8,49,59.8
+01061,Geneva County,Alabama,63.8,-2.1,24,65.9
+01063,Greene County,Alabama,62.4,-1.2,42,63.6
+01065,Hale County,Alabama,62.1,-1.3,38,63.4
+01067,Henry County,Alabama,63.1,-2.3,21,65.4
+01069,Houston County,Alabama,64.2,-2.1,24,66.3
+01071,Jackson County,Alabama,57.8,-1.6,32,59.4
+01073,Jefferson County,Alabama,60.9,-0.6,51,61.5
+01075,Lamar County,Alabama,60.4,-1.4,36,61.8
+01077,Lauderdale County,Alabama,58.7,-0.8,51,59.5
+01079,Lawrence County,Alabama,58.6,-1.3,35,59.9
+01081,Lee County,Alabama,60.8,-1.6,37,62.4
+01083,Limestone County,Alabama,58.8,-1,45,59.8
+01085,Lowndes County,Alabama,63,-1.4,37,64.4
+01087,Macon County,Alabama,62.1,-1.4,42,63.5
+01089,Madison County,Alabama,58.9,-0.9,44,59.8
+01091,Marengo County,Alabama,62.8,-1.3,44,64.1
+01093,Marion County,Alabama,59.3,-1.2,41,60.5
+01095,Marshall County,Alabama,58.9,-1.2,36,60.1
+01097,Mobile County,Alabama,65.4,-0.8,50,66.2
+01099,Monroe County,Alabama,63.1,-1.8,32,64.9
+01101,Montgomery County,Alabama,63,-1.1,40,64.1
+01103,Morgan County,Alabama,58.8,-1.3,35,60.1
+01105,Perry County,Alabama,61.6,-1.7,32,63.3
+01107,Pickens County,Alabama,61.8,-1,43,62.8
+01109,Pike County,Alabama,62.4,-2,26,64.4
+01111,Randolph County,Alabama,58.9,-1.3,36,60.2
+01113,Russell County,Alabama,62,-1.7,31,63.7
+01115,St. Clair County,Alabama,59.7,-1.1,43,60.8
+01117,Shelby County,Alabama,60.7,-1,44,61.7
+01119,Sumter County,Alabama,63,-0.8,52,63.8
+01121,Talladega County,Alabama,59.8,-1.7,31,61.5
+01123,Tallapoosa County,Alabama,59.9,-1.9,26,61.8
+01125,Tuscaloosa County,Alabama,61.8,-1,46,62.8
+01127,Walker County,Alabama,60.3,-1,43,61.3
+01129,Washington County,Alabama,63.9,-1.4,40,65.3
+01131,Wilcox County,Alabama,62.6,-1.8,27,64.4
+01133,Winston County,Alabama,59,-1,45,60
+04001,Apache County,Arizona,47,-0.4,45,47.4
+04003,Cochise County,Arizona,58.8,0.5,67,58.3
+04005,Coconino County,Arizona,49.4,-0.1,54,49.5
+04007,Gila County,Arizona,56.1,0.7,68,55.4
+04009,Graham County,Arizona,58.2,0.6,70,57.6
+04011,Greenlee County,Arizona,53.6,0.3,60,53.3
+04012,La Paz County,Arizona,68.1,0.3,64,67.8
+04013,Maricopa County,Arizona,67.1,0.8,68,66.3
+04015,Mohave County,Arizona,58.1,-0.2,53,58.3
+04017,Navajo County,Arizona,49,-0,52,49
+04019,Pima County,Arizona,64.3,0.6,66,63.7
+04021,Pinal County,Arizona,65.7,0.8,69,64.9
+04023,Santa Cruz County,Arizona,58,0.7,67,57.3
+04025,Yavapai County,Arizona,55.2,0.3,61,54.9
+04027,Yuma County,Arizona,68.6,0.3,59,68.3
+05001,Arkansas County,Arkansas,62.2,-0.1,70,62.3
+05003,Ashley County,Arkansas,63,-0.3,64,63.3
+05005,Baxter County,Arkansas,56.6,-0.7,46,57.3
+05007,Benton County,Arkansas,56.1,-1.3,44,57.4
+05009,Boone County,Arkansas,55.5,-1.3,37,56.8
+05011,Bradley County,Arkansas,61.8,-1,43,62.8
+05013,Calhoun County,Arkansas,61.4,-1.4,32,62.8
+05015,Carroll County,Arkansas,55.6,-1.2,40,56.8
+05017,Chicot County,Arkansas,63.4,-0.2,61,63.6
+05019,Clark County,Arkansas,61.2,-0.9,49,62.1
+05021,Clay County,Arkansas,58.3,-0.8,45,59.1
+05023,Cleburne County,Arkansas,58.1,-0.9,46,59
+05025,Cleveland County,Arkansas,61.6,-0.8,48,62.4
+05027,Columbia County,Arkansas,61.7,-1.5,33,63.2
+05029,Conway County,Arkansas,59.1,-1.2,38,60.3
+05031,Craighead County,Arkansas,59.2,-0.5,54,59.7
+05033,Crawford County,Arkansas,58.3,-1.1,42,59.4
+05035,Crittenden County,Arkansas,61.1,-0.3,62,61.4
+05037,Cross County,Arkansas,61,0,68,61
+05039,Dallas County,Arkansas,61.5,-0.8,50,62.3
+05041,Desha County,Arkansas,62.6,-0.2,68,62.8
+05043,Drew County,Arkansas,62.6,-0.2,62,62.8
+05045,Faulkner County,Arkansas,59.5,-1.1,43,60.6
+05047,Franklin County,Arkansas,57.6,-1.8,31,59.4
+05049,Fulton County,Arkansas,56,-1,41,57
+05051,Garland County,Arkansas,60,-0.8,50,60.8
+05053,Grant County,Arkansas,61.6,-0.6,55,62.2
+05055,Greene County,Arkansas,58.5,-0.8,43,59.3
+05057,Hempstead County,Arkansas,60.6,-1.8,28,62.4
+05059,Hot Spring County,Arkansas,61.1,-0.7,55,61.8
+05061,Howard County,Arkansas,59.4,-1.7,33,61.1
+05063,Independence County,Arkansas,58.8,-0.2,59,59
+05065,Izard County,Arkansas,57.1,-0.6,48,57.7
+05067,Jackson County,Arkansas,59.8,0,63,59.8
+05069,Jefferson County,Arkansas,61.6,-0.7,52,62.3
+05071,Johnson County,Arkansas,56.7,-2,29,58.7
+05073,Lafayette County,Arkansas,61.6,-1.6,28,63.2
+05075,Lawrence County,Arkansas,58.5,-0.5,49,59
+05077,Lee County,Arkansas,61.8,0.2,73,61.6
+05079,Lincoln County,Arkansas,62.4,-0.1,63,62.5
+05081,Little River County,Arkansas,60.6,-1.7,27,62.3
+05083,Logan County,Arkansas,58.4,-1.8,29,60.2
+05085,Lonoke County,Arkansas,60.8,-0.9,48,61.7
+05087,Madison County,Arkansas,54.9,-1.6,34,56.5
+05089,Marion County,Arkansas,56.4,-0.8,46,57.2
+05091,Miller County,Arkansas,61.6,-1.6,29,63.2
+05093,Mississippi County,Arkansas,60.3,-0,66,60.3
+05095,Monroe County,Arkansas,61.6,-0.2,62,61.8
+05097,Montgomery County,Arkansas,59.1,-1,48,60.1
+05099,Nevada County,Arkansas,61.1,-1.5,31,62.6
+05101,Newton County,Arkansas,55,-1.4,34,56.4
+05103,Ouachita County,Arkansas,61.4,-1.6,29,63
+05105,Perry County,Arkansas,59.7,-1.1,41,60.8
+05107,Phillips County,Arkansas,62.6,0.6,79,62
+05109,Pike County,Arkansas,59.6,-1.4,35,61
+05111,Poinsett County,Arkansas,60,-0.3,59,60.3
+05113,Polk County,Arkansas,57.7,-1.6,36,59.3
+05115,Pope County,Arkansas,57.9,-1.3,38,59.2
+05117,Prairie County,Arkansas,60.8,-0.9,48,61.7
+05119,Pulaski County,Arkansas,60.6,-1,46,61.6
+05121,Randolph County,Arkansas,57.5,-0.9,44,58.4
+05123,St. Francis County,Arkansas,61.4,0,69,61.4
+05125,Saline County,Arkansas,60.4,-0.9,44,61.3
+05127,Scott County,Arkansas,58.6,-1.2,40,59.8
+05129,Searcy County,Arkansas,56.7,-0.4,53,57.1
+05131,Sebastian County,Arkansas,59.2,-1.2,38,60.4
+05133,Sevier County,Arkansas,59.7,-1.8,29,61.5
+05135,Sharp County,Arkansas,57.2,-0.6,46,57.8
+05137,Stone County,Arkansas,57.3,-0.6,51,57.9
+05139,Union County,Arkansas,62.1,-1.1,42,63.2
+05141,Van Buren County,Arkansas,57.5,-0.9,46,58.4
+05143,Washington County,Arkansas,56.3,-1.1,49,57.4
+05145,White County,Arkansas,59.8,-0.6,49,60.4
+05147,Woodruff County,Arkansas,60.6,-0.3,59,60.9
+05149,Yell County,Arkansas,59.2,-1.4,37,60.6
+06001,Alameda County,California,56,0.8,80,55.2
+06003,Alpine County,California,38.4,-0.3,55,38.7
+06005,Amador County,California,53,-0.2,56,53.2
+06007,Butte County,California,56.4,0.8,73,55.6
+06009,Calaveras County,California,53.2,-0.3,53,53.5
+06011,Colusa County,California,58.4,1.1,79,57.3
+06013,Contra Costa County,California,57.2,0.5,73,56.7
+06015,Del Norte County,California,47.8,0.8,81,47
+06017,El Dorado County,California,48.5,-0.2,58,48.7
+06019,Fresno County,California,51,0.3,69,50.7
+06021,Glenn County,California,56.7,1.1,81,55.6
+06023,Humboldt County,California,49.8,0.1,58,49.7
+06025,Imperial County,California,69.8,-0,59,69.8
+06027,Inyo County,California,56.3,-0.4,49,56.7
+06029,Kern County,California,57.6,0.6,76,57
+06031,Kings County,California,60.9,0.5,74,60.4
+06033,Lake County,California,51.9,0.3,63,51.6
+06035,Lassen County,California,42.3,-0.5,60,42.8
+06037,Los Angeles County,California,57.4,1.3,79,56.1
+06039,Madera County,California,51.7,0.2,67,51.5
+06041,Marin County,California,53.3,0.4,67,52.9
+06043,Mariposa County,California,50.1,-0.2,54,50.3
+06045,Mendocino County,California,50.8,-0,60,50.8
+06047,Merced County,California,59.8,1,83,58.8
+06049,Modoc County,California,42.2,-0.2,59,42.4
+06051,Mono County,California,39,-0.4,55,39.4
+06053,Monterey County,California,54.6,0.8,78,53.8
+06055,Napa County,California,56.1,1,80,55.1
+06057,Nevada County,California,47.4,-0.2,58,47.6
+06059,Orange County,California,61.3,2,97,59.3
+06061,Placer County,California,48.8,-0.2,60,49
+06063,Plumas County,California,43.2,0,60,43.2
+06065,Riverside County,California,64,0.3,69,63.7
+06067,Sacramento County,California,59.6,0.5,73,59.1
+06069,San Benito County,California,54.4,1.1,82,53.4
+06071,San Bernardino County,California,62.2,-0.2,58,62.4
+06073,San Diego County,California,58.3,0.8,73,57.5
+06075,San Francisco County,California,55.2,0.8,80,54.4
+06077,San Joaquin County,California,59.6,0.7,75,58.9
+06079,San Luis Obispo County,California,54.9,0.6,71,54.3
+06081,San Mateo County,California,54.5,1.4,96,53.1
+06083,Santa Barbara County,California,53.6,1,80,52.6
+06085,Santa Clara County,California,54.4,1,83,53.4
+06087,Santa Cruz County,California,53.9,0.9,84,53
+06089,Shasta County,California,51.2,0.5,70,50.7
+06091,Sierra County,California,42.8,0.3,65,42.5
+06093,Siskiyou County,California,44.5,0.6,76,43.9
+06095,Solano County,California,58.7,0.8,76,57.9
+06097,Sonoma County,California,54.1,0.8,80,53.3
+06099,Stanislaus County,California,58.7,0.7,79,58
+06101,Sutter County,California,60.8,1.1,81,59.7
+06103,Tehama County,California,54.3,0.5,71,53.8
+06105,Trinity County,California,47.9,0.5,69,47.4
+06107,Tulare County,California,49.6,0.3,69,49.3
+06109,Tuolumne County,California,44.4,-0.6,52,45
+06111,Ventura County,California,52.4,0.8,74,51.6
+06113,Yolo County,California,59.5,1.1,83,58.4
+06115,Yuba County,California,56.8,0,63,56.8
+08001,Adams County,Colorado,45.6,-0.8,45,46.4
+08003,Alamosa County,Colorado,41,-0.2,46,41.2
+08005,Arapahoe County,Colorado,44.9,-0.9,43,45.8
+08007,Archuleta County,Colorado,40.3,-0.1,51,40.4
+08009,Baca County,Colorado,50.6,-1,46,51.6
+08011,Bent County,Colorado,51.2,-0.3,58,51.5
+08013,Boulder County,Colorado,40.2,-0.6,47,40.8
+08014,Broomfield County,Colorado,46.2,-1,42,47.2
+08015,Chaffee County,Colorado,34.5,-0.3,52,34.8
+08017,Cheyenne County,Colorado,48.1,-0.7,48,48.8
+08019,Clear Creek County,Colorado,32.2,-0.8,43,33
+08021,Conejos County,Colorado,37.2,-0.5,47,37.7
+08023,Costilla County,Colorado,38.9,-0.2,48,39.1
+08025,Crowley County,Colorado,49.7,0.5,65,49.2
+08027,Custer County,Colorado,37.9,0.1,48,37.8
+08029,Delta County,Colorado,43.2,-0.3,50,43.5
+08031,Denver County,Colorado,45.9,-1.2,41,47.1
+08033,Dolores County,Colorado,39.3,0.4,58,38.9
+08035,Douglas County,Colorado,41.8,-1.6,34,43.4
+08037,Eagle County,Colorado,35.4,-0.9,41,36.3
+08039,Elbert County,Colorado,43.4,-0.9,43,44.3
+08041,El Paso County,Colorado,43.9,-0.5,45,44.4
+08043,Fremont County,Colorado,42,-0.3,47,42.3
+08045,Garfield County,Colorado,39.3,-0.5,48,39.8
+08047,Gilpin County,Colorado,34.4,-0.4,48,34.8
+08049,Grand County,Colorado,33.7,-0.3,49,34
+08051,Gunnison County,Colorado,34.8,-0.1,51,34.9
+08053,Hinsdale County,Colorado,31.2,-0.2,48,31.4
+08055,Huerfano County,Colorado,43,-0.3,41,43.3
+08057,Jackson County,Colorado,33.5,0.2,61,33.3
+08059,Jefferson County,Colorado,40.8,-1.4,35,42.2
+08061,Kiowa County,Colorado,49.6,-0.7,50,50.3
+08063,Kit Carson County,Colorado,46.8,-1.2,41,48
+08065,Lake County,Colorado,30.3,-0.6,46,30.9
+08067,La Plata County,Colorado,40.9,-0,53,40.9
+08069,Larimer County,Colorado,37.8,0,60,37.8
+08071,Las Animas County,Colorado,48,0,54,48
+08073,Lincoln County,Colorado,45.7,-1,41,46.7
+08075,Logan County,Colorado,45.6,-1.5,33,47.1
+08077,Mesa County,Colorado,43.8,0.1,56,43.7
+08079,Mineral County,Colorado,32.6,-0.3,45,32.9
+08081,Moffat County,Colorado,40.4,-0.5,54,40.9
+08083,Montezuma County,Colorado,44.8,-0.3,48,45.1
+08085,Montrose County,Colorado,44.2,0.4,61,43.8
+08087,Morgan County,Colorado,45.6,-0.8,44,46.4
+08089,Otero County,Colorado,51,0.3,62,50.7
+08091,Ouray County,Colorado,37.5,0.5,60,37
+08093,Park County,Colorado,33.8,-1,39,34.8
+08095,Phillips County,Colorado,46.1,-1.2,38,47.3
+08097,Pitkin County,Colorado,33.3,-0.9,43,34.2
+08099,Prowers County,Colorado,50.9,-0.9,49,51.8
+08101,Pueblo County,Colorado,49.4,0.3,54,49.1
+08103,Rio Blanco County,Colorado,40.4,-0.3,51,40.7
+08105,Rio Grande County,Colorado,36.8,-0.3,49,37.1
+08107,Routt County,Colorado,36.5,-0.2,51,36.7
+08109,Saguache County,Colorado,36.5,-0.1,50,36.6
+08111,San Juan County,Colorado,29.8,0.2,55,29.6
+08113,San Miguel County,Colorado,41.1,0.6,59,40.5
+08115,Sedgwick County,Colorado,46.3,-1.2,40,47.5
+08117,Summit County,Colorado,31.3,-0.8,43,32.1
+08119,Teller County,Colorado,35.7,-0.9,42,36.6
+08121,Washington County,Colorado,45.6,-1.1,43,46.7
+08123,Weld County,Colorado,44.8,-0.8,41,45.6
+08125,Yuma County,Colorado,46.8,-1.3,36,48.1
+09001,Fairfield County,Connecticut,50.2,3,111,47.2
+09003,Hartford County,Connecticut,50.1,3.5,114,46.6
+09005,Litchfield County,Connecticut,47.8,3.4,111,44.4
+09007,Middlesex County,Connecticut,49.7,3.2,114,46.5
+09009,New Haven County,Connecticut,49.4,2.8,106,46.6
+09011,New London County,Connecticut,49.6,3.6,117,46
+09013,Tolland County,Connecticut,49,3.4,115,45.6
+09015,Windham County,Connecticut,49.1,3.5,116,45.6
+10001,Kent County,Delaware,54.7,2.7,104,52
+10003,New Castle County,Delaware,54.3,2.9,106,51.4
+10005,Sussex County,Delaware,55.4,3.1,108,52.3
+12001,Alachua County,Florida,67.6,-0.4,50,68
+12003,Baker County,Florida,66.4,-0.4,51,66.8
+12005,Bay County,Florida,66.1,-0.7,46,66.8
+12007,Bradford County,Florida,67.2,-0.2,53,67.4
+12009,Brevard County,Florida,71,0.6,72,70.4
+12011,Broward County,Florida,74.2,1.4,91,72.8
+12013,Calhoun County,Florida,65.8,-0.7,46,66.5
+12015,Charlotte County,Florida,72.5,0.6,78,71.9
+12017,Citrus County,Florida,70.4,1.3,93,69.1
+12019,Clay County,Florida,68,0.6,79,67.4
+12021,Collier County,Florida,73.9,1.3,93,72.6
+12023,Columbia County,Florida,66.5,-0.5,52,67
+12027,DeSoto County,Florida,71.6,0.3,73,71.3
+12029,Dixie County,Florida,67,-0.2,57,67.2
+12031,Duval County,Florida,67.7,0.8,81,66.9
+12033,Escambia County,Florida,65,-1.5,32,66.5
+12035,Flagler County,Florida,69.2,0.9,81,68.3
+12037,Franklin County,Florida,66.7,-0.3,55,67
+12039,Gadsden County,Florida,65.8,-0.5,51,66.3
+12041,Gilchrist County,Florida,67,-0.3,53,67.3
+12043,Glades County,Florida,72.4,0.8,82,71.6
+12045,Gulf County,Florida,66.4,-0.2,53,66.6
+12047,Hamilton County,Florida,65.9,-0.8,46,66.7
+12049,Hardee County,Florida,71.9,1.1,86,70.8
+12051,Hendry County,Florida,73,1,85,72
+12053,Hernando County,Florida,70.7,1.5,92,69.2
+12055,Highlands County,Florida,71.9,0.8,78,71.1
+12057,Hillsborough County,Florida,71.9,1.6,91,70.3
+12059,Holmes County,Florida,64.4,-1.8,27,66.2
+12061,Indian River County,Florida,70.8,0.4,68,70.4
+12063,Jackson County,Florida,65.3,-1.4,34,66.7
+12065,Jefferson County,Florida,66.2,-0.3,55,66.5
+12067,Lafayette County,Florida,66.7,-0.2,53,66.9
+12069,Lake County,Florida,70,0.4,71,69.6
+12071,Lee County,Florida,73.8,1.4,91,72.4
+12073,Leon County,Florida,66.4,-0,63,66.4
+12075,Levy County,Florida,68.2,0.3,73,67.9
+12077,Liberty County,Florida,66.2,-0.2,56,66.4
+12079,Madison County,Florida,66,-0.5,51,66.5
+12081,Manatee County,Florida,71.6,0.9,82,70.7
+12083,Marion County,Florida,69.1,0.3,71,68.8
+12085,Martin County,Florida,72.5,0.8,82,71.7
+12086,Miami-Dade County,Florida,74.6,1.5,91,73.1
+12087,Monroe County,Florida,74.8,1.1,88,73.7
+12089,Nassau County,Florida,66.9,0.4,73,66.5
+12091,Okaloosa County,Florida,64.6,-1.4,34,66
+12093,Okeechobee County,Florida,71.6,0.7,78,70.9
+12095,Orange County,Florida,70.7,0.3,68,70.4
+12097,Osceola County,Florida,71.3,0.7,75,70.6
+12099,Palm Beach County,Florida,73.6,1.4,91,72.2
+12101,Pasco County,Florida,70.9,1.4,89,69.5
+12103,Pinellas County,Florida,72,1.2,87,70.8
+12105,Polk County,Florida,72,1.3,87,70.7
+12107,Putnam County,Florida,68.8,0.6,79,68.2
+12109,St. Johns County,Florida,68.5,1,83,67.5
+12111,St. Lucie County,Florida,71.6,0.4,74,71.2
+12113,Santa Rosa County,Florida,64.9,-1.5,34,66.4
+12115,Sarasota County,Florida,72,0.7,81,71.3
+12117,Seminole County,Florida,70.5,0.4,70,70.1
+12119,Sumter County,Florida,70.2,0.8,83,69.4
+12121,Suwannee County,Florida,66.4,-0.5,51,66.9
+12123,Taylor County,Florida,66.8,-0.2,55,67
+12125,Union County,Florida,66.8,-0.4,52,67.2
+12127,Volusia County,Florida,69.9,0.6,74,69.3
+12129,Wakulla County,Florida,66.8,0,61,66.8
+12131,Walton County,Florida,64.6,-1.4,37,66
+12133,Washington County,Florida,65.1,-1.5,36,66.6
+13001,Appling County,Georgia,64.4,-1.2,39,65.6
+13003,Atkinson County,Georgia,64.2,-1.5,32,65.7
+13005,Bacon County,Georgia,64.4,-1.3,34,65.7
+13007,Baker County,Georgia,64.3,-1.7,32,66
+13009,Baldwin County,Georgia,62,-1,40,63
+13011,Banks County,Georgia,58.3,-1.6,31,59.9
+13013,Barrow County,Georgia,58.8,-1.2,37,60
+13015,Bartow County,Georgia,59,-1,41,60
+13017,Ben Hill County,Georgia,63.6,-1.4,37,65
+13019,Berrien County,Georgia,64,-1.5,32,65.5
+13021,Bibb County,Georgia,62,-1.2,37,63.2
+13023,Bleckley County,Georgia,62.4,-1.8,28,64.2
+13025,Brantley County,Georgia,65.3,-0.3,58,65.6
+13027,Brooks County,Georgia,65.2,-0.6,49,65.8
+13029,Bryan County,Georgia,64.7,-0.7,49,65.4
+13031,Bulloch County,Georgia,63.7,-1,40,64.7
+13033,Burke County,Georgia,61.9,-1.3,32,63.2
+13035,Butts County,Georgia,60,-1.5,32,61.5
+13037,Calhoun County,Georgia,63.8,-1.7,30,65.5
+13039,Camden County,Georgia,66.3,0.2,62,66.1
+13043,Candler County,Georgia,63.4,-1.4,31,64.8
+13045,Carroll County,Georgia,58.4,-1.1,39,59.5
+13047,Catoosa County,Georgia,58.3,-0.8,45,59.1
+13049,Charlton County,Georgia,66.2,-0,60,66.2
+13051,Chatham County,Georgia,64.6,-0.6,47,65.2
+13053,Chattahoochee County,Georgia,61.8,-1.9,26,63.7
+13055,Chattooga County,Georgia,59,-0.7,47,59.7
+13057,Cherokee County,Georgia,58.1,-1,45,59.1
+13059,Clarke County,Georgia,59.3,-1.2,38,60.5
+13061,Clay County,Georgia,63.1,-2,27,65.1
+13063,Clayton County,Georgia,59,-1.6,31,60.6
+13065,Clinch County,Georgia,65.2,-1,41,66.2
+13067,Cobb County,Georgia,58.8,-0.9,44,59.7
+13069,Coffee County,Georgia,64,-1.4,31,65.4
+13071,Colquitt County,Georgia,64.2,-1.2,37,65.4
+13073,Columbia County,Georgia,61.1,-1.2,36,62.3
+13075,Cook County,Georgia,64.3,-1.2,37,65.5
+13077,Coweta County,Georgia,59.3,-1.4,33,60.7
+13079,Crawford County,Georgia,61.6,-1.4,34,63
+13081,Crisp County,Georgia,62.8,-1.5,34,64.3
+13083,Dade County,Georgia,57.4,-1.2,40,58.6
+13085,Dawson County,Georgia,56.5,-1.5,31,58
+13087,Decatur County,Georgia,64.9,-1.4,36,66.3
+13089,DeKalb County,Georgia,58.7,-1.3,32,60
+13091,Dodge County,Georgia,62.6,-2,24,64.6
+13093,Dooly County,Georgia,62.4,-1.7,31,64.1
+13095,Dougherty County,Georgia,64.4,-1.2,42,65.6
+13097,Douglas County,Georgia,58.7,-1,37,59.7
+13099,Early County,Georgia,63.8,-2.1,25,65.9
+13101,Echols County,Georgia,65.6,-0.8,44,66.4
+13103,Effingham County,Georgia,64,-0.6,48,64.6
+13105,Elbert County,Georgia,59.1,-1.4,32,60.5
+13107,Emanuel County,Georgia,62.6,-1.7,25,64.3
+13109,Evans County,Georgia,64.4,-1,42,65.4
+13111,Fannin County,Georgia,54.5,-1.4,36,55.9
+13113,Fayette County,Georgia,59.2,-1.6,31,60.8
+13115,Floyd County,Georgia,59.3,-0.9,43,60.2
+13117,Forsyth County,Georgia,57.6,-1.2,40,58.8
+13119,Franklin County,Georgia,58.4,-1.6,29,60
+13121,Fulton County,Georgia,58.8,-1,39,59.8
+13123,Gilmer County,Georgia,55.5,-1.3,35,56.8
+13125,Glascock County,Georgia,60.9,-1.7,26,62.6
+13127,Glynn County,Georgia,66,-0.1,58,66.1
+13129,Gordon County,Georgia,59,-0.8,47,59.8
+13131,Grady County,Georgia,65.1,-0.9,44,66
+13133,Greene County,Georgia,59.8,-1.6,27,61.4
+13135,Gwinnett County,Georgia,58.4,-1.2,38,59.6
+13137,Habersham County,Georgia,56.8,-1.4,33,58.2
+13139,Hall County,Georgia,57.7,-1.4,32,59.1
+13141,Hancock County,Georgia,60.9,-1.5,33,62.4
+13143,Haralson County,Georgia,57.8,-1.3,36,59.1
+13145,Harris County,Georgia,60.4,-1.7,32,62.1
+13147,Hart County,Georgia,58.8,-1.1,35,59.9
+13149,Heard County,Georgia,59.4,-1.2,37,60.6
+13151,Henry County,Georgia,59.4,-1.7,31,61.1
+13153,Houston County,Georgia,62.4,-1.5,31,63.9
+13155,Irwin County,Georgia,63.5,-1.5,34,65
+13157,Jackson County,Georgia,58.7,-1.4,32,60.1
+13159,Jasper County,Georgia,60.2,-1.3,34,61.5
+13161,Jeff Davis County,Georgia,63.7,-1.6,27,65.3
+13163,Jefferson County,Georgia,61.5,-1.5,30,63
+13165,Jenkins County,Georgia,62.4,-1.3,34,63.7
+13167,Johnson County,Georgia,62.1,-1.8,25,63.9
+13169,Jones County,Georgia,61.5,-1.1,43,62.6
+13171,Lamar County,Georgia,60.1,-1.7,34,61.8
+13173,Lanier County,Georgia,64.8,-1,41,65.8
+13175,Laurens County,Georgia,62.4,-2,23,64.4
+13177,Lee County,Georgia,63.5,-1.5,33,65
+13179,Liberty County,Georgia,65.1,-0.5,53,65.6
+13181,Lincoln County,Georgia,60.4,-1.2,33,61.6
+13183,Long County,Georgia,65.2,-0.6,52,65.8
+13185,Lowndes County,Georgia,65.3,-0.5,47,65.8
+13187,Lumpkin County,Georgia,55.6,-1.6,28,57.2
+13189,McDuffie County,Georgia,60.6,-1.4,32,62
+13191,McIntosh County,Georgia,65.7,-0.2,59,65.9
+13193,Macon County,Georgia,61.9,-1.8,27,63.7
+13195,Madison County,Georgia,58.6,-1.5,29,60.1
+13197,Marion County,Georgia,61.3,-2,23,63.3
+13199,Meriwether County,Georgia,59.7,-1.6,31,61.3
+13201,Miller County,Georgia,64.1,-2,25,66.1
+13205,Mitchell County,Georgia,64.5,-1.3,37,65.8
+13207,Monroe County,Georgia,60.8,-1.4,33,62.2
+13209,Montgomery County,Georgia,63.3,-1.7,24,65
+13211,Morgan County,Georgia,59.7,-1.5,31,61.2
+13213,Murray County,Georgia,57.8,-1.1,43,58.9
+13215,Muscogee County,Georgia,61.6,-1.7,32,63.3
+13217,Newton County,Georgia,59.3,-1.6,32,60.9
+13219,Oconee County,Georgia,59.4,-1.3,37,60.7
+13221,Oglethorpe County,Georgia,59.3,-1.4,34,60.7
+13223,Paulding County,Georgia,58.5,-1.1,39,59.6
+13225,Peach County,Georgia,62,-1.4,32,63.4
+13227,Pickens County,Georgia,57.1,-1.1,38,58.2
+13229,Pierce County,Georgia,64.9,-0.8,44,65.7
+13231,Pike County,Georgia,59.8,-1.7,29,61.5
+13233,Polk County,Georgia,58.5,-1.3,34,59.8
+13235,Pulaski County,Georgia,62.6,-1.8,28,64.4
+13237,Putnam County,Georgia,60.8,-1.2,40,62
+13239,Quitman County,Georgia,62.5,-2.1,24,64.6
+13241,Rabun County,Georgia,55.1,-0.9,46,56
+13243,Randolph County,Georgia,62.6,-2,23,64.6
+13245,Richmond County,Georgia,61.9,-1,39,62.9
+13247,Rockdale County,Georgia,59,-1.6,31,60.6
+13249,Schley County,Georgia,61.4,-2.3,21,63.7
+13251,Screven County,Georgia,62.8,-1.1,42,63.9
+13253,Seminole County,Georgia,64.8,-1.6,33,66.4
+13255,Spalding County,Georgia,59.7,-1.8,29,61.5
+13257,Stephens County,Georgia,58.3,-1.5,30,59.8
+13259,Stewart County,Georgia,61.8,-2.2,23,64
+13261,Sumter County,Georgia,62.1,-2.2,23,64.3
+13263,Talbot County,Georgia,60.8,-1.6,32,62.4
+13265,Taliaferro County,Georgia,59.8,-1.7,26,61.5
+13267,Tattnall County,Georgia,64.5,-1,41,65.5
+13269,Taylor County,Georgia,61.4,-1.6,31,63
+13271,Telfair County,Georgia,63.6,-1.5,28,65.1
+13273,Terrell County,Georgia,63,-1.9,23,64.9
+13275,Thomas County,Georgia,65.1,-0.7,46,65.8
+13277,Tift County,Georgia,63.3,-1.7,33,65
+13279,Toombs County,Georgia,63.8,-1.4,31,65.2
+13281,Towns County,Georgia,53.9,-1,46,54.9
+13283,Treutlen County,Georgia,62.8,-1.8,24,64.6
+13285,Troup County,Georgia,59.8,-1.6,31,61.4
+13287,Turner County,Georgia,63,-1.6,34,64.6
+13289,Twiggs County,Georgia,62.3,-1.4,33,63.7
+13291,Union County,Georgia,54,-1.2,37,55.2
+13293,Upson County,Georgia,60.6,-1.5,32,62.1
+13295,Walker County,Georgia,58.1,-0.8,47,58.9
+13297,Walton County,Georgia,58.9,-1.4,33,60.3
+13299,Ware County,Georgia,65.2,-0.9,44,66.1
+13301,Warren County,Georgia,60.4,-1.6,27,62
+13303,Washington County,Georgia,61.7,-1.6,27,63.3
+13305,Wayne County,Georgia,65.1,-0.6,53,65.7
+13307,Webster County,Georgia,61.6,-2.4,21,64
+13309,Wheeler County,Georgia,63.2,-1.9,24,65.1
+13311,White County,Georgia,55.9,-1.3,37,57.2
+13313,Whitfield County,Georgia,58.4,-0.9,43,59.3
+13315,Wilcox County,Georgia,62.9,-1.7,31,64.6
+13317,Wilkes County,Georgia,59.8,-1.3,31,61.1
+13319,Wilkinson County,Georgia,62.3,-1.4,33,63.7
+13321,Worth County,Georgia,63.6,-1.4,36,65
+16001,Ada County,Idaho,49.2,-0.7,60,49.9
+16003,Adams County,Idaho,40.8,0,67,40.8
+16005,Bannock County,Idaho,42,-0.3,60,42.3
+16007,Bear Lake County,Idaho,38,0.5,69,37.5
+16009,Benewah County,Idaho,42.3,-1.1,44,43.4
+16011,Bingham County,Idaho,42.6,-0.2,61,42.8
+16013,Blaine County,Idaho,40.1,0.5,67,39.6
+16015,Boise County,Idaho,40.5,0,64,40.5
+16017,Bonner County,Idaho,41.2,-0.7,52,41.9
+16019,Bonneville County,Idaho,39.9,0.4,71,39.5
+16021,Boundary County,Idaho,38.6,-0.8,47,39.4
+16023,Butte County,Idaho,40.3,0.3,69,40
+16025,Camas County,Idaho,38.9,0.6,73,38.3
+16027,Canyon County,Idaho,50.3,-0.8,55,51.1
+16029,Caribou County,Idaho,38.9,0.1,67,38.8
+16031,Cassia County,Idaho,42.4,-0.3,61,42.7
+16033,Clark County,Idaho,37.5,-0.2,55,37.7
+16035,Clearwater County,Idaho,41,-0.4,59,41.4
+16037,Custer County,Idaho,35.3,0.2,63,35.1
+16039,Elmore County,Idaho,44,-0.2,63,44.2
+16041,Franklin County,Idaho,41.9,0.6,70,41.3
+16043,Fremont County,Idaho,37.8,0.4,68,37.4
+16045,Gem County,Idaho,46.8,-0.6,57,47.4
+16047,Gooding County,Idaho,46.2,-0.3,63,46.5
+16049,Idaho County,Idaho,38.6,-0.4,56,39
+16051,Jefferson County,Idaho,43,0.4,69,42.6
+16053,Jerome County,Idaho,45.7,-0.7,54,46.4
+16055,Kootenai County,Idaho,42.3,-1.1,44,43.4
+16057,Latah County,Idaho,43,-1,44,44
+16059,Lemhi County,Idaho,36.4,-0.3,58,36.7
+16061,Lewis County,Idaho,42.5,-0.6,53,43.1
+16063,Lincoln County,Idaho,44.2,-0.2,62,44.4
+16065,Madison County,Idaho,41.4,0.6,76,40.8
+16067,Minidoka County,Idaho,44.4,0.2,63,44.2
+16069,Nez Perce County,Idaho,45.7,-1,45,46.7
+16071,Oneida County,Idaho,42.6,-0.2,59,42.8
+16073,Owyhee County,Idaho,43.8,-0.6,61,44.4
+16075,Payette County,Idaho,50,-0.2,61,50.2
+16077,Power County,Idaho,42.6,-0.5,55,43.1
+16079,Shoshone County,Idaho,39.7,-0.4,60,40.1
+16081,Teton County,Idaho,37.4,0.5,70,36.9
+16083,Twin Falls County,Idaho,44.1,-0.6,58,44.7
+16085,Valley County,Idaho,36.2,0.2,64,36
+16087,Washington County,Idaho,45.6,-0.3,61,45.9
+17001,Adams County,Illinois,51.2,-1.2,43,52.4
+17003,Alexander County,Illinois,57,0.1,62,56.9
+17005,Bond County,Illinois,53.6,-0.1,54,53.7
+17007,Boone County,Illinois,46.8,-0.2,57,47
+17009,Brown County,Illinois,51.6,-0.5,51,52.1
+17011,Bureau County,Illinois,48.7,-0.3,53,49
+17013,Calhoun County,Illinois,53.3,-0.6,52,53.9
+17015,Carroll County,Illinois,47.9,0.3,60,47.6
+17017,Cass County,Illinois,52,-0.4,52,52.4
+17019,Champaign County,Illinois,51,0.5,62,50.5
+17021,Christian County,Illinois,52.6,0.4,66,52.2
+17023,Clark County,Illinois,53.6,1.2,77,52.4
+17025,Clay County,Illinois,53.9,0.2,60,53.7
+17027,Clinton County,Illinois,54,-0.4,48,54.4
+17029,Coles County,Illinois,52.6,0.7,69,51.9
+17031,Cook County,Illinois,47.1,-0.4,54,47.5
+17033,Crawford County,Illinois,54.5,1.2,77,53.3
+17035,Cumberland County,Illinois,53.3,0.8,70,52.5
+17037,DeKalb County,Illinois,47.1,-0.3,55,47.4
+17039,De Witt County,Illinois,51,0.4,61,50.6
+17041,Douglas County,Illinois,52,0.7,70,51.3
+17043,DuPage County,Illinois,47.3,-0.3,55,47.6
+17045,Edgar County,Illinois,52.3,0.8,73,51.5
+17047,Edwards County,Illinois,55.4,0.6,73,54.8
+17049,Effingham County,Illinois,53.5,0.5,71,53
+17051,Fayette County,Illinois,53.5,0.2,58,53.3
+17053,Ford County,Illinois,50,0.4,62,49.6
+17055,Franklin County,Illinois,55.4,0.2,68,55.2
+17057,Fulton County,Illinois,51.1,-0.4,53,51.5
+17059,Gallatin County,Illinois,56.7,0.6,68,56.1
+17061,Greene County,Illinois,52.8,-0.8,50,53.6
+17063,Grundy County,Illinois,48.6,-0.2,53,48.8
+17065,Hamilton County,Illinois,55.4,0.1,63,55.3
+17067,Hancock County,Illinois,50.6,-1.2,41,51.8
+17069,Hardin County,Illinois,57,0.7,70,56.3
+17071,Henderson County,Illinois,49.9,-0.9,46,50.8
+17073,Henry County,Illinois,48.9,-0.3,51,49.2
+17075,Iroquois County,Illinois,49.4,-0,54,49.4
+17077,Jackson County,Illinois,55.6,0.1,62,55.5
+17079,Jasper County,Illinois,53.9,0.6,68,53.3
+17081,Jefferson County,Illinois,54.6,-0.2,56,54.8
+17083,Jersey County,Illinois,53.7,-0.4,53,54.1
+17085,Jo Daviess County,Illinois,47.3,0.2,59,47.1
+17087,Johnson County,Illinois,56.6,0.6,68,56
+17089,Kane County,Illinois,47,-0.3,53,47.3
+17091,Kankakee County,Illinois,48.5,-0.3,51,48.8
+17093,Kendall County,Illinois,48.2,-0.2,54,48.4
+17095,Knox County,Illinois,49.3,-0.6,49,49.9
+17097,Lake County,Illinois,45.7,-0.5,50,46.2
+17099,LaSalle County,Illinois,48.6,-0.3,52,48.9
+17101,Lawrence County,Illinois,54.9,0.8,72,54.1
+17103,Lee County,Illinois,48,-0.1,55,48.1
+17105,Livingston County,Illinois,49.3,-0.1,52,49.4
+17107,Logan County,Illinois,51.9,0.3,63,51.6
+17109,McDonough County,Illinois,50.4,-0.9,46,51.3
+17111,McHenry County,Illinois,45.9,-0.5,52,46.4
+17113,McLean County,Illinois,50.1,0.3,61,49.8
+17115,Macon County,Illinois,52,0.6,68,51.4
+17117,Macoupin County,Illinois,52.7,-0.4,54,53.1
+17119,Madison County,Illinois,54.4,-0,57,54.4
+17121,Marion County,Illinois,53.7,-0.3,54,54
+17123,Marshall County,Illinois,49.2,-0.7,48,49.9
+17125,Mason County,Illinois,52.5,0.3,61,52.2
+17127,Massac County,Illinois,57.4,0.6,72,56.8
+17129,Menard County,Illinois,52.2,0.1,58,52.1
+17131,Mercer County,Illinois,49.2,-0.8,48,50
+17133,Monroe County,Illinois,55.3,-0.1,59,55.4
+17135,Montgomery County,Illinois,52.8,-0,57,52.8
+17137,Morgan County,Illinois,52,-0.4,54,52.4
+17139,Moultrie County,Illinois,52.3,0.6,68,51.7
+17141,Ogle County,Illinois,47.6,0,55,47.6
+17143,Peoria County,Illinois,50.1,-0.4,49,50.5
+17145,Perry County,Illinois,54.9,-0,59,54.9
+17147,Piatt County,Illinois,51.3,0.5,62,50.8
+17149,Pike County,Illinois,51.9,-1,46,52.9
+17151,Pope County,Illinois,57,0.8,74,56.2
+17153,Pulaski County,Illinois,57.3,0.4,70,56.9
+17155,Putnam County,Illinois,49.2,-0.6,48,49.8
+17157,Randolph County,Illinois,55.4,0.2,66,55.2
+17159,Richland County,Illinois,54.5,0.5,68,54
+17161,Rock Island County,Illinois,49.2,-0.3,55,49.5
+17163,St. Clair County,Illinois,54.9,-0.2,54,55.1
+17165,Saline County,Illinois,56.2,0.5,67,55.7
+17167,Sangamon County,Illinois,52.3,0.1,60,52.2
+17169,Schuyler County,Illinois,51.4,-0.6,50,52
+17171,Scott County,Illinois,52.3,-0.6,51,52.9
+17173,Shelby County,Illinois,52.8,0.4,65,52.4
+17175,Stark County,Illinois,49,-0.6,49,49.6
+17177,Stephenson County,Illinois,47.4,0.5,65,46.9
+17179,Tazewell County,Illinois,51.2,0.3,60,50.9
+17181,Union County,Illinois,56.2,0.2,62,56
+17183,Vermilion County,Illinois,50.8,0.2,59,50.6
+17185,Wabash County,Illinois,55.7,1,73,54.7
+17187,Warren County,Illinois,49.5,-0.6,49,50.1
+17189,Washington County,Illinois,54.1,-0.6,49,54.7
+17191,Wayne County,Illinois,54.8,0.3,61,54.6
+17193,White County,Illinois,55.9,0.3,68,55.6
+17195,Whiteside County,Illinois,48.6,0,56,48.6
+17197,Will County,Illinois,48.2,-0.3,54,48.5
+17199,Williamson County,Illinois,55.9,0.5,68,55.4
+17201,Winnebago County,Illinois,47.6,0.3,63,47.3
+17203,Woodford County,Illinois,49.6,-0.2,50,49.8
+18001,Adams County,Indiana,49.7,1.3,79,48.4
+18003,Allen County,Indiana,49.6,1.4,84,48.2
+18005,Bartholomew County,Indiana,53,0.6,63,52.4
+18007,Benton County,Indiana,49.5,0.4,65,49.1
+18009,Blackford County,Indiana,49.6,0.3,62,49.3
+18011,Boone County,Indiana,50.4,1,71,49.4
+18013,Brown County,Indiana,52.4,0.6,68,51.8
+18015,Carroll County,Indiana,50.4,1.1,74,49.3
+18017,Cass County,Indiana,49.6,0.7,71,48.9
+18019,Clark County,Indiana,55.6,1.6,79,54
+18021,Clay County,Indiana,53.2,1.5,79,51.7
+18023,Clinton County,Indiana,50.2,0.9,70,49.3
+18025,Crawford County,Indiana,55,0.9,72,54.1
+18027,Daviess County,Indiana,54.4,1.1,73,53.3
+18029,Dearborn County,Indiana,53.8,1.8,85,52
+18031,Decatur County,Indiana,52.6,0.8,71,51.8
+18033,DeKalb County,Indiana,49.3,1.9,86,47.4
+18035,Delaware County,Indiana,50.4,0.7,69,49.7
+18037,Dubois County,Indiana,55.1,1.1,74,54
+18039,Elkhart County,Indiana,48.6,1.7,86,46.9
+18041,Fayette County,Indiana,51,0.6,68,50.4
+18043,Floyd County,Indiana,55.6,1.3,76,54.3
+18045,Fountain County,Indiana,50.5,0.2,59,50.3
+18047,Franklin County,Indiana,52.5,1.3,76,51.2
+18049,Fulton County,Indiana,48.6,0.7,72,47.9
+18051,Gibson County,Indiana,56.1,1.2,77,54.9
+18053,Grant County,Indiana,50.3,0.8,69,49.5
+18055,Greene County,Indiana,53.3,1.1,75,52.2
+18057,Hamilton County,Indiana,50.8,0.8,68,50
+18059,Hancock County,Indiana,51,0.4,67,50.6
+18061,Harrison County,Indiana,55.5,1.1,72,54.4
+18063,Hendricks County,Indiana,51.2,0.9,71,50.3
+18065,Henry County,Indiana,50.4,0.8,68,49.6
+18067,Howard County,Indiana,50.5,1.1,73,49.4
+18069,Huntington County,Indiana,49.6,0.8,70,48.8
+18071,Jackson County,Indiana,53.7,0.8,69,52.9
+18073,Jasper County,Indiana,48.3,-0.2,54,48.5
+18075,Jay County,Indiana,49.8,0.9,73,48.9
+18077,Jefferson County,Indiana,54.9,1.8,80,53.1
+18079,Jennings County,Indiana,54.1,1.3,77,52.8
+18081,Johnson County,Indiana,51.9,0.6,67,51.3
+18083,Knox County,Indiana,54.8,0.9,75,53.9
+18085,Kosciusko County,Indiana,48.6,1,75,47.6
+18087,LaGrange County,Indiana,48.8,1.9,86,46.9
+18089,Lake County,Indiana,47.6,-0.2,54,47.8
+18091,LaPorte County,Indiana,47.8,0.6,70,47.2
+18093,Lawrence County,Indiana,53.3,0.7,69,52.6
+18095,Madison County,Indiana,51,1,72,50
+18097,Marion County,Indiana,51.6,0.8,69,50.8
+18099,Marshall County,Indiana,48.5,1.3,81,47.2
+18101,Martin County,Indiana,53.9,0.9,72,53
+18103,Miami County,Indiana,49.8,0.8,73,49
+18105,Monroe County,Indiana,52.6,0.9,73,51.7
+18107,Montgomery County,Indiana,50.4,0.6,68,49.8
+18109,Morgan County,Indiana,51.9,0.6,68,51.3
+18111,Newton County,Indiana,48.5,-0.3,51,48.8
+18113,Noble County,Indiana,49,1.7,85,47.3
+18115,Ohio County,Indiana,54.5,1.8,84,52.7
+18117,Orange County,Indiana,53.9,0.6,68,53.3
+18119,Owen County,Indiana,52.5,1,74,51.5
+18121,Parke County,Indiana,51.5,0.4,63,51.1
+18123,Perry County,Indiana,55.6,0.6,70,55
+18125,Pike County,Indiana,55.4,1.2,76,54.2
+18127,Porter County,Indiana,47.4,-0,59,47.4
+18129,Posey County,Indiana,56.7,0.7,72,56
+18131,Pulaski County,Indiana,48.4,0.3,63,48.1
+18133,Putnam County,Indiana,51.2,0.5,66,50.7
+18135,Randolph County,Indiana,50,1.1,74,48.9
+18137,Ripley County,Indiana,53.4,1.5,80,51.9
+18139,Rush County,Indiana,50.9,0.2,59,50.7
+18141,St. Joseph County,Indiana,48.4,1.5,83,46.9
+18143,Scott County,Indiana,54.9,1.6,78,53.3
+18145,Shelby County,Indiana,51.9,0.3,62,51.6
+18147,Spencer County,Indiana,56.3,0.9,72,55.4
+18149,Starke County,Indiana,48.2,0.6,68,47.6
+18151,Steuben County,Indiana,48.5,2,88,46.5
+18153,Sullivan County,Indiana,54.2,1.5,79,52.7
+18155,Switzerland County,Indiana,54.8,1.7,82,53.1
+18157,Tippecanoe County,Indiana,50.4,0.8,71,49.6
+18159,Tipton County,Indiana,50.6,1.1,72,49.5
+18161,Union County,Indiana,51.8,1.5,78,50.3
+18163,Vanderburgh County,Indiana,56.8,1,77,55.8
+18165,Vermillion County,Indiana,51.7,0.4,64,51.3
+18167,Vigo County,Indiana,53.8,1.7,81,52.1
+18169,Wabash County,Indiana,49.7,0.8,71,48.9
+18171,Warren County,Indiana,50.2,0.3,60,49.9
+18173,Warrick County,Indiana,56.4,1.2,79,55.2
+18175,Washington County,Indiana,53.9,0.9,71,53
+18177,Wayne County,Indiana,50.7,1.2,74,49.5
+18179,Wells County,Indiana,49.6,0.9,72,48.7
+18181,White County,Indiana,49.5,0.6,69,48.9
+18183,Whitley County,Indiana,49.1,1.1,80,48
+19001,Adair County,Iowa,47.4,-1.5,39,48.9
+19003,Adams County,Iowa,47.8,-1.6,39,49.4
+19005,Allamakee County,Iowa,45.9,-0.2,55,46.1
+19007,Appanoose County,Iowa,48.9,-1.4,39,50.3
+19009,Audubon County,Iowa,46.2,-2,33,48.2
+19011,Benton County,Iowa,47.1,-0.9,47,48
+19013,Black Hawk County,Iowa,46.6,-0.8,50,47.4
+19015,Boone County,Iowa,47,-1.5,40,48.5
+19017,Bremer County,Iowa,45.9,-0.6,53,46.5
+19019,Buchanan County,Iowa,46.2,-0.8,50,47
+19021,Buena Vista County,Iowa,45.6,-1,48,46.6
+19023,Butler County,Iowa,46.1,-0.7,52,46.8
+19025,Calhoun County,Iowa,46.2,-1.4,41,47.6
+19027,Carroll County,Iowa,46.1,-1.7,36,47.8
+19029,Cass County,Iowa,47.4,-1.8,35,49.2
+19031,Cedar County,Iowa,48.2,-0.6,50,48.8
+19033,Cerro Gordo County,Iowa,45.4,-0.3,58,45.7
+19035,Cherokee County,Iowa,45.6,-1.2,42,46.8
+19037,Chickasaw County,Iowa,44.9,-0.7,49,45.6
+19039,Clarke County,Iowa,48.2,-1.6,37,49.8
+19041,Clay County,Iowa,45.1,-0.8,52,45.9
+19043,Clayton County,Iowa,45.8,-0.9,49,46.7
+19045,Clinton County,Iowa,48.2,-0.4,53,48.6
+19047,Crawford County,Iowa,46.1,-1.8,36,47.9
+19049,Dallas County,Iowa,47.8,-1.6,37,49.4
+19051,Davis County,Iowa,49.2,-1.3,40,50.5
+19053,Decatur County,Iowa,48.9,-1.2,41,50.1
+19055,Delaware County,Iowa,46.1,-0.7,51,46.8
+19057,Des Moines County,Iowa,49.8,-0.9,44,50.7
+19059,Dickinson County,Iowa,44.2,-1,48,45.2
+19061,Dubuque County,Iowa,46.7,-0.4,50,47.1
+19063,Emmet County,Iowa,44.9,-0.4,54,45.3
+19065,Fayette County,Iowa,45.3,-0.7,51,46
+19067,Floyd County,Iowa,45.8,-0.3,55,46.1
+19069,Franklin County,Iowa,45.7,-0.6,53,46.3
+19071,Fremont County,Iowa,49.4,-2,34,51.4
+19073,Greene County,Iowa,46.9,-1.4,39,48.3
+19075,Grundy County,Iowa,46.4,-1,49,47.4
+19077,Guthrie County,Iowa,46.9,-1.8,37,48.7
+19079,Hamilton County,Iowa,46.5,-0.9,47,47.4
+19081,Hancock County,Iowa,44.6,-1.2,42,45.8
+19083,Hardin County,Iowa,46.4,-0.8,52,47.2
+19085,Harrison County,Iowa,47.9,-1.6,38,49.5
+19087,Henry County,Iowa,49.3,-1.3,39,50.6
+19089,Howard County,Iowa,44.5,-0.1,55,44.6
+19091,Humboldt County,Iowa,45.8,-1.3,42,47.1
+19093,Ida County,Iowa,45.9,-1.5,38,47.4
+19095,Iowa County,Iowa,47.5,-1.4,41,48.9
+19097,Jackson County,Iowa,47.4,-0.5,49,47.9
+19099,Jasper County,Iowa,48,-1.1,41,49.1
+19101,Jefferson County,Iowa,48.8,-1.6,36,50.4
+19103,Johnson County,Iowa,48.3,-0.8,49,49.1
+19105,Jones County,Iowa,47.2,-0.5,50,47.7
+19107,Keokuk County,Iowa,47.9,-1.7,35,49.6
+19109,Kossuth County,Iowa,45.3,-0.6,51,45.9
+19111,Lee County,Iowa,50.5,-1.1,42,51.6
+19113,Linn County,Iowa,47.4,-0.4,51,47.8
+19115,Louisa County,Iowa,49.2,-1,43,50.2
+19117,Lucas County,Iowa,48.9,-1.1,41,50
+19119,Lyon County,Iowa,44.6,-1.4,39,46
+19121,Madison County,Iowa,47.8,-1.8,35,49.6
+19123,Mahaska County,Iowa,47.8,-1.9,31,49.7
+19125,Marion County,Iowa,49.1,-1,44,50.1
+19127,Marshall County,Iowa,47,-1.2,44,48.2
+19129,Mills County,Iowa,49,-1.8,34,50.8
+19131,Mitchell County,Iowa,45.2,0,58,45.2
+19133,Monona County,Iowa,47,-1.8,35,48.8
+19135,Monroe County,Iowa,48.8,-1.4,39,50.2
+19137,Montgomery County,Iowa,48.2,-1.9,33,50.1
+19139,Muscatine County,Iowa,49.1,-0.6,52,49.7
+19141,O&#039;Brien County,Iowa,44.9,-1.3,42,46.2
+19143,Osceola County,Iowa,44.1,-1.3,43,45.4
+19145,Page County,Iowa,48.7,-1.9,35,50.6
+19147,Palo Alto County,Iowa,45.4,-0.6,53,46
+19149,Plymouth County,Iowa,46.2,-1.1,43,47.3
+19151,Pocahontas County,Iowa,46,-1,47,47
+19153,Polk County,Iowa,48.4,-1.3,40,49.7
+19155,Pottawattamie County,Iowa,48.3,-1.7,35,50
+19157,Poweshiek County,Iowa,47.2,-1.5,40,48.7
+19159,Ringgold County,Iowa,48.3,-1.4,38,49.7
+19161,Sac County,Iowa,45.8,-1.5,41,47.3
+19163,Scott County,Iowa,48.9,-0.1,53,49
+19165,Shelby County,Iowa,46.6,-2,33,48.6
+19167,Sioux County,Iowa,45.1,-1.6,38,46.7
+19169,Story County,Iowa,47.1,-1.4,42,48.5
+19171,Tama County,Iowa,46.8,-1.3,43,48.1
+19173,Taylor County,Iowa,48.4,-1.4,41,49.8
+19175,Union County,Iowa,47.9,-1.4,43,49.3
+19177,Van Buren County,Iowa,49.5,-1.6,36,51.1
+19179,Wapello County,Iowa,48.8,-1.5,38,50.3
+19181,Warren County,Iowa,48.7,-1.5,37,50.2
+19183,Washington County,Iowa,48.2,-1.5,36,49.7
+19185,Wayne County,Iowa,48.9,-1.2,41,50.1
+19187,Webster County,Iowa,46.4,-1.1,43,47.5
+19189,Winnebago County,Iowa,44.6,-0.6,51,45.2
+19191,Winneshiek County,Iowa,45,-0.1,54,45.1
+19193,Woodbury County,Iowa,46.8,-1.3,39,48.1
+19195,Worth County,Iowa,45.2,0.1,58,45.1
+19197,Wright County,Iowa,45.1,-1.5,39,46.6
+20001,Allen County,Kansas,53.2,-2.6,26,55.8
+20003,Anderson County,Kansas,52.9,-2.2,29,55.1
+20005,Atchison County,Kansas,51.5,-1.6,34,53.1
+20007,Barber County,Kansas,55.4,-0.5,55,55.9
+20009,Barton County,Kansas,51.9,-1.5,40,53.4
+20011,Bourbon County,Kansas,53.6,-2.3,27,55.9
+20013,Brown County,Kansas,50.6,-1.7,30,52.3
+20015,Butler County,Kansas,53.8,-1.5,40,55.3
+20017,Chase County,Kansas,52.9,-1.5,41,54.4
+20019,Chautauqua County,Kansas,55.2,-2.2,31,57.4
+20021,Cherokee County,Kansas,55.7,-1.7,35,57.4
+20023,Cheyenne County,Kansas,48,-1.2,40,49.2
+20025,Clark County,Kansas,54,-1.7,34,55.7
+20027,Clay County,Kansas,51.3,-2,33,53.3
+20029,Cloud County,Kansas,51.4,-1.3,38,52.7
+20031,Coffey County,Kansas,53.2,-1.6,38,54.8
+20033,Comanche County,Kansas,54.5,-1.2,41,55.7
+20035,Cowley County,Kansas,55.5,-1.1,43,56.6
+20037,Crawford County,Kansas,54.8,-1.7,34,56.5
+20039,Decatur County,Kansas,48.8,-1.6,36,50.4
+20041,Dickinson County,Kansas,52.6,-1.3,41,53.9
+20043,Doniphan County,Kansas,51.1,-2,29,53.1
+20045,Douglas County,Kansas,53,-1.4,38,54.4
+20047,Edwards County,Kansas,53.6,-0.3,56,53.9
+20049,Elk County,Kansas,54.6,-1.7,36,56.3
+20051,Ellis County,Kansas,51.4,-1.1,41,52.5
+20053,Ellsworth County,Kansas,52.2,-1.5,40,53.7
+20055,Finney County,Kansas,51.3,-1.1,44,52.4
+20057,Ford County,Kansas,53.2,-0.6,51,53.8
+20059,Franklin County,Kansas,53,-1.6,33,54.6
+20061,Geary County,Kansas,52,-1.7,36,53.7
+20063,Gove County,Kansas,50.2,-1.4,42,51.6
+20065,Graham County,Kansas,50.3,-1.5,39,51.8
+20067,Grant County,Kansas,52.2,-1.1,44,53.3
+20069,Gray County,Kansas,52,-1.2,44,53.2
+20071,Greeley County,Kansas,49.3,-1,46,50.3
+20073,Greenwood County,Kansas,53.5,-1.8,34,55.3
+20075,Hamilton County,Kansas,51,-1.2,46,52.2
+20077,Harper County,Kansas,55.8,-0.6,54,56.4
+20079,Harvey County,Kansas,53.6,-1.3,40,54.9
+20081,Haskell County,Kansas,52.2,-1.1,44,53.3
+20083,Hodgeman County,Kansas,52.6,-0.8,49,53.4
+20085,Jackson County,Kansas,51,-1.8,28,52.8
+20087,Jefferson County,Kansas,52.3,-1.3,37,53.6
+20089,Jewell County,Kansas,49.9,-1.7,35,51.6
+20091,Johnson County,Kansas,52.9,-1.3,38,54.2
+20093,Kearny County,Kansas,51.2,-1.1,44,52.3
+20095,Kingman County,Kansas,54.8,-0.6,49,55.4
+20097,Kiowa County,Kansas,53.6,-1,46,54.6
+20099,Labette County,Kansas,55.4,-2.2,29,57.6
+20101,Lane County,Kansas,50.6,-1.2,39,51.8
+20103,Leavenworth County,Kansas,52.7,-1.2,42,53.9
+20105,Lincoln County,Kansas,51.9,-1.3,39,53.2
+20107,Linn County,Kansas,53.3,-2,29,55.3
+20109,Logan County,Kansas,49.7,-1.2,44,50.9
+20111,Lyon County,Kansas,53,-1.2,46,54.2
+20113,McPherson County,Kansas,53,-1.1,43,54.1
+20115,Marion County,Kansas,52.7,-1.5,39,54.2
+20117,Marshall County,Kansas,50,-2.2,26,52.2
+20119,Meade County,Kansas,53.5,-1.5,38,55
+20121,Miami County,Kansas,53.1,-1.5,35,54.6
+20123,Mitchell County,Kansas,51.3,-1.3,41,52.6
+20125,Montgomery County,Kansas,55.4,-2.3,28,57.7
+20127,Morris County,Kansas,52.1,-1.5,37,53.6
+20129,Morton County,Kansas,52.2,-1.5,36,53.7
+20131,Nemaha County,Kansas,49.9,-2,28,51.9
+20133,Neosho County,Kansas,54.2,-2.4,27,56.6
+20135,Ness County,Kansas,51.1,-1.7,35,52.8
+20137,Norton County,Kansas,49.5,-1.5,38,51
+20139,Osage County,Kansas,52.7,-1.3,43,54
+20141,Osborne County,Kansas,50.7,-1.8,36,52.5
+20143,Ottawa County,Kansas,52.2,-1.1,40,53.3
+20145,Pawnee County,Kansas,52.9,-0.7,47,53.6
+20147,Phillips County,Kansas,49.9,-1.8,36,51.7
+20149,Pottawatomie County,Kansas,51.3,-1.8,34,53.1
+20151,Pratt County,Kansas,53.7,-1,45,54.7
+20153,Rawlins County,Kansas,48.2,-1.5,37,49.7
+20155,Reno County,Kansas,53.6,-1.3,40,54.9
+20157,Republic County,Kansas,50.4,-1.3,39,51.7
+20159,Rice County,Kansas,52.5,-1.6,39,54.1
+20161,Riley County,Kansas,51.5,-1.9,32,53.4
+20163,Rooks County,Kansas,50.3,-2,36,52.3
+20165,Rush County,Kansas,51.7,-1.3,40,53
+20167,Russell County,Kansas,51.8,-1.2,39,53
+20169,Saline County,Kansas,53.4,-0.5,51,53.9
+20171,Scott County,Kansas,50.4,-1.1,45,51.5
+20173,Sedgwick County,Kansas,54.8,-0.9,43,55.7
+20175,Seward County,Kansas,53.3,-1.1,44,54.4
+20177,Shawnee County,Kansas,52.8,-1.1,45,53.9
+20179,Sheridan County,Kansas,49.3,-1.4,37,50.7
+20181,Sherman County,Kansas,48,-0.9,49,48.9
+20183,Smith County,Kansas,49.6,-2.2,34,51.8
+20185,Stafford County,Kansas,53,-1,45,54
+20187,Stanton County,Kansas,51.9,-1.2,42,53.1
+20189,Stevens County,Kansas,52.6,-1.3,41,53.9
+20191,Sumner County,Kansas,56,-0.6,49,56.6
+20193,Thomas County,Kansas,48.4,-1.5,42,49.9
+20195,Trego County,Kansas,50.8,-1.4,37,52.2
+20197,Wabaunsee County,Kansas,52.1,-1.5,38,53.6
+20199,Wallace County,Kansas,48.9,-0.9,46,49.8
+20201,Washington County,Kansas,50.3,-1.8,32,52.1
+20203,Wichita County,Kansas,49.9,-1.1,44,51
+20205,Wilson County,Kansas,54.3,-2.5,26,56.8
+20207,Woodson County,Kansas,53.4,-2.3,27,55.7
+20209,Wyandotte County,Kansas,52.9,-1.2,43,54.1
+21001,Adair County,Kentucky,55.7,0.4,70,55.3
+21003,Allen County,Kentucky,56.7,-0.4,53,57.1
+21005,Anderson County,Kentucky,55.3,1.3,77,54
+21007,Ballard County,Kentucky,57.6,0.4,73,57.2
+21009,Barren County,Kentucky,56.7,0,62,56.7
+21011,Bath County,Kentucky,55.9,2,88,53.9
+21013,Bell County,Kentucky,54,-0.6,56,54.6
+21015,Boone County,Kentucky,54.5,1.9,85,52.6
+21017,Bourbon County,Kentucky,55.2,2,87,53.2
+21019,Boyd County,Kentucky,55.2,1.5,82,53.7
+21021,Boyle County,Kentucky,55,0.9,73,54.1
+21023,Bracken County,Kentucky,54.4,1.6,83,52.8
+21025,Breathitt County,Kentucky,55.8,0.6,76,55.2
+21027,Breckinridge County,Kentucky,55.1,-0,60,55.1
+21029,Bullitt County,Kentucky,56.5,1.4,78,55.1
+21031,Butler County,Kentucky,56.9,0.3,67,56.6
+21033,Caldwell County,Kentucky,57,-0.2,59,57.2
+21035,Calloway County,Kentucky,58,0,63,58
+21037,Campbell County,Kentucky,54.7,1.9,87,52.8
+21039,Carlisle County,Kentucky,57.6,0.1,60,57.5
+21041,Carroll County,Kentucky,55.3,1.6,80,53.7
+21043,Carter County,Kentucky,54.6,1.4,80,53.2
+21045,Casey County,Kentucky,54.7,0.3,68,54.4
+21047,Christian County,Kentucky,57.2,-0,63,57.2
+21049,Clark County,Kentucky,55.8,2,83,53.8
+21051,Clay County,Kentucky,54.8,-0.2,55,55
+21053,Clinton County,Kentucky,55.2,-0.5,51,55.7
+21055,Crittenden County,Kentucky,57.2,0.4,66,56.8
+21057,Cumberland County,Kentucky,55.8,-0.5,50,56.3
+21059,Daviess County,Kentucky,56.8,0.8,71,56
+21061,Edmonson County,Kentucky,56.8,0.4,72,56.4
+21063,Elliott County,Kentucky,54.9,1.4,81,53.5
+21065,Estill County,Kentucky,56.1,1.2,79,54.9
+21067,Fayette County,Kentucky,55,1.7,82,53.3
+21069,Fleming County,Kentucky,55.2,1.9,86,53.3
+21071,Floyd County,Kentucky,55.9,0.6,73,55.3
+21073,Franklin County,Kentucky,55.1,1.2,77,53.9
+21075,Fulton County,Kentucky,57.8,-0.6,51,58.4
+21077,Gallatin County,Kentucky,55,1.7,81,53.3
+21079,Garrard County,Kentucky,55.2,0.9,74,54.3
+21081,Grant County,Kentucky,54.6,1.6,82,53
+21083,Graves County,Kentucky,57.8,0.1,63,57.7
+21085,Grayson County,Kentucky,55.4,-0.1,63,55.5
+21087,Green County,Kentucky,56.4,0.7,71,55.7
+21089,Greenup County,Kentucky,54.5,1.4,78,53.1
+21091,Hancock County,Kentucky,55.8,0.2,65,55.6
+21093,Hardin County,Kentucky,55.7,0.7,70,55
+21095,Harlan County,Kentucky,53.3,-0,60,53.3
+21097,Harrison County,Kentucky,54.8,1.7,84,53.1
+21099,Hart County,Kentucky,56.5,0.6,69,55.9
+21101,Henderson County,Kentucky,57.1,0.7,69,56.4
+21103,Henry County,Kentucky,55.1,1.4,78,53.7
+21105,Hickman County,Kentucky,57.6,-0.3,56,57.9
+21107,Hopkins County,Kentucky,57.3,0.3,67,57
+21109,Jackson County,Kentucky,54.7,0.4,72,54.3
+21111,Jefferson County,Kentucky,56.4,1.5,77,54.9
+21113,Jessamine County,Kentucky,55.2,1.3,76,53.9
+21115,Johnson County,Kentucky,55.3,0.8,73,54.5
+21117,Kenton County,Kentucky,54.4,1.8,85,52.6
+21119,Knott County,Kentucky,55.3,0.6,73,54.7
+21121,Knox County,Kentucky,54.5,-0.7,51,55.2
+21123,Larue County,Kentucky,56.1,0.9,73,55.2
+21125,Laurel County,Kentucky,54.6,-0.1,61,54.7
+21127,Lawrence County,Kentucky,55.4,1.3,80,54.1
+21129,Lee County,Kentucky,56,0.8,77,55.2
+21131,Leslie County,Kentucky,54.6,-0.1,62,54.7
+21133,Letcher County,Kentucky,54.5,0.6,72,53.9
+21135,Lewis County,Kentucky,54.5,1.6,81,52.9
+21137,Lincoln County,Kentucky,54.7,0.6,70,54.1
+21139,Livingston County,Kentucky,57.6,0.6,70,57
+21141,Logan County,Kentucky,57.1,-0,63,57.1
+21143,Lyon County,Kentucky,57.4,-0.1,57,57.5
+21145,McCracken County,Kentucky,57.8,0.7,72,57.1
+21147,McCreary County,Kentucky,54.7,-0.3,58,55
+21149,McLean County,Kentucky,57.2,0.7,70,56.5
+21151,Madison County,Kentucky,55.6,1.1,78,54.5
+21153,Magoffin County,Kentucky,55.3,0.7,72,54.6
+21155,Marion County,Kentucky,55.7,0.8,72,54.9
+21157,Marshall County,Kentucky,58.1,0.3,68,57.8
+21159,Martin County,Kentucky,56.2,1.2,75,55
+21161,Mason County,Kentucky,54.5,1.7,86,52.8
+21163,Meade County,Kentucky,55.5,0.7,70,54.8
+21165,Menifee County,Kentucky,55.8,1.7,81,54.1
+21167,Mercer County,Kentucky,55.3,1.2,75,54.1
+21169,Metcalfe County,Kentucky,55.9,0,63,55.9
+21171,Monroe County,Kentucky,56,-0.6,53,56.6
+21173,Montgomery County,Kentucky,55.9,2.2,86,53.7
+21175,Morgan County,Kentucky,55.4,1.3,81,54.1
+21177,Muhlenberg County,Kentucky,57.2,0.3,63,56.9
+21179,Nelson County,Kentucky,56.3,1.4,79,54.9
+21181,Nicholas County,Kentucky,55.2,2,86,53.2
+21183,Ohio County,Kentucky,56.4,0.4,65,56
+21185,Oldham County,Kentucky,55.6,1.6,79,54
+21187,Owen County,Kentucky,54.9,1.5,81,53.4
+21189,Owsley County,Kentucky,55.6,0.4,73,55.2
+21191,Pendleton County,Kentucky,54.7,1.7,82,53
+21193,Perry County,Kentucky,55.3,0.4,72,54.9
+21195,Pike County,Kentucky,56.1,1,73,55.1
+21197,Powell County,Kentucky,56.2,1.6,82,54.6
+21199,Pulaski County,Kentucky,54.7,-0.1,61,54.8
+21201,Robertson County,Kentucky,54.7,1.8,87,52.9
+21203,Rockcastle County,Kentucky,54.7,0.4,70,54.3
+21205,Rowan County,Kentucky,55.3,1.7,81,53.6
+21207,Russell County,Kentucky,55.2,0,61,55.2
+21209,Scott County,Kentucky,54.7,1.4,81,53.3
+21211,Shelby County,Kentucky,55.2,1.4,77,53.8
+21213,Simpson County,Kentucky,56.9,-0.2,60,57.1
+21215,Spencer County,Kentucky,55.9,1.4,79,54.5
+21217,Taylor County,Kentucky,55.7,0.6,70,55.1
+21219,Todd County,Kentucky,57.2,0.1,66,57.1
+21221,Trigg County,Kentucky,57.2,-0.5,52,57.7
+21223,Trimble County,Kentucky,55.4,1.8,81,53.6
+21225,Union County,Kentucky,57.2,0.6,69,56.6
+21227,Warren County,Kentucky,57.3,0.3,69,57
+21229,Washington County,Kentucky,55.6,1.1,74,54.5
+21231,Wayne County,Kentucky,55,-0.1,59,55.1
+21233,Webster County,Kentucky,57.3,0.5,68,56.8
+21235,Whitley County,Kentucky,54.9,-0.5,59,55.4
+21237,Wolfe County,Kentucky,55.8,1.2,78,54.6
+21239,Woodford County,Kentucky,55.1,1.4,79,53.7
+22001,Acadia Parish,Louisiana,66.9,-1.2,40,68.1
+22003,Allen Parish,Louisiana,65.6,-1.6,29,67.2
+22005,Ascension Parish,Louisiana,67.5,0,62,67.5
+22007,Assumption Parish,Louisiana,67.7,-0.3,57,68
+22009,Avoyelles Parish,Louisiana,65.5,-1.3,41,66.8
+22011,Beauregard Parish,Louisiana,64.8,-1.9,24,66.7
+22013,Bienville Parish,Louisiana,62.7,-1.2,38,63.9
+22015,Bossier Parish,Louisiana,62.7,-1.4,36,64.1
+22017,Caddo Parish,Louisiana,63,-1.5,34,64.5
+22019,Calcasieu Parish,Louisiana,66.6,-1,42,67.6
+22021,Caldwell Parish,Louisiana,64.1,-0.7,54,64.8
+22023,Cameron Parish,Louisiana,67.4,-0.7,49,68.1
+22025,Catahoula Parish,Louisiana,64.7,-1.1,45,65.8
+22027,Claiborne Parish,Louisiana,62.2,-1.2,39,63.4
+22029,Concordia Parish,Louisiana,65.1,-0.9,48,66
+22031,De Soto Parish,Louisiana,63.4,-1.3,35,64.7
+22033,East Baton Rouge Parish,Louisiana,66.8,-0.3,57,67.1
+22035,East Carroll Parish,Louisiana,64.4,0.2,68,64.2
+22037,East Feliciana Parish,Louisiana,65.6,-0.6,53,66.2
+22039,Evangeline Parish,Louisiana,65.9,-1.4,39,67.3
+22041,Franklin Parish,Louisiana,64.8,-0.3,61,65.1
+22043,Grant Parish,Louisiana,64.4,-1.4,42,65.8
+22045,Iberia Parish,Louisiana,67.6,-0.5,53,68.1
+22047,Iberville Parish,Louisiana,67.5,-0.1,60,67.6
+22049,Jackson Parish,Louisiana,63,-0.9,47,63.9
+22051,Jefferson Parish,Louisiana,68.2,-0.1,59,68.3
+22053,Jefferson Davis Parish,Louisiana,67,-1.1,39,68.1
+22055,Lafayette Parish,Louisiana,67,-1,49,68
+22057,Lafourche Parish,Louisiana,68.6,0.1,69,68.5
+22059,La Salle Parish,Louisiana,64.2,-1.5,39,65.7
+22061,Lincoln Parish,Louisiana,62.6,-0.9,48,63.5
+22063,Livingston Parish,Louisiana,66.7,-0.2,57,66.9
+22065,Madison Parish,Louisiana,64.7,-0.1,64,64.8
+22067,Morehouse Parish,Louisiana,63.5,-0.4,63,63.9
+22069,Natchitoches Parish,Louisiana,64.1,-1.3,37,65.4
+22071,Orleans Parish,Louisiana,67.4,-0.2,62,67.6
+22073,Ouachita Parish,Louisiana,63.5,-0.7,55,64.2
+22075,Plaquemines Parish,Louisiana,68,-0.1,62,68.1
+22077,Pointe Coupee Parish,Louisiana,66.7,-0.6,55,67.3
+22079,Rapides Parish,Louisiana,64.8,-1.7,31,66.5
+22081,Red River Parish,Louisiana,63.3,-1.3,36,64.6
+22083,Richland Parish,Louisiana,64.2,-0.4,61,64.6
+22085,Sabine Parish,Louisiana,63.9,-1.2,38,65.1
+22087,St. Bernard Parish,Louisiana,67.4,-0.1,60,67.5
+22089,St. Charles Parish,Louisiana,68.1,-0.1,62,68.2
+22091,St. Helena Parish,Louisiana,65.4,-0.5,54,65.9
+22093,St. James Parish,Louisiana,67.7,-0.1,61,67.8
+22095,St. John the Baptist Parish,Louisiana,67.5,-0.2,61,67.7
+22097,St. Landry Parish,Louisiana,66.5,-1,48,67.5
+22099,St. Martin Parish,Louisiana,67.3,-0.6,53,67.9
+22101,St. Mary Parish,Louisiana,67.8,-0.3,56,68.1
+22103,St. Tammany Parish,Louisiana,66.4,-0.1,64,66.5
+22105,Tangipahoa Parish,Louisiana,66,-0.2,58,66.2
+22107,Tensas Parish,Louisiana,64.9,-0.4,57,65.3
+22109,Terrebonne Parish,Louisiana,68.5,-0.1,62,68.6
+22111,Union Parish,Louisiana,62.8,-0.8,51,63.6
+22113,Vermilion Parish,Louisiana,67.6,-0.7,50,68.3
+22115,Vernon Parish,Louisiana,64.2,-1.6,31,65.8
+22117,Washington Parish,Louisiana,65.6,-0.2,61,65.8
+22119,Webster Parish,Louisiana,62.5,-1.4,34,63.9
+22121,West Baton Rouge Parish,Louisiana,67.2,-0.3,58,67.5
+22123,West Carroll Parish,Louisiana,64.1,0,68,64.1
+22125,West Feliciana Parish,Louisiana,66.1,-0.6,55,66.7
+22127,Winn Parish,Louisiana,63.7,-1.1,42,64.8
+23001,Androscoggin County,Maine,45.7,4.5,124,41.2
+23003,Aroostook County,Maine,39.3,3.1,111,36.2
+23005,Cumberland County,Maine,46.1,4.3,124,41.8
+23007,Franklin County,Maine,40.4,4.1,118,36.3
+23009,Hancock County,Maine,44.1,3.3,117,40.8
+23011,Kennebec County,Maine,45.5,4.4,124,41.1
+23013,Knox County,Maine,44.4,3.6,119,40.8
+23015,Lincoln County,Maine,45.2,4,122,41.2
+23017,Oxford County,Maine,42.6,4,116,38.6
+23019,Penobscot County,Maine,43.1,3.5,119,39.6
+23021,Piscataquis County,Maine,40,3.3,116,36.7
+23023,Sagadahoc County,Maine,45.8,4.2,122,41.6
+23025,Somerset County,Maine,40.6,3.9,120,36.7
+23027,Waldo County,Maine,44.6,3.9,121,40.7
+23029,Washington County,Maine,43.1,3.2,115,39.9
+23031,York County,Maine,46.7,4.2,125,42.5
+24001,Allegany County,Maryland,51.8,1.4,81,50.4
+24003,Anne Arundel County,Maryland,56.3,2.6,98,53.7
+24005,Baltimore County,Maryland,54.3,2.9,100,51.4
+24009,Calvert County,Maryland,56.2,2.3,98,53.9
+24011,Caroline County,Maryland,55.8,3,105,52.8
+24013,Carroll County,Maryland,53.3,2.9,103,50.4
+24015,Cecil County,Maryland,54.3,2.6,100,51.7
+24017,Charles County,Maryland,56.6,2.3,97,54.3
+24019,Dorchester County,Maryland,57,3.4,111,53.6
+24021,Frederick County,Maryland,54,2.8,104,51.2
+24023,Garrett County,Maryland,46.9,0.7,75,46.2
+24025,Harford County,Maryland,54.2,2.5,98,51.7
+24027,Howard County,Maryland,54.7,3.2,109,51.5
+24029,Kent County,Maryland,55.5,2.7,102,52.8
+24031,Montgomery County,Maryland,55,2.8,105,52.2
+24033,Prince George&#039;s County,Maryland,55.9,2.3,97,53.6
+24035,Queen Anne&#039;s County,Maryland,55.9,2.9,106,53
+24037,St. Mary&#039;s County,Maryland,56.7,2.6,103,54.1
+24039,Somerset County,Maryland,57,3.2,110,53.8
+24041,Talbot County,Maryland,56.5,2.8,105,53.7
+24043,Washington County,Maryland,53.3,2.3,93,51
+24045,Wicomico County,Maryland,56.6,3.5,115,53.1
+24047,Worcester County,Maryland,55.9,3.2,110,52.7
+24510,Baltimore City,Maryland,56.1,3.2,102,52.9
+24511,Washington D.C.,Washington D.C.,56,2.1,96,53.9
+25001,Barnstable County,Massachusetts,48.2,3.6,121,44.6
+25003,Berkshire County,Massachusetts,46.4,3.9,115,42.5
+25005,Bristol County,Massachusetts,49.4,3.3,116,46.1
+25007,Dukes County,Massachusetts,48.9,3.9,122,45
+25009,Essex County,Massachusetts,48.8,3.9,123,44.9
+25011,Franklin County,Massachusetts,47.5,3.5,114,44
+25013,Hampden County,Massachusetts,48.8,3.5,113,45.3
+25015,Hampshire County,Massachusetts,48.2,3.3,111,44.9
+25017,Middlesex County,Massachusetts,49.3,3.7,119,45.6
+25019,Nantucket County,Massachusetts,46.9,3.3,119,43.6
+25021,Norfolk County,Massachusetts,49.6,3.7,118,45.9
+25023,Plymouth County,Massachusetts,49.3,3.6,120,45.7
+25025,Suffolk County,Massachusetts,49.7,4,120,45.7
+25027,Worcester County,Massachusetts,48,3.6,114,44.4
+26001,Alcona County,Michigan,41.4,1.1,78,40.3
+26003,Alger County,Michigan,38,0.3,73,37.7
+26005,Allegan County,Michigan,47.6,1.6,86,46
+26007,Alpena County,Michigan,41.6,1.6,85,40
+26009,Antrim County,Michigan,41.6,1,75,40.6
+26011,Arenac County,Michigan,43.8,1.3,79,42.5
+26013,Baraga County,Michigan,37.2,0.6,73,36.6
+26015,Barry County,Michigan,46.6,1.1,76,45.5
+26017,Bay County,Michigan,45,1.1,76,43.9
+26019,Benzie County,Michigan,42.4,2.1,87,40.3
+26021,Berrien County,Michigan,47.9,1.2,77,46.7
+26023,Branch County,Michigan,47.8,1.6,82,46.2
+26025,Calhoun County,Michigan,47.3,1.7,85,45.6
+26027,Cass County,Michigan,48.1,1.6,84,46.5
+26029,Charlevoix County,Michigan,41.6,1,73,40.6
+26031,Cheboygan County,Michigan,41.3,1.4,79,39.9
+26033,Chippewa County,Michigan,38.8,1.5,84,37.3
+26035,Clare County,Michigan,43.5,1.4,82,42.1
+26037,Clinton County,Michigan,45.8,0.5,66,45.3
+26039,Crawford County,Michigan,41.6,1.2,78,40.4
+26041,Delta County,Michigan,39.2,0.6,74,38.6
+26043,Dickinson County,Michigan,39,0.6,75,38.4
+26045,Eaton County,Michigan,46.5,1.2,77,45.3
+26047,Emmet County,Michigan,40.9,1.5,85,39.4
+26049,Genesee County,Michigan,46.7,1.8,85,44.9
+26051,Gladwin County,Michigan,44.2,1.2,78,43
+26053,Gogebic County,Michigan,38.4,0.6,74,37.8
+26055,Grand Traverse County,Michigan,42.2,1.7,81,40.5
+26057,Gratiot County,Michigan,45.2,0.5,68,44.7
+26059,Hillsdale County,Michigan,47.5,1.7,84,45.8
+26061,Houghton County,Michigan,37.9,0.2,65,37.7
+26063,Huron County,Michigan,43.7,1.4,85,42.3
+26065,Ingham County,Michigan,46.8,1.7,87,45.1
+26067,Ionia County,Michigan,45.5,0.4,63,45.1
+26069,Iosco County,Michigan,42.4,1.1,78,41.3
+26071,Iron County,Michigan,37.6,0.4,71,37.2
+26073,Isabella County,Michigan,44.6,1.1,76,43.5
+26075,Jackson County,Michigan,47.7,2.5,95,45.2
+26077,Kalamazoo County,Michigan,47.9,1.8,88,46.1
+26079,Kalkaska County,Michigan,42,1.5,79,40.5
+26081,Kent County,Michigan,46,1.1,73,44.9
+26083,Keweenaw County,Michigan,36.6,0.1,69,36.5
+26085,Lake County,Michigan,43.6,1.1,77,42.5
+26087,Lapeer County,Michigan,46.2,1.8,86,44.4
+26089,Leelanau County,Michigan,41.5,1.7,84,39.8
+26091,Lenawee County,Michigan,48.4,2,88,46.4
+26093,Livingston County,Michigan,47.3,2.6,96,44.7
+26095,Luce County,Michigan,38,0.9,79,37.1
+26097,Mackinac County,Michigan,39,1.3,82,37.7
+26099,Macomb County,Michigan,47.9,2.5,96,45.4
+26101,Manistee County,Michigan,42.9,1.5,80,41.5
+26103,Marquette County,Michigan,37.6,0.6,74,37
+26105,Mason County,Michigan,43.4,1,74,42.4
+26107,Mecosta County,Michigan,44,1,74,43
+26109,Menominee County,Michigan,40.4,0.4,68,40
+26111,Midland County,Michigan,45.2,1,75,44.2
+26113,Missaukee County,Michigan,42.6,1.8,83,40.8
+26115,Monroe County,Michigan,49.2,2.2,92,47
+26117,Montcalm County,Michigan,44.5,0.6,69,43.9
+26119,Montmorency County,Michigan,41.6,1.3,81,40.3
+26121,Muskegon County,Michigan,46,1.9,88,44.1
+26123,Newaygo County,Michigan,44.8,1.4,80,43.4
+26125,Oakland County,Michigan,47.4,2.5,95,44.9
+26127,Oceana County,Michigan,44.6,1.6,81,43
+26129,Ogemaw County,Michigan,42.4,1,74,41.4
+26131,Ontonagon County,Michigan,38.8,0.7,72,38.1
+26133,Osceola County,Michigan,43,1.3,80,41.7
+26135,Oscoda County,Michigan,41.4,0.9,77,40.5
+26137,Otsego County,Michigan,40.9,1,75,39.9
+26139,Ottawa County,Michigan,47,1.8,88,45.2
+26141,Presque Isle County,Michigan,41.3,1.5,85,39.8
+26143,Roscommon County,Michigan,42.8,1.8,83,41
+26145,Saginaw County,Michigan,45.9,1,76,44.9
+26147,St. Clair County,Michigan,46.9,2.2,93,44.7
+26149,St. Joseph County,Michigan,48.5,1.9,89,46.6
+26151,Sanilac County,Michigan,44.7,1.4,82,43.3
+26153,Schoolcraft County,Michigan,38.9,0.5,73,38.4
+26155,Shiawassee County,Michigan,46.1,1,71,45.1
+26157,Tuscola County,Michigan,45.5,1.4,84,44.1
+26159,Van Buren County,Michigan,47.9,1.5,83,46.4
+26161,Washtenaw County,Michigan,48.1,2.7,98,45.4
+26163,Wayne County,Michigan,48.7,2.4,95,46.3
+26165,Wexford County,Michigan,42.4,1.6,80,40.9
+27001,Aitkin County,Minnesota,41.3,1.4,84,39.9
+27003,Anoka County,Minnesota,45.5,1.1,79,44.4
+27005,Becker County,Minnesota,39.7,-0.6,54,40.3
+27007,Beltrami County,Minnesota,39.2,0.4,71,38.8
+27009,Benton County,Minnesota,43.8,1.2,79,42.6
+27011,Big Stone County,Minnesota,42.6,-1,52,43.6
+27013,Blue Earth County,Minnesota,45.6,0,62,45.6
+27015,Brown County,Minnesota,45.2,-0.1,58,45.3
+27017,Carlton County,Minnesota,41,1.8,88,39.2
+27019,Carver County,Minnesota,46,1.1,77,44.9
+27021,Cass County,Minnesota,40.8,0.9,80,39.9
+27023,Chippewa County,Minnesota,44.4,0.3,68,44.1
+27025,Chisago County,Minnesota,44.8,1,78,43.8
+27027,Clay County,Minnesota,41.2,-0.9,50,42.1
+27029,Clearwater County,Minnesota,39.5,0.3,67,39.2
+27031,Cook County,Minnesota,36,1,84,35
+27033,Cottonwood County,Minnesota,44.3,-0.2,58,44.5
+27035,Crow Wing County,Minnesota,42,1.2,81,40.8
+27037,Dakota County,Minnesota,46.1,0.7,72,45.4
+27039,Dodge County,Minnesota,44.9,0.9,79,44
+27041,Douglas County,Minnesota,41.7,0.2,67,41.5
+27043,Faribault County,Minnesota,45.4,-0,58,45.4
+27045,Fillmore County,Minnesota,44.7,0.2,60,44.5
+27047,Freeborn County,Minnesota,45.2,0.5,68,44.7
+27049,Goodhue County,Minnesota,45.6,0.8,77,44.8
+27051,Grant County,Minnesota,41.8,-0.7,54,42.5
+27053,Hennepin County,Minnesota,46.1,1.3,80,44.8
+27055,Houston County,Minnesota,45.9,0.3,61,45.6
+27057,Hubbard County,Minnesota,40,0.6,72,39.4
+27059,Isanti County,Minnesota,44.4,0.9,78,43.5
+27061,Itasca County,Minnesota,39.9,1.2,82,38.7
+27063,Jackson County,Minnesota,44,-0.7,53,44.7
+27065,Kanabec County,Minnesota,42.9,1,80,42
+27067,Kandiyohi County,Minnesota,44.3,0.9,79,43.4
+27069,Kittson County,Minnesota,39.2,-0.1,56,39.3
+27071,Koochiching County,Minnesota,39,1,79,38
+27073,Lac qui Parle County,Minnesota,43.8,-0.4,55,44.2
+27075,Lake County,Minnesota,37.2,1,82,36.2
+27077,Lake of the Woods County,Minnesota,39.2,1.2,80,38
+27079,Le Sueur County,Minnesota,45.9,0.5,72,45.4
+27081,Lincoln County,Minnesota,42.1,-1.4,44,43.5
+27083,Lyon County,Minnesota,43.6,-0.9,49,44.5
+27085,McLeod County,Minnesota,45.4,0.8,75,44.6
+27087,Mahnomen County,Minnesota,39.7,-0.3,57,40
+27089,Marshall County,Minnesota,39.8,0,62,39.8
+27091,Martin County,Minnesota,45.1,-0.1,56,45.2
+27093,Meeker County,Minnesota,44.6,1,79,43.6
+27095,Mille Lacs County,Minnesota,43.1,1.2,80,41.9
+27097,Morrison County,Minnesota,42.9,1.1,79,41.8
+27099,Mower County,Minnesota,44.8,0.8,76,44
+27101,Murray County,Minnesota,43.2,-0.7,53,43.9
+27103,Nicollet County,Minnesota,45.7,0.3,68,45.4
+27105,Nobles County,Minnesota,43.5,-1,46,44.5
+27107,Norman County,Minnesota,40.8,-0.8,54,41.6
+27109,Olmsted County,Minnesota,45.2,1,80,44.2
+27111,Otter Tail County,Minnesota,40.4,-0.9,51,41.3
+27113,Pennington County,Minnesota,39.8,-0.2,61,40
+27115,Pine County,Minnesota,42.4,1.4,84,41
+27117,Pipestone County,Minnesota,42.6,-1.2,45,43.8
+27119,Polk County,Minnesota,40.2,-0.7,54,40.9
+27121,Pope County,Minnesota,42.6,0.4,68,42.2
+27123,Ramsey County,Minnesota,46.3,1.2,83,45.1
+27125,Red Lake County,Minnesota,40,-0.5,56,40.5
+27127,Redwood County,Minnesota,45.1,0,60,45.1
+27129,Renville County,Minnesota,45.4,0.6,76,44.8
+27131,Rice County,Minnesota,45.5,0.5,70,45
+27133,Rock County,Minnesota,43.9,-1.1,43,45
+27135,Roseau County,Minnesota,39.8,1.4,80,38.4
+27137,St. Louis County,Minnesota,39.4,1.8,88,37.6
+27139,Scott County,Minnesota,46.2,0.8,74,45.4
+27141,Sherburne County,Minnesota,44.7,1.2,78,43.5
+27143,Sibley County,Minnesota,45.7,0.6,74,45.1
+27145,Stearns County,Minnesota,43.5,1,78,42.5
+27147,Steele County,Minnesota,45.1,0.6,70,44.5
+27149,Stevens County,Minnesota,42.4,-0.5,57,42.9
+27151,Swift County,Minnesota,43.6,0.1,64,43.5
+27153,Todd County,Minnesota,42.1,0.8,74,41.3
+27155,Traverse County,Minnesota,41.8,-1.4,42,43.2
+27157,Wabasha County,Minnesota,45.6,0.7,71,44.9
+27159,Wadena County,Minnesota,40.8,0.3,67,40.5
+27161,Waseca County,Minnesota,45.4,0.4,69,45
+27163,Washington County,Minnesota,45.9,1,77,44.9
+27165,Watonwan County,Minnesota,45,-0.2,56,45.2
+27167,Wilkin County,Minnesota,41.1,-1.7,42,42.8
+27169,Winona County,Minnesota,45.9,1,74,44.9
+27171,Wright County,Minnesota,45.1,1.2,78,43.9
+27173,Yellow Medicine County,Minnesota,43.9,-0.7,52,44.6
+28001,Adams County,Mississippi,65,-0.5,58,65.5
+28003,Alcorn County,Mississippi,60,-0.1,62,60.1
+28005,Amite County,Mississippi,64.7,-0.6,55,65.3
+28007,Attala County,Mississippi,61.6,-1,46,62.6
+28009,Benton County,Mississippi,59.5,-0.9,47,60.4
+28011,Bolivar County,Mississippi,62.4,-0.6,55,63
+28013,Calhoun County,Mississippi,61.4,-0.8,53,62.2
+28015,Carroll County,Mississippi,62.6,-0.1,65,62.7
+28017,Chickasaw County,Mississippi,61,-1.2,44,62.2
+28019,Choctaw County,Mississippi,60.9,-1.2,45,62.1
+28021,Claiborne County,Mississippi,64.3,-0.7,54,65
+28023,Clarke County,Mississippi,63.1,-1,50,64.1
+28025,Clay County,Mississippi,61.5,-1.1,44,62.6
+28027,Coahoma County,Mississippi,62.5,0.2,73,62.3
+28029,Copiah County,Mississippi,63.8,-0.8,47,64.6
+28031,Covington County,Mississippi,63.8,-0.9,47,64.7
+28033,DeSoto County,Mississippi,60.8,-0.8,50,61.6
+28035,Forrest County,Mississippi,64.5,-0.9,50,65.4
+28037,Franklin County,Mississippi,64.4,-0.6,54,65
+28039,George County,Mississippi,65.2,-0.6,54,65.8
+28041,Greene County,Mississippi,64.4,-1.1,46,65.5
+28043,Grenada County,Mississippi,62.3,-0.4,61,62.7
+28045,Hancock County,Mississippi,66.1,0,69,66.1
+28047,Harrison County,Mississippi,65.9,-0.2,63,66.1
+28049,Hinds County,Mississippi,63.6,-0.8,47,64.4
+28051,Holmes County,Mississippi,62.7,-0.8,49,63.5
+28053,Humphreys County,Mississippi,63.6,-0.4,52,64
+28055,Issaquena County,Mississippi,64.2,-0.1,63,64.3
+28057,Itawamba County,Mississippi,60.2,-1.1,38,61.3
+28059,Jackson County,Mississippi,65.7,-0.5,56,66.2
+28061,Jasper County,Mississippi,62.9,-1,47,63.9
+28063,Jefferson County,Mississippi,64.5,-0.6,54,65.1
+28065,Jefferson Davis County,Mississippi,64.1,-0.6,53,64.7
+28067,Jones County,Mississippi,64,-0.9,48,64.9
+28069,Kemper County,Mississippi,62.5,-0.5,59,63
+28071,Lafayette County,Mississippi,60.8,-1.1,45,61.9
+28073,Lamar County,Mississippi,64.5,-0.8,50,65.3
+28075,Lauderdale County,Mississippi,62.9,-0.5,54,63.4
+28077,Lawrence County,Mississippi,64.4,-0.5,57,64.9
+28079,Leake County,Mississippi,61.8,-1.1,44,62.9
+28081,Lee County,Mississippi,60.6,-1.1,41,61.7
+28083,Leflore County,Mississippi,63.3,-0.1,65,63.4
+28085,Lincoln County,Mississippi,64,-0.7,51,64.7
+28087,Lowndes County,Mississippi,61.7,-1.1,42,62.8
+28089,Madison County,Mississippi,62.8,-1.2,40,64
+28091,Marion County,Mississippi,65,-0.5,56,65.5
+28093,Marshall County,Mississippi,60.1,-0.9,50,61
+28095,Monroe County,Mississippi,61.1,-1.1,41,62.2
+28097,Montgomery County,Mississippi,61.8,-0.5,59,62.3
+28099,Neshoba County,Mississippi,61.6,-1,47,62.6
+28101,Newton County,Mississippi,62.1,-1,47,63.1
+28103,Noxubee County,Mississippi,62.2,-0.8,53,63
+28105,Oktibbeha County,Mississippi,61.4,-1.2,37,62.6
+28107,Panola County,Mississippi,61.4,-0.9,49,62.3
+28109,Pearl River County,Mississippi,65.4,-0.2,60,65.6
+28111,Perry County,Mississippi,64.6,-0.8,49,65.4
+28113,Pike County,Mississippi,64.8,-0.3,56,65.1
+28115,Pontotoc County,Mississippi,60.5,-1.2,41,61.7
+28117,Prentiss County,Mississippi,60.1,-0.6,50,60.7
+28119,Quitman County,Mississippi,62.1,-0.5,58,62.6
+28121,Rankin County,Mississippi,63,-0.9,49,63.9
+28123,Scott County,Mississippi,62.2,-1,48,63.2
+28125,Sharkey County,Mississippi,63.9,-0.4,56,64.3
+28127,Simpson County,Mississippi,63.4,-0.8,48,64.2
+28129,Smith County,Mississippi,62.9,-1,48,63.9
+28131,Stone County,Mississippi,65.2,-0.4,57,65.6
+28133,Sunflower County,Mississippi,62.9,-0.5,57,63.4
+28135,Tallahatchie County,Mississippi,62.4,-0.5,53,62.9
+28137,Tate County,Mississippi,60.9,-1,51,61.9
+28139,Tippah County,Mississippi,59.7,-0.7,53,60.4
+28141,Tishomingo County,Mississippi,59.6,-0.5,58,60.1
+28143,Tunica County,Mississippi,61.9,-0.1,69,62
+28145,Union County,Mississippi,60.2,-1.1,44,61.3
+28147,Walthall County,Mississippi,65,-0.3,59,65.3
+28149,Warren County,Mississippi,64.3,-0.4,57,64.7
+28151,Washington County,Mississippi,63.3,-0.5,56,63.8
+28153,Wayne County,Mississippi,63.5,-1.3,42,64.8
+28155,Webster County,Mississippi,61.3,-0.8,54,62.1
+28157,Wilkinson County,Mississippi,65.3,-0.6,55,65.9
+28159,Winston County,Mississippi,61,-1.3,41,62.3
+28161,Yalobusha County,Mississippi,61.8,-0.6,56,62.4
+28163,Yazoo County,Mississippi,63.3,-1,43,64.3
+29001,Adair County,Missouri,50,-1,45,51
+29003,Andrew County,Missouri,50.4,-2,27,52.4
+29005,Atchison County,Missouri,49.7,-2.1,27,51.8
+29007,Audrain County,Missouri,51.8,-1.2,41,53
+29009,Barry County,Missouri,55.2,-1.1,43,56.3
+29011,Barton County,Missouri,54.5,-2,29,56.5
+29013,Bates County,Missouri,53.5,-1.9,30,55.4
+29015,Benton County,Missouri,52.8,-2,29,54.8
+29017,Bollinger County,Missouri,56.2,-0.3,58,56.5
+29019,Boone County,Missouri,52.7,-1.2,42,53.9
+29021,Buchanan County,Missouri,51.4,-1.7,30,53.1
+29023,Butler County,Missouri,57.3,-1.2,41,58.5
+29025,Caldwell County,Missouri,50.6,-1.8,32,52.4
+29027,Callaway County,Missouri,52.6,-1.5,35,54.1
+29029,Camden County,Missouri,53.4,-1.9,31,55.3
+29031,Cape Girardeau County,Missouri,56.2,-0.2,59,56.4
+29033,Carroll County,Missouri,51.8,-1.5,38,53.3
+29035,Carter County,Missouri,56,-0.8,46,56.8
+29037,Cass County,Missouri,52.7,-1.5,36,54.2
+29039,Cedar County,Missouri,53.9,-2.1,29,56
+29041,Chariton County,Missouri,51.9,-1.3,42,53.2
+29043,Christian County,Missouri,54.2,-1.1,41,55.3
+29045,Clark County,Missouri,50.4,-1.3,39,51.7
+29047,Clay County,Missouri,52,-1.3,41,53.3
+29049,Clinton County,Missouri,50.7,-1.7,34,52.4
+29051,Cole County,Missouri,53.7,-1.4,38,55.1
+29053,Cooper County,Missouri,52.7,-1.3,40,54
+29055,Crawford County,Missouri,53.7,-0.8,49,54.5
+29057,Dade County,Missouri,54.2,-1.8,33,56
+29059,Dallas County,Missouri,52.9,-2.1,28,55
+29061,Daviess County,Missouri,50.7,-1.4,37,52.1
+29063,DeKalb County,Missouri,50.4,-1.7,34,52.1
+29065,Dent County,Missouri,54,-0.7,48,54.7
+29067,Douglas County,Missouri,54.7,-0.7,47,55.4
+29069,Dunklin County,Missouri,59,-0.4,52,59.4
+29071,Franklin County,Missouri,54,-0.5,53,54.5
+29073,Gasconade County,Missouri,53.6,-0.7,51,54.3
+29075,Gentry County,Missouri,50.3,-1.2,41,51.5
+29077,Greene County,Missouri,53.8,-1.3,36,55.1
+29079,Grundy County,Missouri,50.8,-1.4,39,52.2
+29081,Harrison County,Missouri,49.8,-1.3,41,51.1
+29083,Henry County,Missouri,52.7,-2.5,23,55.2
+29085,Hickory County,Missouri,53.1,-2.2,28,55.3
+29087,Holt County,Missouri,50.4,-2.2,27,52.6
+29089,Howard County,Missouri,52.7,-0.9,46,53.6
+29091,Howell County,Missouri,55,-0.7,44,55.7
+29093,Iron County,Missouri,53.9,-0.8,50,54.7
+29095,Jackson County,Missouri,52.5,-1.3,42,53.8
+29097,Jasper County,Missouri,55.2,-1.6,36,56.8
+29099,Jefferson County,Missouri,54.9,-0.4,56,55.3
+29101,Johnson County,Missouri,52.4,-1.6,35,54
+29103,Knox County,Missouri,50.4,-0.9,45,51.3
+29105,Laclede County,Missouri,53.4,-1.6,35,55
+29107,Lafayette County,Missouri,52.3,-1.2,44,53.5
+29109,Lawrence County,Missouri,54.3,-1.5,37,55.8
+29111,Lewis County,Missouri,51.2,-0.9,45,52.1
+29113,Lincoln County,Missouri,53,-0.6,52,53.6
+29115,Linn County,Missouri,50.9,-1.5,38,52.4
+29117,Livingston County,Missouri,51.4,-1.4,37,52.8
+29119,McDonald County,Missouri,56,-1.3,40,57.3
+29121,Macon County,Missouri,50.6,-1.4,37,52
+29123,Madison County,Missouri,54.7,-0.7,50,55.4
+29125,Maries County,Missouri,54.1,-1,42,55.1
+29127,Marion County,Missouri,51.4,-1.3,40,52.7
+29129,Mercer County,Missouri,50,-1.1,45,51.1
+29131,Miller County,Missouri,53.8,-1.4,35,55.2
+29133,Mississippi County,Missouri,57.6,-0.3,55,57.9
+29135,Moniteau County,Missouri,52.9,-1.5,38,54.4
+29137,Monroe County,Missouri,51.7,-1,44,52.7
+29139,Montgomery County,Missouri,52.5,-1,47,53.5
+29141,Morgan County,Missouri,52.5,-1.9,31,54.4
+29143,New Madrid County,Missouri,58.2,-0.5,49,58.7
+29145,Newton County,Missouri,55.4,-1.5,37,56.9
+29147,Nodaway County,Missouri,49.4,-1.8,33,51.2
+29149,Oregon County,Missouri,55.5,-1.1,39,56.6
+29151,Osage County,Missouri,54,-0.9,44,54.9
+29153,Ozark County,Missouri,55.4,-1,43,56.4
+29155,Pemiscot County,Missouri,59.5,0.1,68,59.4
+29157,Perry County,Missouri,55.2,-0.4,59,55.6
+29159,Pettis County,Missouri,52.3,-1.8,33,54.1
+29161,Phelps County,Missouri,54.1,-1.1,41,55.2
+29163,Pike County,Missouri,52.1,-0.9,47,53
+29165,Platte County,Missouri,52.2,-1.3,41,53.5
+29167,Polk County,Missouri,53.5,-1.8,32,55.3
+29169,Pulaski County,Missouri,54,-1.3,37,55.3
+29171,Putnam County,Missouri,49.5,-1.3,43,50.8
+29173,Ralls County,Missouri,51.4,-1.5,39,52.9
+29175,Randolph County,Missouri,51.7,-1.1,44,52.8
+29177,Ray County,Missouri,51.6,-1.4,39,53
+29179,Reynolds County,Missouri,54.8,-0.5,50,55.3
+29181,Ripley County,Missouri,56.8,-0.9,41,57.7
+29183,St. Charles County,Missouri,54.4,-0.3,52,54.7
+29185,St. Clair County,Missouri,53.6,-2.2,27,55.8
+29186,Ste. Genevieve County,Missouri,54.8,-0.5,56,55.3
+29187,St. Francois County,Missouri,53.9,-0.9,51,54.8
+29189,St. Louis County,Missouri,54.8,-0.4,52,55.2
+29195,Saline County,Missouri,52.3,-1.4,41,53.7
+29197,Schuyler County,Missouri,49.5,-1.1,42,50.6
+29199,Scotland County,Missouri,49.8,-1.2,40,51
+29201,Scott County,Missouri,57.1,-0.3,57,57.4
+29203,Shannon County,Missouri,55.1,-0.6,48,55.7
+29205,Shelby County,Missouri,51,-1,47,52
+29207,Stoddard County,Missouri,57.2,-1.1,44,58.3
+29209,Stone County,Missouri,55.1,-1.2,41,56.3
+29211,Sullivan County,Missouri,50.2,-1.3,43,51.5
+29213,Taney County,Missouri,55.3,-1.3,40,56.6
+29215,Texas County,Missouri,54.2,-0.9,44,55.1
+29217,Vernon County,Missouri,54.1,-2.1,26,56.2
+29219,Warren County,Missouri,53.2,-0.6,52,53.8
+29221,Washington County,Missouri,53.7,-0.8,47,54.5
+29223,Wayne County,Missouri,56.2,-0.6,49,56.8
+29225,Webster County,Missouri,53.2,-1.2,41,54.4
+29227,Worth County,Missouri,49.4,-1.2,39,50.6
+29229,Wright County,Missouri,54,-0.8,46,54.8
+29510,St. Louis City,Missouri,55.2,-0.2,55,55.4
+30001,Beaverhead County,Montana,33.9,-0.9,51,34.8
+30003,Big Horn County,Montana,42.2,-0.9,56,43.1
+30005,Blaine County,Montana,41.3,-0.8,52,42.1
+30007,Broadwater County,Montana,39.4,-1.2,47,40.6
+30009,Carbon County,Montana,39.3,-0.3,60,39.6
+30011,Carter County,Montana,39,-3.4,23,42.4
+30013,Cascade County,Montana,39.4,-1.5,45,40.9
+30015,Chouteau County,Montana,42.1,-0.7,53,42.8
+30017,Custer County,Montana,42.9,-1.2,50,44.1
+30019,Daniels County,Montana,39.6,-0.4,56,40
+30021,Dawson County,Montana,42.2,-0.7,57,42.9
+30023,Deer Lodge County,Montana,33.8,-1.1,51,34.9
+30025,Fallon County,Montana,40.4,-2.1,38,42.5
+30027,Fergus County,Montana,40.9,-1.4,48,42.3
+30029,Flathead County,Montana,37.6,-0.4,54,38
+30031,Gallatin County,Montana,36.5,-0.5,57,37
+30033,Garfield County,Montana,42.2,-1.1,51,43.3
+30035,Glacier County,Montana,36.3,-0.6,55,36.9
+30037,Golden Valley County,Montana,41.2,-1,55,42.2
+30039,Granite County,Montana,35.6,-0.8,54,36.4
+30041,Hill County,Montana,41.6,-0.1,62,41.7
+30043,Jefferson County,Montana,36.8,-1,50,37.8
+30045,Judith Basin County,Montana,37.6,-1.4,47,39
+30047,Lake County,Montana,41.7,-0.1,66,41.8
+30049,Lewis and Clark County,Montana,36.8,-1.5,42,38.3
+30051,Liberty County,Montana,40.8,-0.1,62,40.9
+30053,Lincoln County,Montana,39.7,-0.3,56,40
+30055,McCone County,Montana,42.4,-0.5,58,42.9
+30057,Madison County,Montana,35.8,-0.8,54,36.6
+30059,Meagher County,Montana,35.6,-1.1,51,36.7
+30061,Mineral County,Montana,39.4,-0.4,63,39.8
+30063,Missoula County,Montana,38.7,-0.6,54,39.3
+30065,Musselshell County,Montana,43.5,-0.4,63,43.9
+30067,Park County,Montana,35.5,-0.1,62,35.6
+30069,Petroleum County,Montana,43.8,-0.9,54,44.7
+30071,Phillips County,Montana,42.3,-0.9,53,43.2
+30073,Pondera County,Montana,39.2,-0.4,58,39.6
+30075,Powder River County,Montana,41.4,-2.3,31,43.7
+30077,Powell County,Montana,35.9,-1.1,47,37
+30079,Prairie County,Montana,42.6,-0.8,55,43.4
+30081,Ravalli County,Montana,37.5,-0.7,56,38.2
+30083,Richland County,Montana,42.6,-0.2,62,42.8
+30085,Roosevelt County,Montana,41.7,-0.4,57,42.1
+30087,Rosebud County,Montana,42.8,-1.1,50,43.9
+30089,Sanders County,Montana,41,-0.2,65,41.2
+30091,Sheridan County,Montana,40.6,-0.1,59,40.7
+30093,Silver Bow County,Montana,35.4,-0.7,52,36.1
+30095,Stillwater County,Montana,39.8,-1.1,55,40.9
+30097,Sweet Grass County,Montana,38.6,-0.7,59,39.3
+30099,Teton County,Montana,38.4,-0.9,55,39.3
+30101,Toole County,Montana,40.5,-0.2,57,40.7
+30103,Treasure County,Montana,43.8,-0.8,57,44.6
+30105,Valley County,Montana,41.3,-0.5,55,41.8
+30107,Wheatland County,Montana,38.9,-1.1,55,40
+30109,Wibaux County,Montana,41.5,-1.3,52,42.8
+30111,Yellowstone County,Montana,44,-0.7,59,44.7
+31001,Adams County,Nebraska,48.8,-0.9,45,49.7
+31003,Antelope County,Nebraska,45.3,-2.6,27,47.9
+31005,Arthur County,Nebraska,44.1,-2.1,31,46.2
+31007,Banner County,Nebraska,42.9,-1.5,37,44.4
+31009,Blaine County,Nebraska,46.3,-1.2,39,47.5
+31011,Boone County,Nebraska,46.3,-1.6,33,47.9
+31013,Box Butte County,Nebraska,42.4,-1.7,35,44.1
+31015,Boyd County,Nebraska,45.4,-2.3,29,47.7
+31017,Brown County,Nebraska,45.4,-1.4,38,46.8
+31019,Buffalo County,Nebraska,47.8,-1,44,48.8
+31021,Burt County,Nebraska,47.3,-2,36,49.3
+31023,Butler County,Nebraska,48,-1.4,41,49.4
+31025,Cass County,Nebraska,49.4,-1.5,33,50.9
+31027,Cedar County,Nebraska,45.8,-1.8,36,47.6
+31029,Chase County,Nebraska,47.6,-0.8,45,48.4
+31031,Cherry County,Nebraska,43.8,-1.6,33,45.4
+31033,Cheyenne County,Nebraska,44.6,-1.1,39,45.7
+31035,Clay County,Nebraska,48.8,-1.2,40,50
+31037,Colfax County,Nebraska,47.5,-1.5,36,49
+31039,Cuming County,Nebraska,46.7,-2.1,33,48.8
+31041,Custer County,Nebraska,46.3,-1.2,36,47.5
+31043,Dakota County,Nebraska,47.3,-1.1,41,48.4
+31045,Dawes County,Nebraska,42.5,-2.4,30,44.9
+31047,Dawson County,Nebraska,47.6,-1.3,40,48.9
+31049,Deuel County,Nebraska,46,-1.3,37,47.3
+31051,Dixon County,Nebraska,46.4,-1.6,37,48
+31053,Dodge County,Nebraska,47.4,-2.2,32,49.6
+31055,Douglas County,Nebraska,48.6,-1.8,32,50.4
+31057,Dundy County,Nebraska,48.2,-1,46,49.2
+31059,Fillmore County,Nebraska,49.1,-1.2,41,50.3
+31061,Franklin County,Nebraska,48.8,-1.8,37,50.6
+31063,Frontier County,Nebraska,47.5,-1.8,34,49.3
+31065,Furnas County,Nebraska,48.8,-1.9,36,50.7
+31067,Gage County,Nebraska,49.3,-2,32,51.3
+31069,Garden County,Nebraska,44.6,-1.3,40,45.9
+31071,Garfield County,Nebraska,45.5,-1.4,36,46.9
+31073,Gosper County,Nebraska,47.9,-1.8,36,49.7
+31075,Grant County,Nebraska,43.1,-2.1,31,45.2
+31077,Greeley County,Nebraska,46.4,-1.4,36,47.8
+31079,Hall County,Nebraska,48.4,-0.9,42,49.3
+31081,Hamilton County,Nebraska,48.6,-1.1,42,49.7
+31083,Harlan County,Nebraska,49.5,-1.2,39,50.7
+31085,Hayes County,Nebraska,47.4,-1.3,38,48.7
+31087,Hitchcock County,Nebraska,48.4,-1.5,38,49.9
+31089,Holt County,Nebraska,44.9,-2.2,33,47.1
+31091,Hooker County,Nebraska,44.4,-1.7,37,46.1
+31093,Howard County,Nebraska,48,-0.9,43,48.9
+31095,Jefferson County,Nebraska,49.8,-1.3,39,51.1
+31097,Johnson County,Nebraska,49.3,-2.2,29,51.5
+31099,Kearney County,Nebraska,48.4,-1,44,49.4
+31101,Keith County,Nebraska,46.2,-1.5,35,47.7
+31103,Keya Paha County,Nebraska,44.5,-2,36,46.5
+31105,Kimball County,Nebraska,42.8,-0.9,42,43.7
+31107,Knox County,Nebraska,45.7,-2.2,34,47.9
+31109,Lancaster County,Nebraska,49.2,-1.4,38,50.6
+31111,Lincoln County,Nebraska,46.7,-1.3,39,48
+31113,Logan County,Nebraska,45.7,-1.4,36,47.1
+31115,Loup County,Nebraska,45.6,-1.4,35,47
+31117,McPherson County,Nebraska,44.9,-1.7,35,46.6
+31119,Madison County,Nebraska,46.3,-2.1,32,48.4
+31121,Merrick County,Nebraska,48.5,-0.9,44,49.4
+31123,Morrill County,Nebraska,44.8,-0.7,44,45.5
+31125,Nance County,Nebraska,48,-0.8,44,48.8
+31127,Nemaha County,Nebraska,49.8,-2.1,28,51.9
+31129,Nuckolls County,Nebraska,49.1,-1.5,40,50.6
+31131,Otoe County,Nebraska,49.5,-1.9,33,51.4
+31133,Pawnee County,Nebraska,49.3,-2.5,25,51.8
+31135,Perkins County,Nebraska,46.8,-1,43,47.8
+31137,Phelps County,Nebraska,48.1,-1.4,39,49.5
+31139,Pierce County,Nebraska,45.4,-2.5,29,47.9
+31141,Platte County,Nebraska,47.6,-1.1,43,48.7
+31143,Polk County,Nebraska,48.3,-1.2,43,49.5
+31145,Red Willow County,Nebraska,48.4,-1.7,35,50.1
+31147,Richardson County,Nebraska,50.4,-1.8,29,52.2
+31149,Rock County,Nebraska,44.6,-2,33,46.6
+31151,Saline County,Nebraska,49.1,-1.5,38,50.6
+31153,Sarpy County,Nebraska,49.1,-1.6,33,50.7
+31155,Saunders County,Nebraska,48.1,-1.9,33,50
+31157,Scotts Bluff County,Nebraska,44.1,-1.5,36,45.6
+31159,Seward County,Nebraska,48.5,-1.6,39,50.1
+31161,Sheridan County,Nebraska,42.6,-1.7,36,44.3
+31163,Sherman County,Nebraska,47,-1.3,36,48.3
+31165,Sioux County,Nebraska,41.1,-2.3,25,43.4
+31167,Stanton County,Nebraska,46.6,-1.9,34,48.5
+31169,Thayer County,Nebraska,49.3,-1.6,37,50.9
+31171,Thomas County,Nebraska,46.1,-1,42,47.1
+31173,Thurston County,Nebraska,46.8,-1.7,37,48.5
+31175,Valley County,Nebraska,46.3,-1.1,40,47.4
+31177,Washington County,Nebraska,48,-2,31,50
+31179,Wayne County,Nebraska,46.1,-1.8,35,47.9
+31181,Webster County,Nebraska,48.7,-2,34,50.7
+31183,Wheeler County,Nebraska,45.7,-1.6,35,47.3
+31185,York County,Nebraska,48.8,-1.3,41,50.1
+32001,Churchill County,Nevada,47.4,-0.7,51,48.1
+32003,Clark County,Nevada,60.2,-0.3,55,60.5
+32005,Douglas County,Nevada,44,-0.5,54,44.5
+32007,Elko County,Nevada,40.8,-0.8,53,41.6
+32009,Esmeralda County,Nevada,48.5,0,62,48.5
+32011,Eureka County,Nevada,41.4,-0.8,50,42.2
+32013,Humboldt County,Nevada,44.2,-1,54,45.2
+32015,Lander County,Nevada,42.9,-0.9,49,43.8
+32017,Lincoln County,Nevada,50.7,-0.3,56,51
+32019,Lyon County,Nevada,47.1,-0.5,56,47.6
+32021,Mineral County,Nevada,46,-0,62,46
+32023,Nye County,Nevada,47.8,0.1,61,47.7
+32027,Pershing County,Nevada,45.6,-1.4,45,47
+32029,Storey County,Nevada,45.8,-0,62,45.8
+32031,Washoe County,Nevada,44.2,-0.7,55,44.9
+32033,White Pine County,Nevada,41.3,-0.3,54,41.6
+32510,Carson City,Nevada,45.7,0,67,45.7
+33001,Belknap County,New Hampshire,46.1,3.8,118,42.3
+33003,Carroll County,New Hampshire,44.4,3.9,116,40.5
+33005,Cheshire County,New Hampshire,46.2,3.8,115,42.4
+33007,Coos County,New Hampshire,40.6,3.9,116,36.7
+33009,Grafton County,New Hampshire,42.8,3.6,116,39.2
+33011,Hillsborough County,New Hampshire,47.3,3.7,116,43.6
+33013,Merrimack County,New Hampshire,46.3,3.7,118,42.6
+33015,Rockingham County,New Hampshire,47.8,3.7,118,44.1
+33017,Strafford County,New Hampshire,47.3,4.3,124,43
+33019,Sullivan County,New Hampshire,44.5,3.6,115,40.9
+34001,Atlantic County,New Jersey,53.4,3.5,112,49.9
+34003,Bergen County,New Jersey,52.4,3.3,110,49.1
+34005,Burlington County,New Jersey,53.5,2.9,106,50.6
+34007,Camden County,New Jersey,54.1,2.9,107,51.2
+34009,Cape May County,New Jersey,53.5,3.6,114,49.9
+34011,Cumberland County,New Jersey,53.6,2.9,105,50.7
+34013,Essex County,New Jersey,52.6,3.2,108,49.4
+34015,Gloucester County,New Jersey,54.3,2.9,105,51.4
+34017,Hudson County,New Jersey,53.5,3.4,108,50.1
+34019,Hunterdon County,New Jersey,51.7,3.7,113,48
+34021,Mercer County,New Jersey,53.1,3.3,109,49.8
+34023,Middlesex County,New Jersey,52.7,3,107,49.7
+34025,Monmouth County,New Jersey,52.4,2.9,106,49.5
+34027,Morris County,New Jersey,50.6,3.1,110,47.5
+34029,Ocean County,New Jersey,52.2,2.9,103,49.3
+34031,Passaic County,New Jersey,50.8,3.1,107,47.7
+34033,Salem County,New Jersey,54.3,2.8,103,51.5
+34035,Somerset County,New Jersey,52.1,3.2,108,48.9
+34037,Sussex County,New Jersey,49.5,3,107,46.5
+34039,Union County,New Jersey,52.8,3.1,108,49.7
+34041,Warren County,New Jersey,50.7,3.8,115,46.9
+35001,Bernalillo County,New Mexico,51.2,0.5,67,50.7
+35003,Catron County,New Mexico,45.6,0.1,56,45.5
+35005,Chaves County,New Mexico,58.3,0.9,79,57.4
+35006,Cibola County,New Mexico,45.8,-0.3,46,46.1
+35007,Colfax County,New Mexico,44.6,0.1,59,44.5
+35009,Curry County,New Mexico,55.1,0.4,69,54.7
+35011,De Baca County,New Mexico,56.8,1.1,80,55.7
+35013,Dona Ana County,New Mexico,59.7,0.6,65,59.1
+35015,Eddy County,New Mexico,61.4,0.8,73,60.6
+35017,Grant County,New Mexico,52.8,0.1,58,52.7
+35019,Guadalupe County,New Mexico,53.3,0.7,71,52.6
+35021,Harding County,New Mexico,52.4,0.5,70,51.9
+35023,Hidalgo County,New Mexico,57.7,0.4,61,57.3
+35025,Lea County,New Mexico,60.4,0.9,81,59.5
+35027,Lincoln County,New Mexico,52.7,0.8,74,51.9
+35028,Los Alamos County,New Mexico,43.8,-0.3,46,44.1
+35029,Luna County,New Mexico,59,0.8,72,58.2
+35031,McKinley County,New Mexico,45.4,-0.7,43,46.1
+35033,Mora County,New Mexico,45.1,0.3,63,44.8
+35035,Otero County,New Mexico,56.5,1,78,55.5
+35037,Quay County,New Mexico,55.3,-0.1,59,55.4
+35039,Rio Arriba County,New Mexico,42.3,-0.4,45,42.7
+35041,Roosevelt County,New Mexico,56.8,0.9,81,55.9
+35043,Sandoval County,New Mexico,46.8,-0.7,41,47.5
+35045,San Juan County,New Mexico,48,-0.6,43,48.6
+35047,San Miguel County,New Mexico,50.5,0.5,69,50
+35049,Santa Fe County,New Mexico,46.4,-0.1,51,46.5
+35051,Sierra County,New Mexico,56,0.7,74,55.3
+35053,Socorro County,New Mexico,52.5,0.9,73,51.7
+35055,Taos County,New Mexico,40,-0.4,43,40.4
+35057,Torrance County,New Mexico,48.4,0.6,67,47.8
+35059,Union County,New Mexico,49.5,-0.2,54,49.7
+35061,Valencia County,New Mexico,53.6,0.9,75,52.7
+36001,Albany County,New York,48.2,3.3,111,44.9
+36003,Allegany County,New York,45.8,2.7,104,43.1
+36005,Bronx County,New York,53.2,3.4,111,49.8
+36007,Broome County,New York,47.2,3.1,109,44.1
+36009,Cattaraugus County,New York,45,2,93,43
+36011,Cayuga County,New York,46.8,3.2,107,43.6
+36013,Chautauqua County,New York,46.3,2.5,96,43.8
+36015,Chemung County,New York,46.8,2.5,102,44.3
+36017,Chenango County,New York,46.1,3.3,109,42.8
+36019,Clinton County,New York,43.6,3.3,109,40.3
+36021,Columbia County,New York,49.8,4.1,118,45.7
+36023,Cortland County,New York,45.3,3,105,42.3
+36025,Delaware County,New York,45.4,3.2,109,42.2
+36027,Dutchess County,New York,50,3.5,113,46.5
+36029,Erie County,New York,46.1,2.5,98,43.6
+36031,Essex County,New York,42.2,3.4,110,38.8
+36033,Franklin County,New York,42.3,3.5,107,38.8
+36035,Fulton County,New York,45.5,3.2,107,42.3
+36037,Genesee County,New York,46.4,2.7,98,43.7
+36039,Greene County,New York,47.2,3.9,115,43.3
+36041,Hamilton County,New York,41.4,3.3,109,38.1
+36043,Herkimer County,New York,43.8,3.5,110,40.3
+36045,Jefferson County,New York,44.3,2.1,96,42.2
+36047,Kings County,New York,53.2,3.2,108,50
+36049,Lewis County,New York,42.8,2.8,104,40
+36051,Livingston County,New York,47.3,3.2,105,44.1
+36053,Madison County,New York,45.5,3,104,42.5
+36055,Monroe County,New York,46.9,2.7,99,44.2
+36057,Montgomery County,New York,47.4,2.9,105,44.5
+36059,Nassau County,New York,51.9,3.2,109,48.7
+36061,New York County,New York,53.4,3.4,109,50
+36063,Niagara County,New York,46.4,2.6,98,43.8
+36065,Oneida County,New York,45.3,2.8,103,42.5
+36067,Onondaga County,New York,46.6,3,106,43.6
+36069,Ontario County,New York,47.1,3.2,105,43.9
+36071,Orange County,New York,49.7,3.1,105,46.6
+36073,Orleans County,New York,46.4,2.7,97,43.7
+36075,Oswego County,New York,45.8,2.8,104,43
+36077,Otsego County,New York,45.6,3.3,108,42.3
+36079,Putnam County,New York,50,3.1,109,46.9
+36081,Queens County,New York,52.8,3.2,109,49.6
+36083,Rensselaer County,New York,47.8,3.4,111,44.4
+36085,Richmond County,New York,53.2,3.1,107,50.1
+36087,Rockland County,New York,51.4,3.3,109,48.1
+36089,St. Lawrence County,New York,43.7,2.9,104,40.8
+36091,Saratoga County,New York,46.5,2.7,105,43.8
+36093,Schenectady County,New York,47.5,2.9,108,44.6
+36095,Schoharie County,New York,46,3.2,108,42.8
+36097,Schuyler County,New York,46.4,2.7,103,43.7
+36099,Seneca County,New York,47.6,3,105,44.6
+36101,Steuben County,New York,46.1,2.7,105,43.4
+36103,Suffolk County,New York,50,3.3,114,46.7
+36105,Sullivan County,New York,46.8,3,107,43.8
+36107,Tioga County,New York,46.9,2.8,104,44.1
+36109,Tompkins County,New York,46.5,2.9,105,43.6
+36111,Ulster County,New York,48.3,3.9,115,44.4
+36113,Warren County,New York,43.8,2.7,105,41.1
+36115,Washington County,New York,46.6,2.9,107,43.7
+36117,Wayne County,New York,47.3,3.4,108,43.9
+36119,Westchester County,New York,51.5,3.4,112,48.1
+36121,Wyoming County,New York,45.4,2.7,98,42.7
+36123,Yates County,New York,47,3.1,106,43.9
+37001,Alamance County,North Carolina,58.8,1.1,86,57.7
+37003,Alexander County,North Carolina,57.3,0.7,77,56.6
+37005,Alleghany County,North Carolina,50.9,0.5,69,50.4
+37007,Anson County,North Carolina,61.2,0.8,77,60.4
+37009,Ashe County,North Carolina,49.7,0.5,68,49.2
+37011,Avery County,North Carolina,48.7,0.5,69,48.2
+37013,Beaufort County,North Carolina,61.6,1.8,97,59.9
+37015,Bertie County,North Carolina,59.8,1.3,87,58.5
+37017,Bladen County,North Carolina,61.6,0.5,72,61.1
+37019,Brunswick County,North Carolina,61.7,0.5,71,61.2
+37021,Buncombe County,North Carolina,52.9,0.3,68,52.6
+37023,Burke County,North Carolina,56.4,0,58,56.4
+37025,Cabarrus County,North Carolina,60.1,1.3,85,58.8
+37027,Caldwell County,North Carolina,56.4,0.5,73,55.9
+37029,Camden County,North Carolina,59.5,2.1,103,57.4
+37031,Carteret County,North Carolina,61.1,0.6,75,60.5
+37033,Caswell County,North Carolina,58.5,1.3,89,57.2
+37035,Catawba County,North Carolina,57.9,0.5,74,57.4
+37037,Chatham County,North Carolina,59.9,1.2,85,58.7
+37039,Cherokee County,North Carolina,54.6,-0.9,45,55.5
+37041,Chowan County,North Carolina,60.8,2.1,105,58.7
+37043,Clay County,North Carolina,53.1,-0.7,50,53.8
+37045,Cleveland County,North Carolina,58.2,-0.1,59,58.3
+37047,Columbus County,North Carolina,61.9,0.6,73,61.3
+37049,Craven County,North Carolina,61.2,1.1,87,60.1
+37051,Cumberland County,North Carolina,61.5,0.6,78,60.9
+37053,Currituck County,North Carolina,59.3,2.1,103,57.2
+37055,Dare County,North Carolina,61,2.3,106,58.7
+37057,Davidson County,North Carolina,58.8,1.2,85,57.6
+37059,Davie County,North Carolina,57.9,1.1,81,56.8
+37061,Duplin County,North Carolina,61.4,1.1,85,60.3
+37063,Durham County,North Carolina,59.3,1.5,88,57.8
+37065,Edgecombe County,North Carolina,59.8,1,79,58.8
+37067,Forsyth County,North Carolina,58.1,1.6,88,56.5
+37069,Franklin County,North Carolina,59.3,1.7,92,57.6
+37071,Gaston County,North Carolina,58.7,0.1,62,58.6
+37073,Gates County,North Carolina,59.6,1.7,100,57.9
+37075,Graham County,North Carolina,52.8,-0.5,53,53.3
+37077,Granville County,North Carolina,58.4,1.5,90,56.9
+37079,Greene County,North Carolina,60.8,1,81,59.8
+37081,Guilford County,North Carolina,58.7,1.6,88,57.1
+37083,Halifax County,North Carolina,59.2,1.4,91,57.8
+37085,Harnett County,North Carolina,61,1,83,60
+37087,Haywood County,North Carolina,49.7,-0.1,61,49.8
+37089,Henderson County,North Carolina,54.4,0.2,69,54.2
+37091,Hertford County,North Carolina,59.4,1.4,92,58
+37093,Hoke County,North Carolina,61.2,0.7,74,60.5
+37095,Hyde County,North Carolina,62,2.1,106,59.9
+37097,Iredell County,North Carolina,57.8,0.8,76,57
+37099,Jackson County,North Carolina,51.1,-0.4,57,51.5
+37101,Johnston County,North Carolina,60.4,0.7,78,59.7
+37103,Jones County,North Carolina,60.9,0.9,78,60
+37105,Lee County,North Carolina,60.8,1.4,89,59.4
+37107,Lenoir County,North Carolina,61.2,1.2,83,60
+37109,Lincoln County,North Carolina,58.1,0.2,68,57.9
+37111,McDowell County,North Carolina,55.1,-0.4,51,55.5
+37113,Macon County,North Carolina,52.2,-0.4,55,52.6
+37115,Madison County,North Carolina,53.5,0.3,67,53.2
+37117,Martin County,North Carolina,60.2,1.3,87,58.9
+37119,Mecklenburg County,North Carolina,59.8,0.9,77,58.9
+37121,Mitchell County,North Carolina,50.4,0.5,73,49.9
+37123,Montgomery County,North Carolina,60.4,1,78,59.4
+37125,Moore County,North Carolina,60.3,0.7,73,59.6
+37127,Nash County,North Carolina,59.5,1.3,87,58.2
+37129,New Hanover County,North Carolina,62,0.8,77,61.2
+37131,Northampton County,North Carolina,59.1,1.4,91,57.7
+37133,Onslow County,North Carolina,61.2,0.6,74,60.6
+37135,Orange County,North Carolina,58.6,1.1,82,57.5
+37137,Pamlico County,North Carolina,61.6,1.1,90,60.5
+37139,Pasquotank County,North Carolina,59.9,2.1,103,57.8
+37141,Pender County,North Carolina,61.6,0.8,78,60.8
+37143,Perquimans County,North Carolina,60.4,2.1,106,58.3
+37145,Person County,North Carolina,57.5,0.9,78,56.6
+37147,Pitt County,North Carolina,60.8,1.1,82,59.7
+37149,Polk County,North Carolina,58.3,0.4,76,57.9
+37151,Randolph County,North Carolina,59.6,1.4,87,58.2
+37153,Richmond County,North Carolina,61.2,0.8,76,60.4
+37155,Robeson County,North Carolina,61.8,0.4,70,61.4
+37157,Rockingham County,North Carolina,58.4,1.5,90,56.9
+37159,Rowan County,North Carolina,59,1.2,86,57.8
+37161,Rutherford County,North Carolina,57.8,-0.2,55,58
+37163,Sampson County,North Carolina,61.2,0.7,81,60.5
+37165,Scotland County,North Carolina,61.8,1,82,60.8
+37167,Stanly County,North Carolina,60.7,1.2,83,59.5
+37169,Stokes County,North Carolina,57.2,1.2,84,56
+37171,Surry County,North Carolina,56.1,1,81,55.1
+37173,Swain County,North Carolina,50.8,-0.3,56,51.1
+37175,Transylvania County,North Carolina,52.4,-0.7,47,53.1
+37177,Tyrrell County,North Carolina,61.3,2.3,105,59
+37179,Union County,North Carolina,60.5,0.9,78,59.6
+37181,Vance County,North Carolina,58.6,1.7,92,56.9
+37183,Wake County,North Carolina,60.2,1.6,92,58.6
+37185,Warren County,North Carolina,58.9,1.8,95,57.1
+37187,Washington County,North Carolina,61.2,2.3,104,58.9
+37189,Watauga County,North Carolina,49.5,0.4,68,49.1
+37191,Wayne County,North Carolina,60.9,1,80,59.9
+37193,Wilkes County,North Carolina,55.7,0.4,68,55.3
+37195,Wilson County,North Carolina,60.1,0.8,74,59.3
+37197,Yadkin County,North Carolina,57.4,1.4,85,56
+37199,Yancey County,North Carolina,50.1,0.4,70,49.7
+38001,Adams County,North Dakota,38.7,-3,29,41.7
+38003,Barnes County,North Dakota,39.6,-1.9,39,41.5
+38005,Benson County,North Dakota,38.2,-1.7,44,39.9
+38007,Billings County,North Dakota,40.3,-1.9,41,42.2
+38009,Bottineau County,North Dakota,38.9,-1.2,49,40.1
+38011,Bowman County,North Dakota,38.6,-3.3,26,41.9
+38013,Burke County,North Dakota,38.8,-0.8,52,39.6
+38015,Burleigh County,North Dakota,38.9,-2.9,31,41.8
+38017,Cass County,North Dakota,41.2,-1.2,49,42.4
+38019,Cavalier County,North Dakota,36.5,-1.6,43,38.1
+38021,Dickey County,North Dakota,40.8,-1.8,40,42.6
+38023,Divide County,North Dakota,38.9,-0.9,51,39.8
+38025,Dunn County,North Dakota,40,-1.8,41,41.8
+38027,Eddy County,North Dakota,38.7,-1.7,43,40.4
+38029,Emmons County,North Dakota,39.8,-3.1,29,42.9
+38031,Foster County,North Dakota,38.7,-1.9,38,40.6
+38033,Golden Valley County,North Dakota,40.9,-1.6,49,42.5
+38035,Grand Forks County,North Dakota,39.7,-1.4,48,41.1
+38037,Grant County,North Dakota,39.6,-2.6,36,42.2
+38039,Griggs County,North Dakota,38.9,-1.5,48,40.4
+38041,Hettinger County,North Dakota,38.5,-3.1,30,41.6
+38043,Kidder County,North Dakota,38,-3.1,25,41.1
+38045,LaMoure County,North Dakota,40.1,-2,37,42.1
+38047,Logan County,North Dakota,38.3,-3.1,27,41.4
+38049,McHenry County,North Dakota,38.3,-3,35,41.3
+38051,McIntosh County,North Dakota,39.3,-2.5,34,41.8
+38053,McKenzie County,North Dakota,41.5,-0.7,55,42.2
+38055,McLean County,North Dakota,39,-2.5,38,41.5
+38057,Mercer County,North Dakota,39.5,-2.6,34,42.1
+38059,Morton County,North Dakota,39.4,-2.8,34,42.2
+38061,Mountrail County,North Dakota,39.1,-1.4,46,40.5
+38063,Nelson County,North Dakota,37.9,-1.7,43,39.6
+38065,Oliver County,North Dakota,39.4,-2.7,36,42.1
+38067,Pembina County,North Dakota,38.8,-0.9,52,39.7
+38069,Pierce County,North Dakota,37.4,-2.4,39,39.8
+38071,Ramsey County,North Dakota,38.3,-1.3,48,39.6
+38073,Ransom County,North Dakota,41.6,-1,48,42.6
+38075,Renville County,North Dakota,39.6,-1.1,50,40.7
+38077,Richland County,North Dakota,41.8,-1.2,46,43
+38079,Rolette County,North Dakota,36.6,-1.6,44,38.2
+38081,Sargent County,North Dakota,41.7,-1.3,48,43
+38083,Sheridan County,North Dakota,37.9,-2.9,34,40.8
+38085,Sioux County,North Dakota,40,-3.1,30,43.1
+38087,Slope County,North Dakota,39.2,-2.9,31,42.1
+38089,Stark County,North Dakota,38.7,-3.2,33,41.9
+38091,Steele County,North Dakota,39.5,-1.5,47,41
+38093,Stutsman County,North Dakota,38.7,-2.5,32,41.2
+38095,Towner County,North Dakota,36.9,-1.6,45,38.5
+38097,Traill County,North Dakota,40.7,-1.3,49,42
+38099,Walsh County,North Dakota,38.8,-1.1,52,39.9
+38101,Ward County,North Dakota,38.8,-2.2,41,41
+38103,Wells County,North Dakota,37.9,-2.5,34,40.4
+38105,Williams County,North Dakota,40.5,-0.5,54,41
+39001,Adams County,Ohio,53.9,1.7,83,52.2
+39003,Allen County,Ohio,49.8,1.2,76,48.6
+39005,Ashland County,Ohio,49.7,2.6,95,47.1
+39007,Ashtabula County,Ohio,48.1,2.9,99,45.2
+39009,Athens County,Ohio,53.3,1.9,85,51.4
+39011,Auglaize County,Ohio,49.8,1,75,48.8
+39013,Belmont County,Ohio,51,1.5,84,49.5
+39015,Brown County,Ohio,53.6,1.9,87,51.7
+39017,Butler County,Ohio,53.3,2,86,51.4
+39019,Carroll County,Ohio,50,2.2,92,47.8
+39021,Champaign County,Ohio,51,1.8,83,49.2
+39023,Clark County,Ohio,51.7,1.9,84,49.8
+39025,Clermont County,Ohio,54,2,87,52
+39027,Clinton County,Ohio,52.6,2.1,87,50.5
+39029,Columbiana County,Ohio,49.7,2.3,93,47.4
+39031,Coshocton County,Ohio,51,2.1,88,48.9
+39033,Crawford County,Ohio,49.7,2.2,86,47.5
+39035,Cuyahoga County,Ohio,49.7,2.8,100,46.9
+39037,Darke County,Ohio,50.4,1.2,74,49.2
+39039,Defiance County,Ohio,49.5,1.6,83,47.9
+39041,Delaware County,Ohio,51.5,2,83,49.5
+39043,Erie County,Ohio,49.4,1.8,93,47.6
+39045,Fairfield County,Ohio,52.1,1.6,82,50.5
+39047,Fayette County,Ohio,52.5,2.3,90,50.2
+39049,Franklin County,Ohio,52.5,1.9,84,50.6
+39051,Fulton County,Ohio,49.3,2,88,47.3
+39053,Gallia County,Ohio,54.5,1.6,83,52.9
+39055,Geauga County,Ohio,48.1,2.7,97,45.4
+39057,Greene County,Ohio,52.4,2,83,50.4
+39059,Guernsey County,Ohio,51.1,1.4,80,49.7
+39061,Hamilton County,Ohio,54.2,1.9,85,52.3
+39063,Hancock County,Ohio,50,1.8,82,48.2
+39065,Hardin County,Ohio,49.8,1.5,79,48.3
+39067,Harrison County,Ohio,50.6,1.9,88,48.7
+39069,Henry County,Ohio,49.9,1.9,86,48
+39071,Highland County,Ohio,52.8,1.9,86,50.9
+39073,Hocking County,Ohio,52.8,2.1,86,50.7
+39075,Holmes County,Ohio,50.1,2.2,91,47.9
+39077,Huron County,Ohio,49.5,2,92,47.5
+39079,Jackson County,Ohio,54.2,2.4,88,51.8
+39081,Jefferson County,Ohio,51.2,2.2,95,49
+39083,Knox County,Ohio,50.3,2.2,93,48.1
+39085,Lake County,Ohio,48.4,2.7,99,45.7
+39087,Lawrence County,Ohio,54.8,1.6,83,53.2
+39089,Licking County,Ohio,50.6,1.2,77,49.4
+39091,Logan County,Ohio,50.1,1.6,80,48.5
+39093,Lorain County,Ohio,49.8,2.3,99,47.5
+39095,Lucas County,Ohio,49.9,2,87,47.9
+39097,Madison County,Ohio,51.9,2,87,49.9
+39099,Mahoning County,Ohio,49,2.3,93,46.7
+39101,Marion County,Ohio,50,1.3,77,48.7
+39103,Medina County,Ohio,49.9,2.6,98,47.3
+39105,Meigs County,Ohio,54.1,1.8,85,52.3
+39107,Mercer County,Ohio,50,1.2,76,48.8
+39109,Miami County,Ohio,51.7,1.8,84,49.9
+39111,Monroe County,Ohio,51.8,1.5,80,50.3
+39113,Montgomery County,Ohio,52.6,2,82,50.6
+39115,Morgan County,Ohio,52.2,1.4,82,50.8
+39117,Morrow County,Ohio,50,2.1,88,47.9
+39119,Muskingum County,Ohio,51.6,1.7,81,49.9
+39121,Noble County,Ohio,51.7,1.3,78,50.4
+39123,Ottawa County,Ohio,49.7,1.7,83,48
+39125,Paulding County,Ohio,49.7,1.2,78,48.5
+39127,Perry County,Ohio,51.8,1.7,83,50.1
+39129,Pickaway County,Ohio,53.6,2.4,91,51.2
+39131,Pike County,Ohio,53.6,1.8,85,51.8
+39133,Portage County,Ohio,48.8,2.6,95,46.2
+39135,Preble County,Ohio,51.4,1.6,79,49.8
+39137,Putnam County,Ohio,50,1.5,81,48.5
+39139,Richland County,Ohio,49.8,2.9,101,46.9
+39141,Ross County,Ohio,53.6,2.1,89,51.5
+39143,Sandusky County,Ohio,49.9,1.7,86,48.2
+39145,Scioto County,Ohio,54.2,1.7,82,52.5
+39147,Seneca County,Ohio,49.9,1.9,89,48
+39149,Shelby County,Ohio,50.2,1.1,76,49.1
+39151,Stark County,Ohio,49.8,2.5,94,47.3
+39153,Summit County,Ohio,49.9,2.8,95,47.1
+39155,Trumbull County,Ohio,48.7,2.7,97,46
+39157,Tuscarawas County,Ohio,50.6,1.9,88,48.7
+39159,Union County,Ohio,50.9,1.6,79,49.3
+39161,Van Wert County,Ohio,49.6,0.9,75,48.7
+39163,Vinton County,Ohio,53.8,2.6,91,51.2
+39165,Warren County,Ohio,53.4,2.1,85,51.3
+39167,Washington County,Ohio,53,1.5,82,51.5
+39169,Wayne County,Ohio,49.8,2.3,95,47.5
+39171,Williams County,Ohio,48.9,1.8,86,47.1
+39173,Wood County,Ohio,50.1,1.8,86,48.3
+39175,Wyandot County,Ohio,50,1.7,83,48.3
+40001,Adair County,Oklahoma,57.4,-1.3,40,58.7
+40003,Alfalfa County,Oklahoma,56.8,-0.5,57,57.3
+40005,Atoka County,Oklahoma,59.8,-2.1,23,61.9
+40007,Beaver County,Oklahoma,54.5,-1.3,37,55.8
+40009,Beckham County,Oklahoma,58.9,-0.1,67,59
+40011,Blaine County,Oklahoma,58.3,-0.1,60,58.4
+40013,Bryan County,Oklahoma,60.7,-1.8,27,62.5
+40015,Caddo County,Oklahoma,59.3,-0.4,57,59.7
+40017,Canadian County,Oklahoma,58.6,-0.4,57,59
+40019,Carter County,Oklahoma,60.8,-1.6,34,62.4
+40021,Cherokee County,Oklahoma,58.3,-1.3,42,59.6
+40023,Choctaw County,Oklahoma,60.1,-1.9,26,62
+40025,Cimarron County,Oklahoma,52.2,-0.9,46,53.1
+40027,Cleveland County,Oklahoma,59,-1.4,40,60.4
+40029,Coal County,Oklahoma,60.1,-1.8,29,61.9
+40031,Comanche County,Oklahoma,61,-0.1,58,61.1
+40033,Cotton County,Oklahoma,62.8,0.5,76,62.3
+40035,Craig County,Oklahoma,57.4,-1.1,43,58.5
+40037,Creek County,Oklahoma,57.8,-2.4,27,60.2
+40039,Custer County,Oklahoma,58.7,0.3,71,58.4
+40041,Delaware County,Oklahoma,57.5,-1,49,58.5
+40043,Dewey County,Oklahoma,57.5,-0.1,65,57.6
+40045,Ellis County,Oklahoma,55.9,-0.7,46,56.6
+40047,Garfield County,Oklahoma,57.8,-0.2,59,58
+40049,Garvin County,Oklahoma,59.9,-1.8,34,61.7
+40051,Grady County,Oklahoma,59.8,-0.5,55,60.3
+40053,Grant County,Oklahoma,56.9,-0.5,56,57.4
+40055,Greer County,Oklahoma,60.2,0,69,60.2
+40057,Harmon County,Oklahoma,60.8,0.1,69,60.7
+40059,Harper County,Oklahoma,54.8,-2,33,56.8
+40061,Haskell County,Oklahoma,59.4,-1.8,31,61.2
+40063,Hughes County,Oklahoma,59.8,-1.3,37,61.1
+40065,Jackson County,Oklahoma,61.4,0.1,73,61.3
+40067,Jefferson County,Oklahoma,62.3,-0.6,56,62.9
+40069,Johnston County,Oklahoma,60.4,-1.6,34,62
+40071,Kay County,Oklahoma,56.9,-1.1,45,58
+40073,Kingfisher County,Oklahoma,58.5,-0.8,50,59.3
+40075,Kiowa County,Oklahoma,60.4,0.2,69,60.2
+40077,Latimer County,Oklahoma,58.9,-2,26,60.9
+40079,Le Flore County,Oklahoma,58.5,-1.9,26,60.4
+40081,Lincoln County,Oklahoma,58.7,-1.8,34,60.5
+40083,Logan County,Oklahoma,58.8,-0.7,50,59.5
+40085,Love County,Oklahoma,61.5,-1.4,39,62.9
+40087,McClain County,Oklahoma,59.4,-1.2,46,60.6
+40089,McCurtain County,Oklahoma,58.7,-2.2,20,60.9
+40091,McIntosh County,Oklahoma,60,-1.2,43,61.2
+40093,Major County,Oklahoma,57.5,-0.5,56,58
+40095,Marshall County,Oklahoma,60.9,-1.7,31,62.6
+40097,Mayes County,Oklahoma,58.6,-1,46,59.6
+40099,Murray County,Oklahoma,60.1,-1.7,33,61.8
+40101,Muskogee County,Oklahoma,59.4,-1.5,38,60.9
+40103,Noble County,Oklahoma,58.1,-0.7,52,58.8
+40105,Nowata County,Oklahoma,57,-1.6,38,58.6
+40107,Okfuskee County,Oklahoma,59.2,-1.6,36,60.8
+40109,Oklahoma County,Oklahoma,59.1,-0.9,52,60
+40111,Okmulgee County,Oklahoma,59,-1.9,32,60.9
+40113,Osage County,Oklahoma,56.9,-1.9,39,58.8
+40115,Ottawa County,Oklahoma,56.9,-1.2,41,58.1
+40117,Pawnee County,Oklahoma,58,-1.5,43,59.5
+40119,Payne County,Oklahoma,58.7,-1,47,59.7
+40121,Pittsburg County,Oklahoma,59.8,-1.6,37,61.4
+40123,Pontotoc County,Oklahoma,60,-1.3,39,61.3
+40125,Pottawatomie County,Oklahoma,59.1,-1.8,34,60.9
+40127,Pushmataha County,Oklahoma,58.9,-2.1,26,61
+40129,Roger Mills County,Oklahoma,57.6,-0.3,57,57.9
+40131,Rogers County,Oklahoma,58.1,-1.5,40,59.6
+40133,Seminole County,Oklahoma,59.2,-1.8,33,61
+40135,Sequoyah County,Oklahoma,59,-1.5,36,60.5
+40137,Stephens County,Oklahoma,61.4,-0.4,58,61.8
+40139,Texas County,Oklahoma,53.7,-1.2,38,54.9
+40141,Tillman County,Oklahoma,62.3,0.4,75,61.9
+40143,Tulsa County,Oklahoma,58.1,-2,32,60.1
+40145,Wagoner County,Oklahoma,59,-1.5,36,60.5
+40147,Washington County,Oklahoma,57.2,-1.6,40,58.8
+40149,Washita County,Oklahoma,59.4,0.3,72,59.1
+40151,Woods County,Oklahoma,56,-0.9,46,56.9
+40153,Woodward County,Oklahoma,56,-1,45,57
+41001,Baker County,Oregon,42.3,-0.4,60,42.7
+41003,Benton County,Oregon,48.2,-1.1,39,49.3
+41005,Clackamas County,Oregon,44.2,-0.8,48,45
+41007,Clatsop County,Oregon,46,-0.4,51,46.4
+41009,Columbia County,Oregon,47.1,-0.6,48,47.7
+41011,Coos County,Oregon,47.9,-0.3,48,48.2
+41013,Crook County,Oregon,41.3,-0.9,53,42.2
+41015,Curry County,Oregon,48.1,0.3,69,47.8
+41017,Deschutes County,Oregon,39.1,-1.5,43,40.6
+41019,Douglas County,Oregon,45.8,-0.7,50,46.5
+41021,Gilliam County,Oregon,47.4,-0.2,60,47.6
+41023,Grant County,Oregon,40.1,-0.7,58,40.8
+41025,Harney County,Oregon,42,-0.2,63,42.2
+41027,Hood River County,Oregon,41.3,-0.8,50,42.1
+41029,Jackson County,Oregon,45.1,-0.5,55,45.6
+41031,Jefferson County,Oregon,43.2,-0.8,52,44
+41033,Josephine County,Oregon,46,0.1,62,45.9
+41035,Klamath County,Oregon,39.8,-0.3,60,40.1
+41037,Lake County,Oregon,40.7,-0.2,59,40.9
+41039,Lane County,Oregon,45,-1.1,43,46.1
+41041,Lincoln County,Oregon,47.2,-1.1,39,48.3
+41043,Linn County,Oregon,44.6,-1.2,44,45.8
+41045,Malheur County,Oregon,44.7,-0.3,64,45
+41047,Marion County,Oregon,45.7,-0.9,47,46.6
+41049,Morrow County,Oregon,46.2,-0.8,47,47
+41051,Multnomah County,Oregon,48.2,-0.5,53,48.7
+41053,Polk County,Oregon,47.6,-0.9,46,48.5
+41055,Sherman County,Oregon,47.1,-0.4,58,47.5
+41057,Tillamook County,Oregon,45.4,-0.4,52,45.8
+41059,Umatilla County,Oregon,45.4,-0.6,53,46
+41061,Union County,Oregon,40.6,-0.7,55,41.3
+41063,Wallowa County,Oregon,39.9,-0.7,55,40.6
+41065,Wasco County,Oregon,44.7,-0.7,53,45.4
+41067,Washington County,Oregon,47.7,-0.3,55,48
+41069,Wheeler County,Oregon,42.9,-0.6,58,43.5
+41071,Yamhill County,Oregon,48.1,-0.6,52,48.7
+42001,Adams County,Pennsylvania,52.2,2.3,99,49.9
+42003,Allegheny County,Pennsylvania,51.4,2,89,49.4
+42005,Armstrong County,Pennsylvania,48.7,1.3,78,47.4
+42007,Beaver County,Pennsylvania,51.1,2.4,97,48.7
+42009,Bedford County,Pennsylvania,49.6,1.1,76,48.5
+42011,Berks County,Pennsylvania,52,2.9,106,49.1
+42013,Blair County,Pennsylvania,48.8,1.6,84,47.2
+42015,Bradford County,Pennsylvania,46.8,2.2,96,44.6
+42017,Bucks County,Pennsylvania,52.5,3.3,110,49.2
+42019,Butler County,Pennsylvania,49.6,2.3,95,47.3
+42021,Cambria County,Pennsylvania,47,1.5,81,45.5
+42023,Cameron County,Pennsylvania,46.9,1.5,87,45.4
+42025,Carbon County,Pennsylvania,48.4,3,105,45.4
+42027,Centre County,Pennsylvania,48.6,1.6,86,47
+42029,Chester County,Pennsylvania,53,3,106,50
+42031,Clarion County,Pennsylvania,47.7,2,87,45.7
+42033,Clearfield County,Pennsylvania,47.2,1.6,80,45.6
+42035,Clinton County,Pennsylvania,48.4,1.7,89,46.7
+42037,Columbia County,Pennsylvania,49.2,2.4,102,46.8
+42039,Crawford County,Pennsylvania,47.7,3,102,44.7
+42041,Cumberland County,Pennsylvania,52.1,2.2,95,49.9
+42043,Dauphin County,Pennsylvania,51.3,2.2,99,49.1
+42045,Delaware County,Pennsylvania,54.4,3.2,109,51.2
+42047,Elk County,Pennsylvania,46.1,2,89,44.1
+42049,Erie County,Pennsylvania,47.2,2.7,97,44.5
+42051,Fayette County,Pennsylvania,49.7,0.9,76,48.8
+42053,Forest County,Pennsylvania,46.6,2.2,88,44.4
+42055,Franklin County,Pennsylvania,51.9,2.1,92,49.8
+42057,Fulton County,Pennsylvania,50.6,1.2,81,49.4
+42059,Greene County,Pennsylvania,51.1,1.3,79,49.8
+42061,Huntingdon County,Pennsylvania,50.3,1.6,87,48.7
+42063,Indiana County,Pennsylvania,48.4,1.6,82,46.9
+42065,Jefferson County,Pennsylvania,46.9,1.9,83,45
+42067,Juniata County,Pennsylvania,50.8,1.4,88,49.4
+42069,Lackawanna County,Pennsylvania,48,3.7,115,44.3
+42071,Lancaster County,Pennsylvania,52.9,3.1,106,49.8
+42073,Lawrence County,Pennsylvania,49.8,2.3,96,47.5
+42075,Lebanon County,Pennsylvania,51.5,2.7,102,48.8
+42077,Lehigh County,Pennsylvania,51.5,3,107,48.5
+42079,Luzerne County,Pennsylvania,48.7,3.5,114,45.2
+42081,Lycoming County,Pennsylvania,48.6,2.4,103,46.2
+42083,McKean County,Pennsylvania,45.1,2,91,43.1
+42085,Mercer County,Pennsylvania,48.6,2.9,100,45.7
+42087,Mifflin County,Pennsylvania,50.2,1.5,85,48.7
+42089,Monroe County,Pennsylvania,48.2,3.4,113,44.8
+42091,Montgomery County,Pennsylvania,53.4,3.3,113,50.1
+42093,Montour County,Pennsylvania,50.1,2.1,102,48
+42095,Northampton County,Pennsylvania,50.9,3.4,112,47.5
+42097,Northumberland County,Pennsylvania,49.9,1.8,94,48.1
+42099,Perry County,Pennsylvania,51.2,1.8,93,49.4
+42101,Philadelphia County,Pennsylvania,54.3,3.1,106,51.2
+42103,Pike County,Pennsylvania,47.8,3.1,109,44.7
+42105,Potter County,Pennsylvania,45.8,2,93,43.8
+42107,Schuylkill County,Pennsylvania,49.4,2.6,102,46.8
+42109,Snyder County,Pennsylvania,50.4,1.6,93,48.8
+42111,Somerset County,Pennsylvania,47.1,1.4,81,45.7
+42113,Sullivan County,Pennsylvania,46,2.6,104,43.4
+42115,Susquehanna County,Pennsylvania,47.2,3.1,109,44.1
+42117,Tioga County,Pennsylvania,46.1,2.1,98,44
+42119,Union County,Pennsylvania,50,1.9,99,48.1
+42121,Venango County,Pennsylvania,48.2,2.9,99,45.3
+42123,Warren County,Pennsylvania,46.2,2.5,95,43.7
+42125,Washington County,Pennsylvania,51.4,2.1,93,49.3
+42127,Wayne County,Pennsylvania,47.1,3.2,110,43.9
+42129,Westmoreland County,Pennsylvania,50.3,1.8,85,48.5
+42131,Wyoming County,Pennsylvania,48.2,3.4,112,44.8
+42133,York County,Pennsylvania,52.3,2.5,99,49.8
+44001,Bristol County,Rhode Island,49.6,3.1,113,46.5
+44003,Kent County,Rhode Island,49.3,3.6,117,45.7
+44005,Newport County,Rhode Island,49.4,3.5,118,45.9
+44007,Providence County,Rhode Island,49.4,3.6,117,45.8
+44009,Washington County,Rhode Island,49.4,3.9,119,45.5
+45001,Abbeville County,South Carolina,59.9,-0.9,42,60.8
+45003,Aiken County,South Carolina,61.8,-0.8,46,62.6
+45005,Allendale County,South Carolina,62.5,-1,44,63.5
+45007,Anderson County,South Carolina,59.4,-0.6,49,60
+45009,Bamberg County,South Carolina,62.9,-0.4,54,63.3
+45011,Barnwell County,South Carolina,62.4,-0.7,48,63.1
+45013,Beaufort County,South Carolina,64.7,-0.2,56,64.9
+45015,Berkeley County,South Carolina,63.2,-0.2,55,63.4
+45017,Calhoun County,South Carolina,62.8,-0.3,55,63.1
+45019,Charleston County,South Carolina,63.8,0,57,63.8
+45021,Cherokee County,South Carolina,59,-0.2,58,59.2
+45023,Chester County,South Carolina,60.5,0.2,66,60.3
+45025,Chesterfield County,South Carolina,61.2,0.5,69,60.7
+45027,Clarendon County,South Carolina,62.5,-0.5,51,63
+45029,Colleton County,South Carolina,63.6,-0.1,55,63.7
+45031,Darlington County,South Carolina,62,0.2,61,61.8
+45033,Dillon County,South Carolina,61.9,0.1,61,61.8
+45035,Dorchester County,South Carolina,63.2,-0.4,48,63.6
+45037,Edgefield County,South Carolina,60.8,-1.4,32,62.2
+45039,Fairfield County,South Carolina,60.9,-0.4,54,61.3
+45041,Florence County,South Carolina,62.6,0.2,62,62.4
+45043,Georgetown County,South Carolina,62.8,0.1,65,62.7
+45045,Greenville County,South Carolina,58.9,0.2,67,58.7
+45047,Greenwood County,South Carolina,60.4,-0.8,44,61.2
+45049,Hampton County,South Carolina,63.2,-0.6,49,63.8
+45051,Horry County,South Carolina,62.1,0.2,66,61.9
+45053,Jasper County,South Carolina,64,-0.4,51,64.4
+45055,Kershaw County,South Carolina,61.3,0.1,62,61.2
+45057,Lancaster County,South Carolina,60.7,0.7,74,60
+45059,Laurens County,South Carolina,60.1,-0.6,47,60.7
+45061,Lee County,South Carolina,62,0.1,61,61.9
+45063,Lexington County,South Carolina,62,-0,59,62
+45065,McCormick County,South Carolina,60.6,-1.1,42,61.7
+45067,Marion County,South Carolina,62.3,-0,61,62.3
+45069,Marlboro County,South Carolina,62.1,0.6,76,61.5
+45071,Newberry County,South Carolina,60.8,-0.5,48,61.3
+45073,Oconee County,South Carolina,58.1,-1,46,59.1
+45075,Orangeburg County,South Carolina,63,-0.3,57,63.3
+45077,Pickens County,South Carolina,58,-0.7,46,58.7
+45079,Richland County,South Carolina,62,-0.4,52,62.4
+45081,Saluda County,South Carolina,60.7,-0.9,44,61.6
+45083,Spartanburg County,South Carolina,59.6,0.2,67,59.4
+45085,Sumter County,South Carolina,62.2,-0.4,55,62.6
+45087,Union County,South Carolina,60.1,-0.2,56,60.3
+45089,Williamsburg County,South Carolina,62.8,-0.1,60,62.9
+45091,York County,South Carolina,59.9,0.4,70,59.5
+46003,Aurora County,South Dakota,44.1,-2.1,33,46.2
+46005,Beadle County,South Dakota,43.7,-1.8,39,45.5
+46007,Bennett County,South Dakota,42.2,-2.6,27,44.8
+46009,Bon Homme County,South Dakota,45.8,-2,36,47.8
+46011,Brookings County,South Dakota,42.1,-1.6,42,43.7
+46013,Brown County,South Dakota,42.1,-1.6,40,43.7
+46015,Brule County,South Dakota,44.3,-2.1,34,46.4
+46017,Buffalo County,South Dakota,43.7,-2.1,34,45.8
+46019,Butte County,South Dakota,40.3,-3.7,22,44
+46021,Campbell County,South Dakota,41.5,-2.3,36,43.8
+46023,Charles Mix County,South Dakota,45.5,-2.1,33,47.6
+46025,Clark County,South Dakota,41.5,-2,38,43.5
+46027,Clay County,South Dakota,46,-1.8,36,47.8
+46029,Codington County,South Dakota,40.9,-1.3,44,42.2
+46031,Corson County,South Dakota,40.8,-3,30,43.8
+46033,Custer County,South Dakota,40.2,-2.4,30,42.6
+46035,Davison County,South Dakota,44.6,-2.3,31,46.9
+46037,Day County,South Dakota,40.6,-1.8,39,42.4
+46039,Deuel County,South Dakota,41.2,-1.5,43,42.7
+46041,Dewey County,South Dakota,42.4,-2.3,36,44.7
+46043,Douglas County,South Dakota,44.9,-2.1,34,47
+46045,Edmunds County,South Dakota,41.9,-1.8,40,43.7
+46047,Fall River County,South Dakota,42.6,-2.5,29,45.1
+46049,Faulk County,South Dakota,42.3,-1.9,40,44.2
+46051,Grant County,South Dakota,42.2,-0.9,50,43.1
+46053,Gregory County,South Dakota,44.4,-2.4,31,46.8
+46055,Haakon County,South Dakota,43.2,-2.4,32,45.6
+46057,Hamlin County,South Dakota,41.5,-1.4,44,42.9
+46059,Hand County,South Dakota,42.2,-2.7,30,44.9
+46061,Hanson County,South Dakota,44.6,-2.2,31,46.8
+46063,Harding County,South Dakota,38.6,-3.8,21,42.4
+46065,Hughes County,South Dakota,43.6,-2.1,36,45.7
+46067,Hutchinson County,South Dakota,45.2,-1.9,35,47.1
+46069,Hyde County,South Dakota,42.1,-2.2,36,44.3
+46071,Jackson County,South Dakota,43.3,-2.8,26,46.1
+46073,Jerauld County,South Dakota,43.4,-2.1,35,45.5
+46075,Jones County,South Dakota,43.7,-2.6,31,46.3
+46077,Kingsbury County,South Dakota,42.8,-1.3,43,44.1
+46079,Lake County,South Dakota,43,-1.7,40,44.7
+46081,Lawrence County,South Dakota,37.9,-2.1,37,40
+46083,Lincoln County,South Dakota,45.1,-1.4,40,46.5
+46085,Lyman County,South Dakota,44.2,-2.3,29,46.5
+46087,McCook County,South Dakota,43.9,-2.1,32,46
+46089,McPherson County,South Dakota,41.1,-1.7,44,42.8
+46091,Marshall County,South Dakota,40.8,-1.7,39,42.5
+46093,Meade County,South Dakota,41,-3.6,23,44.6
+46095,Mellette County,South Dakota,43,-3.5,23,46.5
+46097,Miner County,South Dakota,44,-1.5,39,45.5
+46099,Minnehaha County,South Dakota,44.3,-1.1,42,45.4
+46101,Moody County,South Dakota,43.2,-1.4,44,44.6
+46102,Oglala Lakota County,South Dakota,42.5,-3,26,45.5
+46103,Pennington County,South Dakota,40.4,-3.1,24,43.5
+46105,Perkins County,South Dakota,39.8,-3.2,25,43
+46107,Potter County,South Dakota,42,-1.9,39,43.9
+46109,Roberts County,South Dakota,41.3,-1.6,41,42.9
+46111,Sanborn County,South Dakota,44.6,-1.7,38,46.3
+46115,Spink County,South Dakota,42.8,-2.1,36,44.9
+46117,Stanley County,South Dakota,43.9,-2,39,45.9
+46119,Sully County,South Dakota,43.1,-1.8,45,44.9
+46121,Todd County,South Dakota,42.7,-2.9,24,45.6
+46123,Tripp County,South Dakota,44.1,-2.4,28,46.5
+46125,Turner County,South Dakota,45.2,-1.5,39,46.7
+46127,Union County,South Dakota,46.2,-1.6,37,47.8
+46129,Walworth County,South Dakota,41.6,-2.2,38,43.8
+46135,Yankton County,South Dakota,45.8,-1.6,37,47.4
+46137,Ziebach County,South Dakota,42,-2.5,32,44.5
+47001,Anderson County,Tennessee,56.2,-0.4,54,56.6
+47003,Bedford County,Tennessee,57.5,-0.6,51,58.1
+47005,Benton County,Tennessee,58.5,-0.1,63,58.6
+47007,Bledsoe County,Tennessee,55.6,-0.7,48,56.3
+47009,Blount County,Tennessee,56.8,-0.3,56,57.1
+47011,Bradley County,Tennessee,57.6,-1.2,42,58.8
+47013,Campbell County,Tennessee,55,-0.2,65,55.2
+47015,Cannon County,Tennessee,56.7,-0.6,52,57.3
+47017,Carroll County,Tennessee,58.4,-0.2,60,58.6
+47019,Carter County,Tennessee,52.6,0.5,70,52.1
+47021,Cheatham County,Tennessee,57.7,-0.1,67,57.8
+47023,Chester County,Tennessee,59.4,0.1,69,59.3
+47025,Claiborne County,Tennessee,55,-0.3,61,55.3
+47027,Clay County,Tennessee,55.9,-1,42,56.9
+47029,Cocke County,Tennessee,56.1,-0.1,60,56.2
+47031,Coffee County,Tennessee,56.3,-0.9,44,57.2
+47033,Crockett County,Tennessee,59.5,0.3,72,59.2
+47035,Cumberland County,Tennessee,54.3,-0.4,55,54.7
+47037,Davidson County,Tennessee,57.7,-0.5,55,58.2
+47039,Decatur County,Tennessee,59,-0.4,59,59.4
+47041,DeKalb County,Tennessee,56.6,-0.8,45,57.4
+47043,Dickson County,Tennessee,57.5,0,67,57.5
+47045,Dyer County,Tennessee,59,-0.1,59,59.1
+47047,Fayette County,Tennessee,59.7,-0.6,55,60.3
+47049,Fentress County,Tennessee,54,-0.5,52,54.5
+47051,Franklin County,Tennessee,56.6,-1.3,36,57.9
+47053,Gibson County,Tennessee,58.8,-0.1,62,58.9
+47055,Giles County,Tennessee,57.8,-0.6,55,58.4
+47057,Grainger County,Tennessee,56,-0.1,58,56.1
+47059,Greene County,Tennessee,56.6,0.5,70,56.1
+47061,Grundy County,Tennessee,54.8,-1.1,43,55.9
+47063,Hamblen County,Tennessee,56.6,-0,60,56.6
+47065,Hamilton County,Tennessee,57.6,-1,41,58.6
+47067,Hancock County,Tennessee,55.5,0.2,66,55.3
+47069,Hardeman County,Tennessee,59.5,-0.2,63,59.7
+47071,Hardin County,Tennessee,59.2,-0.5,58,59.7
+47073,Hawkins County,Tennessee,56.6,0.6,74,56
+47075,Haywood County,Tennessee,60.1,0.5,74,59.6
+47077,Henderson County,Tennessee,58.9,-0.1,64,59
+47079,Henry County,Tennessee,58,-0.4,60,58.4
+47081,Hickman County,Tennessee,57.7,-0.3,58,58
+47083,Houston County,Tennessee,57.6,-0.3,60,57.9
+47085,Humphreys County,Tennessee,58,-0.1,63,58.1
+47087,Jackson County,Tennessee,56.4,-0.9,38,57.3
+47089,Jefferson County,Tennessee,56.8,-0.2,57,57
+47091,Johnson County,Tennessee,51.5,1,76,50.5
+47093,Knox County,Tennessee,57.2,-0.3,55,57.5
+47095,Lake County,Tennessee,58.8,-0.1,59,58.9
+47097,Lauderdale County,Tennessee,59.7,-0.2,58,59.9
+47099,Lawrence County,Tennessee,57,-1.2,41,58.2
+47101,Lewis County,Tennessee,57.1,-0.8,52,57.9
+47103,Lincoln County,Tennessee,58.5,-0.2,60,58.7
+47105,Loudon County,Tennessee,57.2,-0.8,46,58
+47107,McMinn County,Tennessee,56.8,-1.5,33,58.3
+47109,McNairy County,Tennessee,59.6,-0.1,66,59.7
+47111,Macon County,Tennessee,56.7,-0.4,55,57.1
+47113,Madison County,Tennessee,59.5,0.3,71,59.2
+47115,Marion County,Tennessee,56.3,-1.6,34,57.9
+47117,Marshall County,Tennessee,57.7,-0.4,56,58.1
+47119,Maury County,Tennessee,57.7,-0.2,59,57.9
+47121,Meigs County,Tennessee,56.8,-1.4,36,58.2
+47123,Monroe County,Tennessee,56.2,-1,41,57.2
+47125,Montgomery County,Tennessee,57.7,0.1,69,57.6
+47127,Moore County,Tennessee,57.5,-0.6,47,58.1
+47129,Morgan County,Tennessee,54.7,-0.6,52,55.3
+47131,Obion County,Tennessee,58,-0.6,51,58.6
+47133,Overton County,Tennessee,55,-0.9,39,55.9
+47135,Perry County,Tennessee,58.2,-0.6,56,58.8
+47137,Pickett County,Tennessee,54.8,-0.9,42,55.7
+47139,Polk County,Tennessee,56.6,-1.4,35,58
+47141,Putnam County,Tennessee,55.7,-0.7,45,56.4
+47143,Rhea County,Tennessee,56.2,-1.1,41,57.3
+47145,Roane County,Tennessee,56.8,-0.8,49,57.6
+47147,Robertson County,Tennessee,57.4,0.1,67,57.3
+47149,Rutherford County,Tennessee,57.6,-0.6,53,58.2
+47151,Scott County,Tennessee,54.4,-0.1,61,54.5
+47153,Sequatchie County,Tennessee,55.7,-0.8,43,56.5
+47155,Sevier County,Tennessee,55.2,-0.1,60,55.3
+47157,Shelby County,Tennessee,60.5,-0.7,50,61.2
+47159,Smith County,Tennessee,57.1,-0.8,46,57.9
+47161,Stewart County,Tennessee,57.3,-0.7,51,58
+47163,Sullivan County,Tennessee,55.6,0.7,74,54.9
+47165,Sumner County,Tennessee,57.2,-0.3,59,57.5
+47167,Tipton County,Tennessee,60,-0.4,55,60.4
+47169,Trousdale County,Tennessee,57.6,-0.2,62,57.8
+47171,Unicoi County,Tennessee,52.8,0.3,62,52.5
+47173,Union County,Tennessee,55.7,-0.5,53,56.2
+47175,Van Buren County,Tennessee,55.6,-0.4,53,56
+47177,Warren County,Tennessee,56.6,-0.3,55,56.9
+47179,Washington County,Tennessee,56,0.5,74,55.5
+47181,Wayne County,Tennessee,57.4,-1.3,39,58.7
+47183,Weakley County,Tennessee,58.1,-0.5,55,58.6
+47185,White County,Tennessee,56,-0.5,54,56.5
+47187,Williamson County,Tennessee,57.4,-0.5,53,57.9
+47189,Wilson County,Tennessee,57.6,-0.5,55,58.1
+48001,Anderson County,Texas,63.2,-2,27,65.2
+48003,Andrews County,Texas,63.5,1,85,62.5
+48005,Angelina County,Texas,64.7,-1.2,35,65.9
+48007,Aransas County,Texas,72.4,2,101,70.4
+48009,Archer County,Texas,64.4,1,88,63.4
+48011,Armstrong County,Texas,57.7,0.4,75,57.3
+48013,Atascosa County,Texas,70.9,0.5,81,70.4
+48015,Austin County,Texas,67.6,-0.4,52,68
+48017,Bailey County,Texas,57.2,0.7,82,56.5
+48019,Bandera County,Texas,66,-0.5,54,66.5
+48021,Bastrop County,Texas,66.9,-0.5,53,67.4
+48023,Baylor County,Texas,64.2,0.7,79,63.5
+48025,Bee County,Texas,72,1.2,94,70.8
+48027,Bell County,Texas,64.8,-0.8,47,65.6
+48029,Bexar County,Texas,69,0.3,79,68.7
+48031,Blanco County,Texas,65.4,-0.8,44,66.2
+48033,Borden County,Texas,63.8,0.7,83,63.1
+48035,Bosque County,Texas,63.6,-1.5,30,65.1
+48037,Bowie County,Texas,61.1,-1.8,28,62.9
+48039,Brazoria County,Texas,68.5,-0.2,55,68.7
+48041,Brazos County,Texas,66,-0.9,39,66.9
+48043,Brewster County,Texas,66.7,0.9,80,65.8
+48045,Briscoe County,Texas,59.1,0.2,77,58.9
+48047,Brooks County,Texas,76.5,2.8,108,73.7
+48049,Brown County,Texas,63.8,-0.8,52,64.6
+48051,Burleson County,Texas,66.3,-0.7,48,67
+48053,Burnet County,Texas,65.8,-0.3,68,66.1
+48055,Caldwell County,Texas,68.2,0.2,81,68
+48057,Calhoun County,Texas,70.8,1.2,95,69.6
+48059,Callahan County,Texas,64,0.2,80,63.8
+48061,Cameron County,Texas,76,1.5,96,74.5
+48063,Camp County,Texas,62,-1.6,32,63.6
+48065,Carson County,Texas,56.2,0.1,68,56.1
+48067,Cass County,Texas,61.8,-1.9,25,63.7
+48069,Castro County,Texas,56,-0,69,56
+48071,Chambers County,Texas,67.4,-0.4,53,67.8
+48073,Cherokee County,Texas,63,-2.1,21,65.1
+48075,Childress County,Texas,61.5,0.4,75,61.1
+48077,Clay County,Texas,63.7,0.5,75,63.2
+48079,Cochran County,Texas,58.1,0.5,78,57.6
+48081,Coke County,Texas,64.4,0,76,64.4
+48083,Coleman County,Texas,64.5,0.1,76,64.4
+48085,Collin County,Texas,62,-1.3,35,63.3
+48087,Collingsworth County,Texas,59.4,0,70,59.4
+48089,Colorado County,Texas,68.5,0.2,71,68.3
+48091,Comal County,Texas,67.3,-0,68,67.3
+48093,Comanche County,Texas,63.3,-1,46,64.3
+48095,Concho County,Texas,64,-0.7,50,64.7
+48097,Cooke County,Texas,61.9,-1.3,40,63.2
+48099,Coryell County,Texas,64.3,-0.9,40,65.2
+48101,Cottle County,Texas,62.5,0.4,78,62.1
+48103,Crane County,Texas,67,1.3,90,65.7
+48105,Crockett County,Texas,64.8,-0.8,45,65.6
+48107,Crosby County,Texas,60.6,0.6,80,60
+48109,Culberson County,Texas,62.4,1.1,87,61.3
+48111,Dallam County,Texas,53,-0.1,60,53.1
+48113,Dallas County,Texas,63.6,-1.2,34,64.8
+48115,Dawson County,Texas,62.3,0.2,75,62.1
+48117,Deaf Smith County,Texas,54.7,-0.2,63,54.9
+48119,Delta County,Texas,61,-1.9,27,62.9
+48121,Denton County,Texas,63,-1.1,42,64.1
+48123,DeWitt County,Texas,69.8,0.5,81,69.3
+48125,Dickens County,Texas,61.7,-0,75,61.7
+48127,Dimmit County,Texas,73.8,1.6,99,72.2
+48129,Donley County,Texas,58.5,0.3,74,58.2
+48131,Duval County,Texas,75.6,3.1,112,72.5
+48133,Eastland County,Texas,63.6,-0.2,73,63.8
+48135,Ector County,Texas,65.4,1.6,95,63.8
+48137,Edwards County,Texas,65.9,0.2,74,65.7
+48139,Ellis County,Texas,63.2,-2.1,22,65.3
+48141,El Paso County,Texas,62.5,0.6,66,61.9
+48143,Erath County,Texas,63.4,-0.7,52,64.1
+48145,Falls County,Texas,64.1,-1.5,33,65.6
+48147,Fannin County,Texas,61.1,-1.5,33,62.6
+48149,Fayette County,Texas,67.4,-0.5,50,67.9
+48151,Fisher County,Texas,63.8,0.3,78,63.5
+48153,Floyd County,Texas,58.9,0.4,78,58.5
+48155,Foard County,Texas,63.4,0.6,83,62.8
+48157,Fort Bend County,Texas,68.9,0.4,70,68.5
+48159,Franklin County,Texas,61.5,-1.8,28,63.3
+48161,Freestone County,Texas,63.7,-1.7,30,65.4
+48163,Frio County,Texas,71.2,0.6,83,70.6
+48165,Gaines County,Texas,61.2,0.1,73,61.1
+48167,Galveston County,Texas,68.2,-0.2,55,68.4
+48169,Garza County,Texas,62.7,0.4,78,62.3
+48171,Gillespie County,Texas,64,-1,38,65
+48173,Glasscock County,Texas,63.8,0.1,72,63.7
+48175,Goliad County,Texas,71.1,1,89,70.1
+48177,Gonzales County,Texas,69.3,0.5,81,68.8
+48179,Gray County,Texas,56.7,-0,63,56.7
+48181,Grayson County,Texas,61.4,-1.6,28,63
+48183,Gregg County,Texas,63.1,-1.7,32,64.8
+48185,Grimes County,Texas,65.7,-1.3,30,67
+48187,Guadalupe County,Texas,68.9,0.4,85,68.5
+48189,Hale County,Texas,58.2,0.4,79,57.8
+48191,Hall County,Texas,60.9,0.4,76,60.5
+48193,Hamilton County,Texas,63.8,-0.8,45,64.6
+48195,Hansford County,Texas,55,-0.9,42,55.9
+48197,Hardeman County,Texas,62.2,0.2,75,62
+48199,Hardin County,Texas,66,-0.9,40,66.9
+48201,Harris County,Texas,67.9,-0.4,52,68.3
+48203,Harrison County,Texas,63,-1.9,27,64.9
+48205,Hartley County,Texas,54.4,0.2,65,54.2
+48207,Haskell County,Texas,64.2,0.4,79,63.8
+48209,Hays County,Texas,67.1,0.2,77,66.9
+48211,Hemphill County,Texas,56.5,-0.6,53,57.1
+48213,Henderson County,Texas,62.5,-2.2,27,64.7
+48215,Hidalgo County,Texas,76.9,1.6,99,75.3
+48217,Hill County,Texas,63.4,-2,23,65.4
+48219,Hockley County,Texas,59.2,0.7,81,58.5
+48221,Hood County,Texas,63.8,-1.1,36,64.9
+48223,Hopkins County,Texas,61.4,-1.7,29,63.1
+48225,Houston County,Texas,64.2,-1.8,26,66
+48227,Howard County,Texas,63.9,0.1,73,63.8
+48229,Hudspeth County,Texas,60.9,0.6,72,60.3
+48231,Hunt County,Texas,61.7,-1.3,34,63
+48233,Hutchinson County,Texas,56.6,-0.4,50,57
+48235,Irion County,Texas,63.8,-0.6,50,64.4
+48237,Jack County,Texas,63.8,0.5,78,63.3
+48239,Jackson County,Texas,69.8,0.8,84,69
+48241,Jasper County,Texas,65,-1.1,38,66.1
+48243,Jeff Davis County,Texas,61.8,1.1,89,60.7
+48245,Jefferson County,Texas,67.2,-0.4,50,67.6
+48247,Jim Hogg County,Texas,76.7,2.8,108,73.9
+48249,Jim Wells County,Texas,74.9,2.6,106,72.3
+48251,Johnson County,Texas,63.2,-1.7,28,64.9
+48253,Jones County,Texas,64.7,0.6,85,64.1
+48255,Karnes County,Texas,70.8,0.9,93,69.9
+48257,Kaufman County,Texas,62.3,-2.3,19,64.6
+48259,Kendall County,Texas,65.5,-0.6,49,66.1
+48261,Kenedy County,Texas,75.4,2.1,103,73.3
+48263,Kent County,Texas,63.1,0.1,75,63.1
+48265,Kerr County,Texas,64.2,-0.7,46,64.9
+48267,Kimble County,Texas,64.2,-0.4,59,64.6
+48269,King County,Texas,63.4,0.5,84,62.9
+48271,Kinney County,Texas,69.9,0.1,78,69.8
+48273,Kleberg County,Texas,74.9,2.8,109,72.1
+48275,Knox County,Texas,64.2,0.7,85,63.5
+48277,Lamar County,Texas,60.6,-2,23,62.6
+48279,Lamb County,Texas,57.8,0.6,80,57.2
+48281,Lampasas County,Texas,65,-0.3,58,65.3
+48283,La Salle County,Texas,73.4,1.3,94,72.1
+48285,Lavaca County,Texas,69.1,0.5,79,68.6
+48287,Lee County,Texas,66.3,-0.7,48,67
+48289,Leon County,Texas,64,-1.9,25,65.9
+48291,Liberty County,Texas,67,-0.6,48,67.6
+48293,Limestone County,Texas,63.6,-1.8,27,65.4
+48295,Lipscomb County,Texas,55.3,-0.9,46,56.2
+48297,Live Oak County,Texas,73,1.7,100,71.3
+48299,Llano County,Texas,65.2,-1,38,66.2
+48301,Loving County,Texas,65.8,1.6,91,64.2
+48303,Lubbock County,Texas,60.3,1.2,86,59.1
+48305,Lynn County,Texas,61.2,0.5,78,60.7
+48307,McCulloch County,Texas,64.1,-0.7,49,64.8
+48309,McLennan County,Texas,63.7,-1.8,25,65.5
+48311,McMullen County,Texas,73.3,1.7,99,71.6
+48313,Madison County,Texas,64.6,-1.9,25,66.5
+48315,Marion County,Texas,62.5,-2,24,64.5
+48317,Martin County,Texas,64.1,0.7,82,63.4
+48319,Mason County,Texas,64,-1.3,34,65.3
+48321,Matagorda County,Texas,69.3,0.5,74,68.8
+48323,Maverick County,Texas,72.7,0.8,89,71.9
+48325,Medina County,Texas,69.2,0.3,76,68.9
+48327,Menard County,Texas,63.6,-0.4,55,64
+48329,Midland County,Texas,65.5,1.5,90,64
+48331,Milam County,Texas,65.3,-0.8,42,66.1
+48333,Mills County,Texas,63.8,-0.9,43,64.7
+48335,Mitchell County,Texas,64,-0,69,64
+48337,Montague County,Texas,62.5,-0.5,58,63
+48339,Montgomery County,Texas,66.4,-1.1,35,67.5
+48341,Moore County,Texas,55.4,-0.3,57,55.7
+48343,Morris County,Texas,61.7,-1.9,24,63.6
+48345,Motley County,Texas,61.3,0.3,78,61
+48347,Nacogdoches County,Texas,63.8,-1.5,29,65.3
+48349,Navarro County,Texas,63.5,-1.8,25,65.3
+48351,Newton County,Texas,64.6,-1.4,32,66
+48353,Nolan County,Texas,63.6,0.5,82,63.1
+48355,Nueces County,Texas,74.3,2.5,107,71.8
+48357,Ochiltree County,Texas,54.9,-1.2,40,56.1
+48359,Oldham County,Texas,55.7,0,65,55.7
+48361,Orange County,Texas,66.3,-0.9,41,67.2
+48363,Palo Pinto County,Texas,64.9,0.7,86,64.2
+48365,Panola County,Texas,63.5,-1.7,32,65.2
+48367,Parker County,Texas,63.6,-0.7,47,64.3
+48369,Parmer County,Texas,55.6,0.2,72,55.4
+48371,Pecos County,Texas,66,1.2,87,64.8
+48373,Polk County,Texas,65.6,-1,42,66.6
+48375,Potter County,Texas,56.4,0.1,66,56.3
+48377,Presidio County,Texas,65.2,0.8,80,64.4
+48379,Rains County,Texas,62.1,-1.2,37,63.3
+48381,Randall County,Texas,56,0.1,70,55.9
+48383,Reagan County,Texas,63.9,-0.5,57,64.4
+48385,Real County,Texas,65.6,-0.3,60,65.9
+48387,Red River County,Texas,60.2,-2.4,16,62.6
+48389,Reeves County,Texas,66.3,1.9,96,64.4
+48391,Refugio County,Texas,71.9,1.4,96,70.5
+48393,Roberts County,Texas,56.4,-0.6,53,57
+48395,Robertson County,Texas,64.6,-1.5,35,66.1
+48397,Rockwall County,Texas,62.2,-1.6,27,63.8
+48399,Runnels County,Texas,64.5,-0.1,76,64.6
+48401,Rusk County,Texas,63,-2,23,65
+48403,Sabine County,Texas,64.2,-1.1,40,65.3
+48405,San Augustine County,Texas,64.2,-1.2,38,65.4
+48407,San Jacinto County,Texas,66,-1,39,67
+48409,San Patricio County,Texas,73.3,2,101,71.3
+48411,San Saba County,Texas,64.4,-0.9,44,65.3
+48413,Schleicher County,Texas,63.3,-0.9,45,64.2
+48415,Scurry County,Texas,63.2,0.1,75,63.1
+48417,Shackelford County,Texas,64.6,0.5,83,64.1
+48419,Shelby County,Texas,63.6,-1.5,34,65.1
+48421,Sherman County,Texas,54.4,-0.5,54,54.9
+48423,Smith County,Texas,62.4,-2,27,64.4
+48425,Somervell County,Texas,63.6,-1.5,33,65.1
+48427,Starr County,Texas,77,1.7,96,75.3
+48429,Stephens County,Texas,65.3,1.4,95,63.9
+48431,Sterling County,Texas,63.5,-0.4,60,63.9
+48433,Stonewall County,Texas,64,0.4,81,63.6
+48435,Sutton County,Texas,64.1,-0.7,48,64.8
+48437,Swisher County,Texas,56.9,0,70,56.9
+48439,Tarrant County,Texas,64.2,-0.7,47,64.9
+48441,Taylor County,Texas,64.4,0.6,87,63.8
+48443,Terrell County,Texas,67.4,-0,68,67.4
+48445,Terry County,Texas,60.1,0.1,74,60
+48447,Throckmorton County,Texas,64.8,1,88,63.8
+48449,Titus County,Texas,61.3,-1.9,27,63.2
+48451,Tom Green County,Texas,64.5,-0.3,60,64.8
+48453,Travis County,Texas,67,-0.1,71,67.1
+48455,Trinity County,Texas,65.1,-1.2,38,66.3
+48457,Tyler County,Texas,64.9,-1.3,35,66.2
+48459,Upshur County,Texas,62.6,-1.5,34,64.1
+48461,Upton County,Texas,66.1,0.9,85,65.2
+48463,Uvalde County,Texas,69.3,0.1,73,69.2
+48465,Val Verde County,Texas,68.6,-0,73,68.6
+48467,Van Zandt County,Texas,62.2,-1.8,30,64
+48469,Victoria County,Texas,70.6,1,92,69.6
+48471,Walker County,Texas,65.4,-1.4,32,66.8
+48473,Waller County,Texas,67.1,-0.8,43,67.9
+48475,Ward County,Texas,66.9,1.7,92,65.2
+48477,Washington County,Texas,66.6,-0.9,43,67.5
+48479,Webb County,Texas,75.4,2.1,102,73.3
+48481,Wharton County,Texas,69.4,0.7,80,68.7
+48483,Wheeler County,Texas,57.7,-0.2,60,57.9
+48485,Wichita County,Texas,63.9,1,88,62.9
+48487,Wilbarger County,Texas,63.2,0.5,80,62.7
+48489,Willacy County,Texas,75.6,1.4,93,74.2
+48491,Williamson County,Texas,65.8,-0.5,58,66.3
+48493,Wilson County,Texas,70.2,0.8,89,69.4
+48495,Winkler County,Texas,65.7,1.7,92,64
+48497,Wise County,Texas,63.3,-0.4,58,63.7
+48499,Wood County,Texas,62.4,-1.2,41,63.6
+48501,Yoakum County,Texas,59.4,0.5,78,58.9
+48503,Young County,Texas,64.9,1.3,93,63.6
+48505,Zapata County,Texas,77.1,2.1,101,75
+48507,Zavala County,Texas,72.3,1,92,71.3
+49001,Beaver County,Utah,44.6,-0.4,48,45
+49003,Box Elder County,Utah,45,-0.2,61,45.2
+49005,Cache County,Utah,40.8,0,63,40.8
+49007,Carbon County,Utah,40.9,-0.5,52,41.4
+49009,Daggett County,Utah,37.6,-0.8,49,38.4
+49011,Davis County,Utah,45.6,-0.3,60,45.9
+49013,Duchesne County,Utah,38.1,-0.4,54,38.5
+49015,Emery County,Utah,47.7,-0.2,55,47.9
+49017,Garfield County,Utah,45.1,0.1,57,45
+49019,Grand County,Utah,48.2,0.1,57,48.1
+49021,Iron County,Utah,44.7,-0,56,44.7
+49023,Juab County,Utah,45.9,-0.8,48,46.7
+49025,Kane County,Utah,48.8,-0.2,55,49
+49027,Millard County,Utah,47.1,-0.4,51,47.5
+49029,Morgan County,Utah,40.3,-0.1,60,40.4
+49031,Piute County,Utah,39.3,-0.2,50,39.5
+49033,Rich County,Utah,38,0.3,65,37.7
+49035,Salt Lake County,Utah,45,-0.2,58,45.2
+49037,San Juan County,Utah,49.8,-0,49,49.8
+49039,Sanpete County,Utah,39.6,-0.9,47,40.5
+49041,Sevier County,Utah,40.4,-0.5,50,40.9
+49043,Summit County,Utah,34.8,-0.3,57,35.1
+49045,Tooele County,Utah,47.8,-0.1,62,47.9
+49047,Uintah County,Utah,43.6,-0.3,55,43.9
+49049,Utah County,Utah,42.9,-0.6,51,43.5
+49051,Wasatch County,Utah,37.1,-0.3,54,37.4
+49053,Washington County,Utah,51.6,-0.3,53,51.9
+49055,Wayne County,Utah,48.4,0.5,64,47.9
+49057,Weber County,Utah,42.8,-0,64,42.8
+50001,Addison County,Vermont,44.1,2.8,105,41.3
+50003,Bennington County,Vermont,43.3,3.3,109,40
+50005,Caledonia County,Vermont,42.6,3.9,115,38.7
+50007,Chittenden County,Vermont,44.1,3,107,41.1
+50009,Essex County,Vermont,41.6,3.9,116,37.7
+50011,Franklin County,Vermont,43.9,3.4,109,40.5
+50013,Grand Isle County,Vermont,45.7,3.3,109,42.4
+50015,Lamoille County,Vermont,42.2,3.8,114,38.4
+50017,Orange County,Vermont,43.3,3.5,115,39.8
+50019,Orleans County,Vermont,42,3.8,114,38.2
+50021,Rutland County,Vermont,43.7,3,108,40.7
+50023,Washington County,Vermont,42.6,3.5,113,39.1
+50025,Windham County,Vermont,44.3,3.2,108,41.1
+50027,Windsor County,Vermont,44,3.4,113,40.6
+51001,Accomack County,Virginia,57,3.3,112,53.7
+51003,Albemarle County,Virginia,55.4,1.5,83,53.9
+51005,Alleghany County,Virginia,53.1,1.2,81,51.9
+51007,Amelia County,Virginia,57.7,1.8,89,55.9
+51009,Amherst County,Virginia,54.9,1.1,77,53.8
+51011,Appomattox County,Virginia,56.3,1.6,86,54.7
+51013,Arlington County,Virginia,55.9,2.1,94,53.8
+51015,Augusta County,Virginia,52.2,1.1,78,51.1
+51017,Bath County,Virginia,51.9,1.3,80,50.6
+51019,Bedford County,Virginia,55.9,1.1,78,54.8
+51021,Bland County,Virginia,51.2,1.2,79,50
+51023,Botetourt County,Virginia,55.1,1.2,81,53.9
+51025,Brunswick County,Virginia,58.2,1.6,95,56.6
+51027,Buchanan County,Virginia,53.5,0.5,66,53
+51029,Buckingham County,Virginia,56.9,1.8,90,55.1
+51031,Campbell County,Virginia,55.9,1.2,80,54.7
+51033,Caroline County,Virginia,57.3,2.3,96,55
+51035,Carroll County,Virginia,52.2,1,81,51.2
+51036,Charles City County,Virginia,58.9,1.7,96,57.2
+51037,Charlotte County,Virginia,56.3,1.1,80,55.3
+51041,Chesterfield County,Virginia,58.1,1.6,91,56.5
+51043,Clarke County,Virginia,53.7,2.1,93,51.6
+51045,Craig County,Virginia,53.2,1.4,84,51.8
+51047,Culpeper County,Virginia,55.4,2.1,96,53.3
+51049,Cumberland County,Virginia,57.4,1.9,92,55.5
+51051,Dickenson County,Virginia,53.8,0.7,72,53.1
+51053,Dinwiddie County,Virginia,58.1,1.5,91,56.6
+51057,Essex County,Virginia,57.8,2.4,100,55.4
+51059,Fairfax County,Virginia,55.9,2.5,99,53.4
+51061,Fauquier County,Virginia,55,2.6,100,52.4
+51063,Floyd County,Virginia,51.9,1.4,87,50.5
+51065,Fluvanna County,Virginia,56.4,1.5,83,54.9
+51067,Franklin County,Virginia,56,1.3,86,54.7
+51069,Frederick County,Virginia,52.8,1.7,84,51.1
+51071,Giles County,Virginia,52.2,1.2,83,51
+51073,Gloucester County,Virginia,58.3,2,97,56.3
+51075,Goochland County,Virginia,56.7,1.4,84,55.3
+51077,Grayson County,Virginia,49.8,0.8,78,49
+51079,Greene County,Virginia,53.6,1.3,81,52.3
+51081,Greensville County,Virginia,58.6,1.4,92,57.2
+51083,Halifax County,Virginia,56.6,0.7,74,55.9
+51085,Hanover County,Virginia,57.6,1.9,96,55.7
+51087,Henrico County,Virginia,58.2,1.7,94,56.5
+51089,Henry County,Virginia,57.2,1.3,89,55.9
+51091,Highland County,Virginia,48.4,0.8,75,47.6
+51093,Isle of Wight County,Virginia,59.2,1.9,100,57.3
+51095,James City County,Virginia,58.9,2,101,56.9
+51097,King and Queen County,Virginia,57.8,1.9,93,56
+51099,King George County,Virginia,56.9,2.2,94,54.7
+51101,King William County,Virginia,58,1.9,96,56.1
+51103,Lancaster County,Virginia,57.4,2.1,95,55.3
+51105,Lee County,Virginia,54.6,0.1,69,54.5
+51107,Loudoun County,Virginia,54.4,2.3,96,52.1
+51109,Louisa County,Virginia,56,1.5,86,54.5
+51111,Lunenburg County,Virginia,57.2,1.5,88,55.7
+51113,Madison County,Virginia,53.7,1.7,87,52
+51115,Mathews County,Virginia,58.2,2.3,102,55.9
+51117,Mecklenburg County,Virginia,57.6,1.2,82,56.4
+51119,Middlesex County,Virginia,57.7,1.9,94,55.8
+51121,Montgomery County,Virginia,53.4,1.4,84,52
+51125,Nelson County,Virginia,54.8,1.5,85,53.3
+51127,New Kent County,Virginia,58.2,1.6,91,56.6
+51131,Northampton County,Virginia,58,2.9,108,55.1
+51133,Northumberland County,Virginia,57.4,2.7,105,54.7
+51135,Nottoway County,Virginia,57.7,1.9,93,55.8
+51137,Orange County,Virginia,55.6,1.7,89,53.9
+51139,Page County,Virginia,52.3,1.6,81,50.7
+51141,Patrick County,Virginia,55.3,1.3,88,54
+51143,Pittsylvania County,Virginia,56.7,0.9,82,55.8
+51145,Powhatan County,Virginia,57.2,1.5,86,55.7
+51147,Prince Edward County,Virginia,57.2,1.9,91,55.3
+51149,Prince George County,Virginia,58.9,1.6,92,57.3
+51153,Prince William County,Virginia,56,2.5,100,53.5
+51155,Pulaski County,Virginia,52.8,1.2,81,51.6
+51157,Rappahannock County,Virginia,53.5,2,90,51.5
+51159,Richmond County,Virginia,57.7,2.5,102,55.2
+51161,Roanoke County,Virginia,55.1,1.3,83,53.8
+51163,Rockbridge County,Virginia,53.4,0.4,64,53
+51165,Rockingham County,Virginia,51.9,1.1,80,50.8
+51167,Russell County,Virginia,53.1,0.8,72,52.3
+51169,Scott County,Virginia,55.2,0.8,78,54.4
+51171,Shenandoah County,Virginia,52.5,1.3,81,51.2
+51173,Smyth County,Virginia,51.1,0.9,76,50.2
+51175,Southampton County,Virginia,58.9,1.5,91,57.4
+51177,Spotsylvania County,Virginia,55.9,1.7,91,54.2
+51179,Stafford County,Virginia,55.9,1.8,91,54.1
+51181,Surry County,Virginia,59.1,2,101,57.1
+51183,Sussex County,Virginia,58.6,1.4,92,57.2
+51185,Tazewell County,Virginia,50.8,0.8,71,50
+51187,Warren County,Virginia,53.4,2,90,51.4
+51191,Washington County,Virginia,53.7,1,76,52.7
+51193,Westmoreland County,Virginia,57.4,2.6,104,54.8
+51195,Wise County,Virginia,53.1,0.8,76,52.3
+51197,Wythe County,Virginia,51.6,1,77,50.6
+51199,York County,Virginia,59,2.2,103,56.8
+51510,Alexandria City,Virginia,56.4,2.1,94,54.3
+51520,Bristol City,Virginia,55.2,0.8,77,54.4
+51530,Buena Vista City,Virginia,54.2,0.1,55,54.1
+51540,Charlottesville City,Virginia,56.1,1.7,85,54.4
+51550,Chesapeake City,Virginia,59.1,2.1,103,57
+51570,Colonial Heights City,Virginia,58.8,1.6,92,57.2
+51580,Covington City,Virginia,54.8,1.3,82,53.5
+51590,Danville City,Virginia,58.4,1.5,91,56.9
+51595,Emporia City,Virginia,58.6,1.3,91,57.3
+51600,Fairfax City,Virginia,55.7,2.5,100,53.2
+51610,Falls Church City,Virginia,55.5,2.3,95,53.2
+51620,Franklin City,Virginia,59.2,1.7,96,57.5
+51630,Fredericksburg City,Virginia,55.8,1.5,89,54.3
+51640,Galax City,Virginia,52,1,79,51
+51650,Hampton City,Virginia,59.2,2.2,102,57
+51660,Harrisonburg City,Virginia,53.1,1.2,81,51.9
+51670,Hopewell City,Virginia,59.1,1.6,93,57.5
+51680,Lynchburg City,Virginia,56,1.3,83,54.7
+51683,Manassas City,Virginia,56.1,2.7,100,53.4
+51685,Manassas Park City,Virginia,56.1,2.7,100,53.4
+51690,Martinsville City,Virginia,57.1,1.2,87,55.9
+51700,Newport News City,Virginia,59.3,2.2,103,57.1
+51710,Norfolk City,Virginia,59.4,2.4,105,57
+51720,Norton City,Virginia,53.5,0.9,78,52.6
+51730,Petersburg City,Virginia,58.7,1.5,93,57.2
+51735,Poquoson City,Virginia,59.1,2.3,102,56.8
+51740,Portsmouth City,Virginia,59.6,2.2,103,57.4
+51750,Radford City,Virginia,53.4,1.3,82,52.1
+51760,Richmond City,Virginia,58.2,1.8,95,56.4
+51770,Roanoke City,Virginia,56.4,1.3,84,55.1
+51775,Salem City,Virginia,56.3,1.3,84,55
+51790,Staunton City,Virginia,53.3,1.3,79,52
+51800,Suffolk City,Virginia,59.4,1.9,101,57.5
+51810,Virginia Beach City,Virginia,58.8,2.3,106,56.5
+51820,Waynesboro City,Virginia,53.7,1.4,79,52.3
+51830,Williamsburg City,Virginia,59,2.3,103,56.7
+51840,Winchester City,Virginia,53.2,1.8,89,51.4
+53001,Adams County,Washington,46.8,-1.3,42,48.1
+53003,Asotin County,Washington,45.4,-0.2,58,45.6
+53005,Benton County,Washington,50.3,-1.3,41,51.6
+53007,Chelan County,Washington,40.4,-0.9,48,41.3
+53009,Clallam County,Washington,43.8,-0.3,49,44.1
+53011,Clark County,Washington,48.5,-0.7,48,49.2
+53013,Columbia County,Washington,44.7,-0.4,56,45.1
+53015,Cowlitz County,Washington,46.2,-0.4,54,46.6
+53017,Douglas County,Washington,46.5,-0.9,48,47.4
+53019,Ferry County,Washington,40.4,-1.6,38,42
+53021,Franklin County,Washington,49.5,-1.2,46,50.7
+53023,Garfield County,Washington,44.9,-0.6,52,45.5
+53025,Grant County,Washington,49.1,-0.9,47,50
+53027,Grays Harbor County,Washington,46.5,-0.7,48,47.2
+53029,Island County,Washington,48,-0.5,42,48.5
+53031,Jefferson County,Washington,41.6,-0.5,46,42.1
+53033,King County,Washington,43.7,-1.4,36,45.1
+53035,Kitsap County,Washington,48,-0.9,39,48.9
+53037,Kittitas County,Washington,42.4,-0.7,51,43.1
+53039,Klickitat County,Washington,45.7,-0.5,52,46.2
+53041,Lewis County,Washington,43.9,-0.5,52,44.4
+53043,Lincoln County,Washington,44.7,-1.7,38,46.4
+53045,Mason County,Washington,45.3,-0.9,45,46.2
+53047,Okanogan County,Washington,40.5,-1.1,45,41.6
+53049,Pacific County,Washington,46.5,-0.7,47,47.2
+53051,Pend Oreille County,Washington,39.9,-1,45,40.9
+53053,Pierce County,Washington,42.9,-0.9,46,43.8
+53055,San Juan County,Washington,47.8,-0.4,48,48.2
+53057,Skagit County,Washington,43.2,-0.6,48,43.8
+53059,Skamania County,Washington,41.2,-0.7,51,41.9
+53061,Snohomish County,Washington,42.9,-1.3,36,44.2
+53063,Spokane County,Washington,43.9,-1.4,39,45.3
+53065,Stevens County,Washington,42.8,-1.5,37,44.3
+53067,Thurston County,Washington,48,-0.6,50,48.6
+53069,Wahkiakum County,Washington,46.7,-0.3,51,47
+53071,Walla Walla County,Washington,50.2,-0.6,52,50.8
+53073,Whatcom County,Washington,41.6,-0.4,49,42
+53075,Whitman County,Washington,46,-1.1,42,47.1
+53077,Yakima County,Washington,43.3,-1,46,44.3
+54001,Barbour County,West Virginia,51,1.2,79,49.8
+54003,Berkeley County,West Virginia,53.1,2.1,92,51
+54005,Boone County,West Virginia,55.1,1.4,80,53.7
+54007,Braxton County,West Virginia,53.6,1.1,80,52.5
+54009,Brooke County,West Virginia,51.8,2.3,95,49.5
+54011,Cabell County,West Virginia,55.8,1.8,85,54
+54013,Calhoun County,West Virginia,54,1.7,87,52.3
+54015,Clay County,West Virginia,54.6,1.7,86,52.9
+54017,Doddridge County,West Virginia,52.5,1.2,78,51.3
+54019,Fayette County,West Virginia,53,1.7,85,51.3
+54021,Gilmer County,West Virginia,53.3,1.1,80,52.2
+54023,Grant County,West Virginia,49.4,0.3,69,49.1
+54025,Greenbrier County,West Virginia,50,1.1,79,48.9
+54027,Hampshire County,West Virginia,51.8,1.1,81,50.7
+54029,Hancock County,West Virginia,51.2,2.2,93,49
+54031,Hardy County,West Virginia,50.6,0.4,66,50.2
+54033,Harrison County,West Virginia,52.4,1.4,81,51
+54035,Jackson County,West Virginia,54.7,1.7,86,53
+54037,Jefferson County,West Virginia,53.6,2.1,92,51.5
+54039,Kanawha County,West Virginia,55.7,2,87,53.7
+54041,Lewis County,West Virginia,53.2,1.6,85,51.6
+54043,Lincoln County,West Virginia,56.2,1.8,81,54.4
+54045,Logan County,West Virginia,55.5,1.2,80,54.3
+54047,McDowell County,West Virginia,53.6,1.1,76,52.5
+54049,Marion County,West Virginia,52,1.4,81,50.6
+54051,Marshall County,West Virginia,51.5,1.4,77,50.1
+54053,Mason County,West Virginia,54.9,1.6,83,53.3
+54055,Mercer County,West Virginia,52.2,1.3,81,50.9
+54057,Mineral County,West Virginia,51.6,0.6,73,51
+54059,Mingo County,West Virginia,56.2,1.4,78,54.8
+54061,Monongalia County,West Virginia,51.1,1,74,50.1
+54063,Monroe County,West Virginia,52.2,1.2,78,51
+54065,Morgan County,West Virginia,52.4,1.7,85,50.7
+54067,Nicholas County,West Virginia,52.2,1.7,85,50.5
+54069,Ohio County,West Virginia,51.3,1.8,83,49.5
+54071,Pendleton County,West Virginia,49,0.8,77,48.2
+54073,Pleasants County,West Virginia,52.7,1.3,79,51.4
+54075,Pocahontas County,West Virginia,46.9,1,77,45.9
+54077,Preston County,West Virginia,48.7,0.9,77,47.8
+54079,Putnam County,West Virginia,55.7,2,86,53.7
+54081,Raleigh County,West Virginia,52.5,1.4,83,51.1
+54083,Randolph County,West Virginia,47.5,1.2,80,46.3
+54085,Ritchie County,West Virginia,53,1.3,83,51.7
+54087,Roane County,West Virginia,54.6,1.9,87,52.7
+54089,Summers County,West Virginia,53,1.3,80,51.7
+54091,Taylor County,West Virginia,51.7,1.2,77,50.5
+54093,Tucker County,West Virginia,47,1,75,46
+54095,Tyler County,West Virginia,52.5,1.4,79,51.1
+54097,Upshur County,West Virginia,52,1.8,87,50.2
+54099,Wayne County,West Virginia,56.1,1.7,83,54.4
+54101,Webster County,West Virginia,50.4,1.3,82,49.1
+54103,Wetzel County,West Virginia,52.1,1.6,80,50.5
+54105,Wirt County,West Virginia,54.1,2,87,52.1
+54107,Wood County,West Virginia,53.9,1.7,84,52.2
+54109,Wyoming County,West Virginia,53.9,1.4,80,52.5
+55001,Adams County,Wisconsin,43.8,-0.2,56,44
+55003,Ashland County,Wisconsin,39.5,0.5,72,39
+55005,Barron County,Wisconsin,43.1,0.7,77,42.4
+55007,Bayfield County,Wisconsin,39.7,0.6,75,39.1
+55009,Brown County,Wisconsin,42.8,0.9,72,41.9
+55011,Buffalo County,Wisconsin,45.8,0.8,72,45
+55013,Burnett County,Wisconsin,43.4,1.5,84,41.9
+55015,Calumet County,Wisconsin,43.4,0.5,69,42.9
+55017,Chippewa County,Wisconsin,43.6,0.5,70,43.2
+55019,Clark County,Wisconsin,43.1,0.5,69,42.6
+55021,Columbia County,Wisconsin,44.6,-0.3,53,44.9
+55023,Crawford County,Wisconsin,46,-0.3,52,46.3
+55025,Dane County,Wisconsin,45.4,-0.1,58,45.5
+55027,Dodge County,Wisconsin,44.1,-0.7,52,44.8
+55029,Door County,Wisconsin,41.4,1.2,80,40.2
+55031,Douglas County,Wisconsin,40.8,1.3,81,39.5
+55033,Dunn County,Wisconsin,44.3,0.3,71,44
+55035,Eau Claire County,Wisconsin,44.4,0.7,71,43.7
+55037,Florence County,Wisconsin,38.8,0.3,68,38.5
+55039,Fond du Lac County,Wisconsin,43.7,-0.1,61,43.8
+55041,Forest County,Wisconsin,38.7,0.2,65,38.5
+55043,Grant County,Wisconsin,46.5,-0.2,55,46.7
+55045,Green County,Wisconsin,46.6,0.3,62,46.3
+55047,Green Lake County,Wisconsin,44.2,-0.3,55,44.5
+55049,Iowa County,Wisconsin,45.8,0.1,59,45.7
+55051,Iron County,Wisconsin,38.8,0.6,76,38.2
+55053,Jackson County,Wisconsin,44.6,0.8,73,43.8
+55055,Jefferson County,Wisconsin,45.6,-0.2,57,45.8
+55057,Juneau County,Wisconsin,44,-0.2,54,44.2
+55059,Kenosha County,Wisconsin,45.3,-0.5,52,45.8
+55061,Kewaunee County,Wisconsin,42,0.8,70,41.2
+55063,La Crosse County,Wisconsin,46,0.6,69,45.4
+55065,Lafayette County,Wisconsin,46.6,0.3,62,46.3
+55067,Langlade County,Wisconsin,40.1,0.5,66,39.6
+55069,Lincoln County,Wisconsin,40.9,0.7,71,40.2
+55071,Manitowoc County,Wisconsin,42.6,0.6,66,42
+55073,Marathon County,Wisconsin,42.2,0.5,68,41.7
+55075,Marinette County,Wisconsin,40.9,0.3,62,40.6
+55077,Marquette County,Wisconsin,44.4,-0.1,56,44.5
+55078,Menominee County,Wisconsin,41.6,0.4,64,41.2
+55079,Milwaukee County,Wisconsin,44.6,-0.1,60,44.7
+55081,Monroe County,Wisconsin,44.5,0.2,63,44.3
+55083,Oconto County,Wisconsin,41.7,0.5,65,41.2
+55085,Oneida County,Wisconsin,39.7,0.7,74,39
+55087,Outagamie County,Wisconsin,43.6,0.7,68,42.9
+55089,Ozaukee County,Wisconsin,43.9,0.4,63,43.5
+55091,Pepin County,Wisconsin,45.5,0.5,70,45
+55093,Pierce County,Wisconsin,45.1,0.6,72,44.5
+55095,Polk County,Wisconsin,44.1,1.2,80,42.9
+55097,Portage County,Wisconsin,43,-0.1,57,43.1
+55099,Price County,Wisconsin,40.1,0.6,73,39.5
+55101,Racine County,Wisconsin,44.9,-0.5,52,45.4
+55103,Richland County,Wisconsin,45.2,-0.5,51,45.7
+55105,Rock County,Wisconsin,46.6,0,61,46.6
+55107,Rusk County,Wisconsin,42.1,0.3,68,41.8
+55109,St. Croix County,Wisconsin,44.8,0.9,78,43.9
+55111,Sauk County,Wisconsin,45.1,0.1,58,45
+55113,Sawyer County,Wisconsin,40.6,0.7,72,39.9
+55115,Shawano County,Wisconsin,42.4,0.5,65,41.9
+55117,Sheboygan County,Wisconsin,43.4,0.6,70,42.8
+55119,Taylor County,Wisconsin,41.4,0.2,69,41.2
+55121,Trempealeau County,Wisconsin,45.5,0.8,71,44.7
+55123,Vernon County,Wisconsin,45.1,0,57,45.1
+55125,Vilas County,Wisconsin,38.6,0.7,74,37.9
+55127,Walworth County,Wisconsin,45.5,-0.4,54,45.9
+55129,Washburn County,Wisconsin,41.9,1,75,40.9
+55131,Washington County,Wisconsin,43.6,-0.2,57,43.8
+55133,Waukesha County,Wisconsin,44.8,-0.1,58,44.9
+55135,Waupaca County,Wisconsin,43.3,0.1,62,43.2
+55137,Waushara County,Wisconsin,43.5,-0.2,55,43.7
+55139,Winnebago County,Wisconsin,44.2,0.3,62,43.9
+55141,Wood County,Wisconsin,43.5,0.1,63,43.4
+56001,Albany County,Wyoming,36.1,-0.3,59,36.4
+56003,Big Horn County,Wyoming,40.6,-0.3,58,40.9
+56005,Campbell County,Wyoming,39.6,-2.2,31,41.8
+56007,Carbon County,Wyoming,37.7,-0.1,59,37.8
+56009,Converse County,Wyoming,39.4,-1.9,35,41.3
+56011,Crook County,Wyoming,39.8,-1.9,39,41.7
+56013,Fremont County,Wyoming,38,0.1,61,37.9
+56015,Goshen County,Wyoming,42,-1.8,32,43.8
+56017,Hot Springs County,Wyoming,40.2,-0.5,56,40.7
+56019,Johnson County,Wyoming,39.6,-0.9,49,40.5
+56021,Laramie County,Wyoming,40.2,-1,43,41.2
+56023,Lincoln County,Wyoming,36,0.5,72,35.5
+56025,Natrona County,Wyoming,39.3,-1,50,40.3
+56027,Niobrara County,Wyoming,41.4,-1.7,39,43.1
+56029,Park County,Wyoming,35.8,0.3,67,35.5
+56031,Platte County,Wyoming,41.5,-1.5,37,43
+56033,Sheridan County,Wyoming,39.6,-0.6,57,40.2
+56035,Sublette County,Wyoming,34,0.6,78,33.4
+56037,Sweetwater County,Wyoming,39.4,0.3,67,39.1
+56039,Teton County,Wyoming,32.8,0.4,70,32.4
+56041,Uinta County,Wyoming,37.1,-0.2,62,37.3
+56043,Washakie County,Wyoming,41.9,-0.8,52,42.7
+56045,Weston County,Wyoming,40.4,-1.8,42,42.2
