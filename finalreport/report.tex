@@ -31,7 +31,7 @@
     to visualize common climate indicators such as wind speed, precipitation, 
     and temperature. With the increase in greenhouse gas emissions around the world, 
     it is crucial to visualize such trends that leverages ones understand in climate 
-    change. To compile this project, we utilized datasets from \href{https://www.kaggle.com/datasets}{Kaggle}.
+    change. To compile this project, we utilized datasets from \href{https://www.kaggle.com/datasets}{Kaggle} and NOAA (ref).
     Our visualization garnered much important feedback, with many feedback being appreciative of our minimalistic and intuitive design. 
     We found that many testers were curious at our web application because they were found to 
     be clicking on multiple things for the sake of visualizing the data.
@@ -76,13 +76,13 @@ Our final dataset came out to contain the following columns: \textbf{Month, Day,
 
 On top of point by point data for major cities and regions, we desired to have a filled or colored in map of the weather data over time. The goal was to have a climate statistics map as a user could easily recognize from weather channels. Initially, we were also looking at the NOAA's \href{https://nomads.ncep.noaa.gov/}{NOMADS} data set, which contained point data as accurate as a quarter of a degree of longitude and latitude, but several issues arose. Given the data was broken down by every 6 hours and by different levels of altitude, it gave way to issues regarding compiling time and location values. However, more presciently, we ran into the difficulty of formatting the data from the raw GRIB2 (Gridded Binary) format, which is used by the national departments to compactly plot weather data, to a usable CSV or JSON file format, which would have required a lot more time building a constant data translator and using more unused languages/softwares for us such as Perl. Instead, we chose to use county data, as city data won't be as complete, to represent the map data.
 
-Working with county data would be much more manageable given the limited amount of data, given there are $3,143$ counties in the United States. The \href{https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/mapping}{NCEI} contained appropriate CSV county data sets broken up by month and state, which contained different types of weather statistics from average temperature to precipitation. We chose to use those as the two major map data sets given that they could can be contrasted well on each other and along with the airports' weather parameters. The first measure of business was having to manually download the CSV data for each state. When looking at our map data set and temperature data set, we realized that the map data set used the FIPS county code for its set, so - using python - we compiled the states all together in one file and another python script to convert the counties into a usable FIPS code. Finally, the last issue to deal with that was breaking the data set was county names that contained commas or illegal characters for the csv, this meant manually running through every file and editing them out.
+Working with county data would be much more manageable given the limited amount of data, given there are $3,143$ counties in the United States. The \href{https://www.ncei.noaa.gov}{NCEI} contained appropriate CSV county data sets broken up by month and state, primarily the lower 48, which contained different types of weather statistics from average temperature to precipitation. We chose to use those as the two major map data sets given that they could can be contrasted well on each other and along with the airports' weather parameters. The first measure of business was having to manually download the CSV data for each state. When looking at our map data set and temperature data set, we realized that the map data set used the FIPS county code for its set, so - using python - we compiled the states all together in one file and another python script to convert the counties into a usable FIPS code. Finally, the last issue to deal with that was breaking the data set was county names that contained commas or illegal characters for the csv, this meant manually running through every file and editing them out.
 
 \section {Visualization and Progress}
 
 For our visualization, our intention was to create a map of the United States that allows individuals to be able to access climate data in our chosen airports. 
 
-\subsection{Progress Report 1: Map Rendering}
+\subsection{Progress Report 1: Map and Regions Rendering}
 
 Map rendering is a key feature of our project. Rendering a map of the United States allowed us to begin learning the D3 stack and also envision the data that we will need to plot the points onto the map. We use \href{https://github.com/topojson/topojson}{topojson} and follow \href{https://observablehq.com/@d3/u-s-map}{this D3 guide} to create and render our intended US map.
 
@@ -92,9 +92,9 @@ Map rendering is a key feature of our project. Rendering a map of the United Sta
     \caption{Our first map rendering of the United States}
 \end{figure}
 
-While topojson is our choice, it is not the only way to render a map. We also considered using \href{https://geojson.org/}{geojson}, but we found that topojson was more efficient in terms of file size, that is to say, they claim that their file sizes are over 80\% smaller than geojson files, as claimed on their \href{https://github.com/topojson/topojson}{Github project description}.
+While topojson is our choice, it is not the only way to render a map. We also considered using \href{https://geojson.org/}{geojson}, but we found that topojson was more efficient in terms of file size, that is to say, they claim that their file sizes are over 80\% smaller than geojson files, as claimed on their \href{https://github.com/topojson/topojson}{Github project description}, and we had difficulties dealing with adjusting and handling visualization in the past. Additionally, after we had decided against using defined point data, we rendered a TopoJSON of the county borders, aligning it on top of the rendered map (figure).
 
-\subsection{Progress Report 2: Plotting the Airports}
+\subsection{Progress Report 2: Plotting the Airports and County Data}
 
 \begin{figure}
     \centering
@@ -105,6 +105,8 @@ While topojson is our choice, it is not the only way to render a map. We also co
 Fig 1 provides us with a starting point to plot the airports. For our dataset, we have information like the latitude and longitude of the airports, which is crucial for plotting them in topojson. Fig 2 shows the 265 airports all plotted out onto our map of the United States. An additional feature that we included was a slight hover effect. Hovering over each airport would enlarge the airport point, this decision was done so that it would be easier for users to see which airport they are hovering over. At this point, if you decide to select on an airport by clicking on it, it would display information about that airport. More specifically, the airport name, the wind speed for that airport, and also a line chart to show the trend of the wind speed over the last 7 days.
 
 While this provides a starting point to what we want to do, there are still many things missing. For example, the line chart that we have included for each point's tooltips was unlabeled, it had no axis, making it difficult for the user to intuitively understand what chart is displaying. Not only that, but the points are all colored blue, which is not very intuitive. We need to color the points based on the climate indicator that we want to display.
+
+Additionally, at this time, we began formatting the data sets to fit into the TopoJSON. (pink figure) demonstrates a test data set built with python that aligns the color strength with the county's coordinates. Once the temperature data for a month was properly formatted, we mapped the values to the county FIPS code, filling in the counties using D3's svg fill feature. (temp initial figure) represents our data set
 
 \subsection {Progress Report 3: Implementing the Time Slider}
 
@@ -169,6 +171,17 @@ In addition, one of the crucial improvements that we wanted to implement was the
 
 \section {Feedback}
 
+\subsection{Muhammad's Feedback}
+Going into the feedback section, I wasn't entirely sure what to expect. We had completed most of the important points of usability that we had set for ourselves after initial feedback on the proposal and first couple of weeks. Thus going in, I didn't always ask the same question; however, I was asking about how more information could be added to the visualization, as it felt empty and static outside of time change. 
+
+One of the suggestions was to display the time trends of not just wind data, but all the possible statistics when hovering over cities. Contrarily, I also heard it would have been appreciated had there been a way to switch the airport wind speed data for temperature over the past week, or any other, based on the user's preference. I also received feedback that seeing the recent temperature trends of a county/region/city while looking at the map would be useful. We decided to tackle this by taking the climate data provided in the airport set and creating a user switch between the different climate stats provided. When I asked about how a user would feel about placing indicators of precipitation over the temperature map, some indicated interested; however, the general consensus was that it could distract from the cities/airports and would be more useful as a toggle.
+
+Collectively, however, regarding this question, we heard that adding more map elements would crowd the visualization, thus we decided to implement more changes that gave control to change the visualization to the user.
+
+Some other feedback received was considering how large the data set was. Given that it was plenty of points across a whole year each day with its own weather stats for the airport points, it does take a non-unnoticeable amount of time to refresh. Additionally, loading the data in case any changes were done takes upwards of 15 minutes running. Thus, a suggestion that came up was to break down the data by 7 day segments, thus the graphs could be succinctly kept but the slider much less minute in detail. We discussed but ultimately decided against given that it would disjoint the feeling of the current daily slider. Additionally, breaking up the data would result in an uneven week total, since the number of weeks doesn't divide perfectly. Finally we wanted the user to be able to look at any prospective day and look at the past 6, not just to be stuck looking at the next 6 if it was the last in the set.
+
+Finally, some more feedback that we were able to partially follow through on was based on the color choices used. Primarily, one suggestion was to implement a colorblind friendly mode for the colors, especially considering we're using green on red, and beige next to the red. We switched the temperature coloring to one with more distinct points and ends from colorbrewer's (ref) diverging colorblind safe options. We didn't apply a fully colorblind safe feature, especially for the airport points being green; however, we ensured the point contains distinct black borders to draw it away from blending with the background. Additionally, there was a suggestion regarding the missing or faulty data representations. Currently, if a county has missing or faulty data for a specific time period, it will appear blacked out (see image), which could cause confusion with high precipitation levels for example. When I asked what could be better done to represent the data, it was brought up to use a pattern - such as diagonally stripped or spotted - in the county. As indicated, that is something we didn't implement, as during testing there were initially difficulities, and in later stages, it seemed like the approaches would create too much clutter, but is spoken further in \textit{Future Work}.
+
 \subsection{Jiawei's Feedback}
 I was fortunate enough to receive a lot of useful feedback. My question during the feedback process was to ask about what should be placed in the blank spaces in the webpage, as the left and right sides were mostly empty and we could implement some sort of left and right rail to fill up to gaps. Our most common feedback was to implement a stats box that allows the user to view some of the highest climate indicators for that day. I thought this was a great idea, which is why we implemented this into our application for the final version.
 
@@ -191,6 +204,7 @@ Another suggestion was to add a toggle for the climate indicators. Some people m
 \section {Work Distribution}
 
 \subsection {Muhammad Alafifi}
+\textbf{For our visualization}, Muhammad was responsible for gathering and processing all the datasets relating to the refined climate trends across the scope of the project. He also was responsible for gathering the TopoJSON data set for the map which contained the county borders and data to be ID. He was responsible for also finding the most appropriate and reliable/usable data set for the counties, once it was decided that we were breaking down the map into a choropleth of counties. Thus Muhammad also worked on formatting the TopoJSON to fit on the old US region map and formatting the county weather data set so that it could be mapped towards upon the map. Additionally, Muhammad was responsible for making the transitions between types of choropleths renderings, which included the interface.
 
 \subsection {Jiawei Wu}
 

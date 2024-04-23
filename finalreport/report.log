@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  21 APR 2024 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  23 APR 2024 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,17 +948,17 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 
 ]
-<images/img1.png, id=89, 762.59906pt x 599.23875pt>
+<images/img1.png, id=93, 762.59906pt x 599.23875pt>
 File: images/img1.png Graphic file (type png)
 <use images/img1.png>
 Package pdftex.def Info: images/img1.png  used on input line 91.
 (pdftex.def)             Requested size: 190.64929pt x 149.80931pt.
-<images/img2.png, id=93, 872.50969pt x 477.28313pt>
+<images/img2.png, id=97, 872.50969pt x 477.28313pt>
 File: images/img2.png Graphic file (type png)
 <use images/img2.png>
 Package pdftex.def Info: images/img2.png  used on input line 101.
 (pdftex.def)             Requested size: 218.12689pt x 119.32048pt.
-<images/img3.png, id=94, 1795.70876pt x 1024.82875pt>
+<images/img3.png, id=98, 1795.70876pt x 1024.82875pt>
 File: images/img3.png Graphic file (type png)
 <use images/img3.png>
 Package pdftex.def Info: images/img3.png  used on input line 113.
@@ -996,26 +996,27 @@ File: images/img9.png Graphic file (type png)
 <use images/img9.png>
 Package pdftex.def Info: images/img9.png  used on input line 166.
 (pdftex.def)             Requested size: 163.10896pt x 216.80946pt.
-
-Underfull \vbox (badness 2229) has occurred while \output is active []
-
  [3 <./images/img5.png> <./images/img4.png> <./images/img6.png>] [4 <./images/i
 mg7.png> <./images/img8.png> <./images/img9.png>] 
 AED: lastpage setting LastPage
-[5
+[5] (report.aux)
 
-] (report.aux)
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CAAC691B0853011A23C55C496D9FC446;2477.
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: B64B8320FF7F1522CCE9338E2DF154EF;2823
+(rerunfilecheck)             After:  9AC861AEFED4E0D244F81BD3BB31FCA4;2788.
  ) 
 Here is how much of TeX's memory you used:
- 30204 strings out of 478338
- 626398 string characters out of 2836700
+ 30225 strings out of 478338
+ 626648 string characters out of 2836700
  828515 words of memory out of 3000000
- 47922 multiletter control sequences out of 15000+600000
- 553410 words of font info for 302 fonts, out of 8000000 for 9000
+ 47927 multiletter control sequences out of 15000+600000
+ 554861 words of font info for 311 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,18n,91p,1187b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 87i,18n,91p,1356b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/junio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
 .pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
@@ -1026,9 +1027,9 @@ rw/helvetic/uhvro8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/palatino/uplb8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/palatino/uplr8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (5 pages, 2047294 bytes).
+Output written on report.pdf (5 pages, 2053909 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 97454 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 101558 words of extra memory for PDF output out of 106986 (max. 10000000)
 

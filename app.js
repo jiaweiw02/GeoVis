@@ -193,7 +193,7 @@ function colorCounties(dataType, month, day){
         renderLegend(colorScale, dataType);
     }));
     console.log("month: "+ month+"; day: "+day);
-    plotPoints(month, day);
+    // plotPoints(month, day);
     console.log("printed points");
 }
 
