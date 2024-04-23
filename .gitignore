@@ -5,3 +5,8 @@ scripts/weather.csv
 weatherdata
 .*
 scripts/weatherdata.json
+finalreport/report.aux
+finalreport/report.log
+finalreport/report.pdf
+finalreport/report.synctex.gz
+finalreport/report.out
