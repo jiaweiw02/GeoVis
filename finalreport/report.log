@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  23 APR 2024 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  23 APR 2024 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,20 +984,24 @@ Package pdftex.def Info: images/img6.png  used on input line 147.
 <images/img7.png, id=111, 1541.76pt x 1024.82875pt>
 File: images/img7.png Graphic file (type png)
 <use images/img7.png>
-Package pdftex.def Info: images/img7.png  used on input line 159.
+Package pdftex.def Info: images/img7.png  used on input line 161.
 (pdftex.def)             Requested size: 231.25401pt x 153.71768pt.
 <images/img8.png, id=112, 385.44pt x 640.3925pt>
 File: images/img8.png Graphic file (type png)
 <use images/img8.png>
-Package pdftex.def Info: images/img8.png  used on input line 162.
+Package pdftex.def Info: images/img8.png  used on input line 164.
 (pdftex.def)             Requested size: 192.71953pt x 320.19547pt.
 <images/img9.png, id=113, 326.21875pt x 433.62pt>
 File: images/img9.png Graphic file (type png)
 <use images/img9.png>
-Package pdftex.def Info: images/img9.png  used on input line 170.
+Package pdftex.def Info: images/img9.png  used on input line 172.
 (pdftex.def)             Requested size: 163.10896pt x 216.80946pt.
  [3 <./images/img3.png> <./images/img5.png> <./images/img4.png> <./images/img6.
-png>] [4 <./images/img7.png> <./images/img8.png> <./images/img9.png>] 
+png>] [4 <./images/img7.png> <./images/img8.png> <./images/img9.png>]
+Underfull \vbox (badness 4621) has occurred while \output is active []
+
+
+
 AED: lastpage setting LastPage
 [5] (report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
@@ -1021,7 +1025,7 @@ rw/helvetic/uhvro8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/palatino/uplb8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/palatino/uplr8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (5 pages, 2055232 bytes).
+Output written on report.pdf (5 pages, 2056040 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  31 named destinations out of 1000 (max. 500000)

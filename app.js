@@ -125,7 +125,6 @@ function renderUSA(svg, month, day) {
               .attr("stroke-linejoin", "round")
               .attr("d", path);
         
-        // plotPoints(month, day);
     })
 }
 
@@ -193,7 +192,7 @@ function colorCounties(dataType, month, day){
         renderLegend(colorScale, dataType);
     }));
     console.log("month: "+ month+"; day: "+day);
-    // plotPoints(month, day);
+    plotPoints(month, day);
     console.log("printed points");
 }
 
@@ -553,7 +552,7 @@ function renderLegend(colorScale, dataType) {
         .attr("y", -10)
         .style("font-size", "12px")
         .style("font-weight", "bold")
-        .text(dataType === tempNum ? "Temperature Legend (F)" : "Precipitation Legend (Inches)");
+        .text(dataType === tempNum ? "Temperature Legend (F)" : "Precipitation Legend (\")");
 
     const legendMin = legend.append("text")
         .attr("x", -10)
