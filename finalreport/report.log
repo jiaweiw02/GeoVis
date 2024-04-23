@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  23 APR 2024 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.12)  23 APR 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,21 +998,26 @@ Package pdftex.def Info: images/img9.png  used on input line 172.
 (pdftex.def)             Requested size: 163.10896pt x 216.80946pt.
  [3 <./images/img3.png> <./images/img5.png> <./images/img4.png> <./images/img6.
 png>] [4 <./images/img7.png> <./images/img8.png> <./images/img9.png>]
-Underfull \vbox (badness 4621) has occurred while \output is active []
-
-
+<images/countiesBroken.png, id=138, 355.3275pt x 300.3722pt>
+File: images/countiesBroken.png Graphic file (type png)
+<use images/countiesBroken.png>
+Package pdftex.def Info: images/countiesBroken.png  used on input line 208.
+(pdftex.def)             Requested size: 177.6633pt x 150.18571pt.
+ [5 <./images/countiesBroken.png>]
 
 AED: lastpage setting LastPage
-[5] (report.aux)
+[6
+
+] (report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 9AC861AEFED4E0D244F81BD3BB31FCA4;2788.
  ) 
 Here is how much of TeX's memory you used:
- 30230 strings out of 478338
- 626671 string characters out of 2836700
- 828530 words of memory out of 3000000
- 47926 multiletter control sequences out of 15000+600000
- 555179 words of font info for 315 fonts, out of 8000000 for 9000
+ 30245 strings out of 478338
+ 626940 string characters out of 2836700
+ 829530 words of memory out of 3000000
+ 47932 multiletter control sequences out of 15000+600000
+ 555435 words of font info for 319 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,18n,91p,1356b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
@@ -1025,9 +1030,9 @@ rw/helvetic/uhvro8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/palatino/uplb8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/palatino/uplr8a.pfb><C:/Users/junio/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (5 pages, 2056040 bytes).
+Output written on report.pdf (6 pages, 2201978 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 101558 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 101563 words of extra memory for PDF output out of 106986 (max. 10000000)
 
