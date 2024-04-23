@@ -1,4 +1,4 @@
-\documentclass[9pt,twocolumn,twoside]{opticajnl}
+\documentclass[10pt,twocolumn,twoside]{opticajnl}
 \journal{opticajournal} % use for journal or Optica Open submissions
 
 % See template introduction for guidance on setting shortarticle option
@@ -53,8 +53,8 @@ and temperature. We believe that with the increase in greenhouse gas
 emissions around the world, it is crucial to visualize such trends that 
 leverages ones understand in climate change. Creating a map visualization 
 was what we believed to be the most intuitive way to visualize data, we were 
-inspired by \href{http://hint.fm/wind/}{wind fm} and \href{https://earth.nullschool.net/}
-{earth nullschool}. These sites provide the user with great flexibility in 
+inspired by wind fm \cite{a2019_wind} and \cite{beccario_2019_earth} earth nullschool.
+These sites provide the user with great flexibility in 
 manipulating and showing specific climate indicators, something that we took 
 inspiration in creating our own.
 
@@ -66,17 +66,17 @@ airport, and another for every county.
 
 \subsection{Airport Data}
 
-Utilizing airports was the most intuitive way to gather weather data. Initially we had planned to use large global datasets, such as \href{https://www.kaggle.com/datasets/noaa/noaa-icoads?select=icoads_core_2017}{NOAA ICOADS}, but we found it expensive, given the size of the dataset being 31 million rows and 75 columns. Not only that, but the points that were collected over the United States were so abundant, that it was difficult to visualize and also hindered our efforts to make it interactive. Instead, we pivoted over to a dataset that was more manageable, which was the \href{https://www.kaggle.com/datasets/srinathnanduri97/weather-data-for-265-airports-in-the-united-states}{weather data for 265 airports in the United States}. This dataset was much more manageable, with 265 airports. Airports resembled a cleaner visualization as well, as some states have at most 3 major airports, making it simple to visualize the difference.
+Utilizing airports was the most intuitive way to gather weather data. Initially we had planned to use large global datasets, such as NOAA ICOADS \cite{noaa_2017_noaa}, but we found it expensive, given the size of the dataset being 31 million rows and 75 columns. Not only that, but the points that were collected over the United States were so abundant, that it was difficult to visualize and also hindered our efforts to make it interactive. Instead, we pivoted over to a dataset that was more manageable, which was the weather data for 265 airports in the United States \cite{nanduri_2021_weather}. This dataset was much more manageable, with 265 airports. Airports resembled a cleaner visualization as well, as some states have at most 3 major airports, making it simple to visualize the difference.
 
-\textbf{Processing the data} was by no means simple. There wasn't a dataset that was "perfect" for our project, so we had to look for multiple datasets. The datasets we found was always missing some key features. Our airport weather data, while it was useful in providing us with the weather data, it was missing the latitude and longitude of the airports. We had to find \href{https://www.kaggle.com/datasets/nancyalaswad90/us-airports}{another} dataset that provided us with the latitude and longitude of the airports. We had to merge these two datasets together to create a dataset that had both the weather data and the latitude and longitude of the airports. However, it would be simple if we could just merge the two datasets together to create one, but we ran into one problem. The airport dataset providing us with climate information contained only 265 airports, while our other dataset contained over 3375 datapoints, which are all the airports in the United States.
+\textbf{Processing the data} was by no means simple. There wasn't a dataset that was "perfect" for our project, so we had to look for multiple datasets. The datasets we found was always missing some key features. Our airport weather data, while it was useful in providing us with the weather data, it was missing the latitude and longitude of the airports. We had to find another \cite{alaswad_2021_us} dataset that provided us with the latitude and longitude of the airports. We had to merge these two datasets together to create a dataset that had both the weather data and the latitude and longitude of the airports. However, it would be simple if we could just merge the two datasets together to create one, but we ran into one problem. The airport dataset providing us with climate information contained only 265 airports, while our other dataset contained over 3375 datapoints, which are all the airports in the United States.
 
 Our final dataset came out to contain the following columns: \textbf{Month, Day, Temperature (F), Dew Point (F), Humidity (\%), Wind Speed (mph), Pressure (in), Precipitation (in), IATA code, Name of airport, Longitude, Latitude}. With all this data, we were able to begin creating our intended visualization.
 
 \subsection{County Data}
 
-On top of point by point data for major cities and regions, we desired to have a filled or colored in map of the weather data over time. The goal was to have a climate statistics map as a user could easily recognize from weather channels. Initially, we were also looking at the NOAA's \href{https://nomads.ncep.noaa.gov/}{NOMADS} data set, which contained point data as accurate as a quarter of a degree of longitude and latitude, but several issues arose. Given the data was broken down by every 6 hours and by different levels of altitude, it gave way to issues regarding compiling time and location values. However, more presciently, we ran into the difficulty of formatting the data from the raw GRIB2 (Gridded Binary) format, which is used by the national departments to compactly plot weather data, to a usable CSV or JSON file format, which would have required a lot more time building a constant data translator and using more unused languages/softwares for us such as Perl. Instead, we chose to use county data, as city data won't be as complete, to represent the map data.
+On top of point by point data for major cities and regions, we desired to have a filled or colored in map of the weather data over time. The goal was to have a climate statistics map as a user could easily recognize from weather channels. Initially, we were also looking at the NOAA's NOMADS \cite{noaa_nomads} data set, which contained point data as accurate as a quarter of a degree of longitude and latitude, but several issues arose. Given the data was broken down by every 6 hours and by different levels of altitude, it gave way to issues regarding compiling time and location values. However, more presciently, we ran into the difficulty of formatting the data from the raw GRIB2 (Gridded Binary) format, which is used by the national departments to compactly plot weather data, to a usable CSV or JSON file format, which would have required a lot more time building a constant data translator and using more unused languages/softwares for us such as Perl. Instead, we chose to use county data, as city data won't be as complete, to represent the map data.
 
-Working with county data would be much more manageable given the limited amount of data, given there are $3,143$ counties in the United States. The \href{https://www.ncei.noaa.gov}{NCEI} contained appropriate CSV county data sets broken up by month and state, primarily the lower 48, which contained different types of weather statistics from average temperature to precipitation. We chose to use those as the two major map data sets given that they could can be contrasted well on each other and along with the airports' weather parameters. The first measure of business was having to manually download the CSV data for each state. When looking at our map data set and temperature data set, we realized that the map data set used the FIPS county code for its set, so - using python - we compiled the states all together in one file and another python script to convert the counties into a usable FIPS code. Finally, the last issue to deal with that was breaking the data set was county names that contained commas or illegal characters for the csv, this meant manually running through every file and editing them out.
+Working with county data would be much more manageable given the limited amount of data, given there are $3,143$ counties in the United States. The NCEI \cite{noaa_2019_national} contained appropriate CSV county data sets broken up by month and state, primarily the lower 48, which contained different types of weather statistics from average temperature to precipitation. We chose to use those as the two major map data sets given that they could can be contrasted well on each other and along with the airports' weather parameters. The first measure of business was having to manually download the CSV data for each state. When looking at our map data set and temperature data set, we realized that the map data set used the FIPS county code for its set, so - using python - we compiled the states all together in one file and another python script to convert the counties into a usable FIPS code. Finally, the last issue to deal with that was breaking the data set was county names that contained commas or illegal characters for the csv, this meant manually running through every file and editing them out.
 
 \section {Visualization and Progress}
 
@@ -84,7 +84,7 @@ For our visualization, our intention was to create a map of the United States th
 
 \subsection{Progress Report 1: Map and Regions Rendering}
 
-Map rendering is a key feature of our project. Rendering a map of the United States allowed us to begin learning the D3 stack and also envision the data that we will need to plot the points onto the map. We use \href{https://github.com/topojson/topojson}{topojson} and follow \href{https://observablehq.com/@d3/u-s-map}{this D3 guide} to create and render our intended US map.
+Map rendering is a key feature of our project. Rendering a map of the United States allowed us to begin learning the D3 stack and also envision the data that we will need to plot the points onto the map. We use topojson \cite{bostock_2024_topojsontopojson} and follow this D3 guide \cite{d3_2023_us} to create and render our intended US map.
 
 \begin{figure}
     \centering
@@ -92,7 +92,7 @@ Map rendering is a key feature of our project. Rendering a map of the United Sta
     \caption{Our first map rendering of the United States}
 \end{figure}
 
-While topojson is our choice, it is not the only way to render a map. We also considered using \href{https://geojson.org/}{geojson}, but we found that topojson was more efficient in terms of file size, that is to say, they claim that their file sizes are over 80\% smaller than geojson files, as claimed on their \href{https://github.com/topojson/topojson}{Github project description}, and we had difficulties dealing with adjusting and handling visualization in the past. Additionally, after we had decided against using defined point data, we rendered a TopoJSON of the county borders, aligning it on top of the rendered map (figure).
+While topojson is our choice, it is not the only way to render a map. We also considered using geojson \cite{mapbox_geojsonio}, but we found that topojson was more efficient in terms of file size, that is to say, they claim that their file sizes are over 80\% smaller than geojson files, as claimed on their \href{https://github.com/topojson/topojson}{Github project description}, and we had difficulties dealing with adjusting and handling visualization in the past. Additionally, after we had decided against using defined point data, we rendered a TopoJSON of the county borders, aligning it on top of the rendered map (figure).
 
 \subsection{Progress Report 2: Plotting the Airports and County Data}
 
@@ -197,7 +197,7 @@ Another suggestion was to add a toggle for the climate indicators. Some people m
 
 \textbf{Data collection} was definitely one of the more significant barriers to our success. We struggled with finding a dataset with all the information that we needed, so we ended up having to combine different datasets for the airport data.
 
-\textbf{Stack} also posed a challenge for us. We were not familiar with the D3 stack, and we had to rely heavily on trying to map the examples given on the \href{https://observablehq.com/@d3/gallery}{D3 gallery} to our own project.
+\textbf{Stack} also posed a challenge for us. We were not familiar with the D3 stack, and we had to rely heavily on trying to map the examples given on the D3 gallery \cite{d3_2020_gallery} to our own project.
 
 \textbf{Time} was also a significant challenge. Our initial proposal was a similar idea, but we wanted to apply it globally. We would first render a map of the entire globe with scrolling and zooming in features, and then plot the points as seen in the United States map. However, we quickly realized that the data collection was going to be exponentially more difficult and time-consuming. We struggled to find the data that we needed. We later realized after a week that this was not going to be feasible given the time that we had, so we pivoted to a more manageable dataset and focused instead on the United States.
 
@@ -214,191 +214,7 @@ Another suggestion was to add a toggle for the climate indicators. Some people m
 
 \section {Citations}
 
-% HERE ENDS WHAT IS WRITTEN BY US
-
-% \section{Figures and Tables}
-
-% Do not place figures and tables at the back of the manuscript. Figures and tables should be placed and sized as they are likely to appear in the final article. 
-
-% Figures and Tables should be labelled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
-
-% \subsection{Sample Figure}
-
-% Figure \ref{fig:false-color} shows an example figure.
-
-% \begin{figure}[ht]
-% \centering
-% % \fbox{\includegraphics[width=\linewidth]{opticafig1}}
-% \caption{Dark-field image of a point absorber.}
-% \label{fig:false-color}
-% \end{figure}
-
-% \subsection{Sample Table}
-
-% Table \ref{tab:shape-functions} shows an example table.
-
-% \begin{table}[htbp]
-% \centering
-% \caption{\bf Shape Functions for Quadratic Line Elements}
-% \begin{tabular}{ccc}
-% \hline
-% local node & $\{N\}_m$ & $\{\Phi_i\}_m$ $(i=x,y,z)$ \\
-% \hline
-% $m = 1$ & $L_1(2L_1-1)$ & $\Phi_{i1}$ \\
-% $m = 2$ & $L_2(2L_2-1)$ & $\Phi_{i2}$ \\
-% $m = 3$ & $L_3=4L_1L_2$ & $\Phi_{i3}$ \\
-% \hline
-% \end{tabular}
-%   \label{tab:shape-functions}
-% \end{table}
-
-% \section{Sample Equation}
-
-% Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-% \begin{equation}
-% S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-%       = \frac{1}{n}\sum_{i}^{n} X_i
-% \label{eq:refname1}
-% \end{equation}
-% denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
-
-% \section{Sample Algorithm}
-
-% Algorithms can be included using the commands as shown in algorithm \ref{alg:euclid}.
-
-% \begin{algorithm}
-% \caption{Euclid’s algorithm}\label{alg:euclid}
-% \begin{algorithmic}[1]
-% \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
-% \State $r\gets a\bmod b$
-% \While{$r\not=0$}\Comment{We have the answer if r is 0}
-% \State $a\gets b$
-% \State $b\gets r$
-% \State $r\gets a\bmod b$
-% \EndWhile\label{euclidendwhile}
-% \State \textbf{return} $b$\Comment{The gcd is b}
-% \EndProcedure
-% \end{algorithmic}
-% \end{algorithm}
-
-% \subsection{Supplementary materials in Optica Publishing Group journals}
-% Optica Publishing Group journals allow authors to include supplementary materials as integral parts of a manuscript. Such materials are subject to peer-review procedures along with the rest of the paper and should be uploaded and described using the Prism manuscript system. Please refer to the \href{https://opg.optica.org/submit/style/supplementary_materials.cfm}{Author Guidelines for Supplementary Materials in Optica Publishing Group Journals} for more detailed instructions on labeling supplementary materials and your manuscript. For preprints submitted to Optica Open a link to supplemental material should be included in the submission.
-
-% \textbf{Authors may also include Supplemental Documents} (PDF documents with expanded descriptions or methods) with the primary manuscript. At this time, supplemental PDF files are not accepted for JOCN or PRJ. To reference the supplementary document, the statement ``See Supplement 1 for supporting content.'' should appear at the bottom of the manuscript (above the References heading). 
-
-% \begin{figure}[ht!]
-% % \centering\includegraphics{opticafig2}
-% \caption{Terahertz focusing metalens.}
-% \end{figure}
-
-
-% \subsection{Sample Dataset Citation}
-
-% 1. M. Partridge, "Spectra evolution during coating," figshare (2014), http://dx.doi.org/10.6084/m9.figshare.1004612.
-
-% \subsection{Sample Code Citation}
-
-% 2. C. Rivers, "Epipy: Python tools for epidemiology," Figshare (2014) [retrieved 13 May 2015], http://dx.doi.org/10.6084/m9.figshare.1005064.
-
-% \section{Backmatter}
-% Backmatter sections should be listed in the order Funding/Acknowledgment/Disclosures/Data Availability Statement/Supplemental Document section. An example of backmatter with each of these sections included is shown below.
-
-% \begin{backmatter}
-% \bmsection{Funding} Content in the funding section will be generated entirely from details submitted to Prism. Authors may add placeholder text in the manuscript to assess length, but any text added to this section in the manuscript will be replaced during production and will display official funder names along with any grant numbers provided. If additional details about a funder are required, they may be added to the Acknowledgments, even if this duplicates information in the funding section. See the example below in Acknowledgements. For preprint submissions, please include funder names and grant numbers in the manuscript.
-
-% \bmsection{Acknowledgments} The section title should not follow the numbering scheme of the body of the paper. Additional information crediting individuals who contributed to the work being reported, clarifying who received funding from a particular source, or other information that does not fit the criteria for the funding block may also be included; for example, ``K. Flockhart thanks the National Science Foundation for help identifying collaborators for this work.''
-
-% \bmsection{Disclosures} Disclosures should be listed in a separate section at the end of the manuscript. List the Disclosures codes identified on the \href{https://opg.optica.org/submit/review/conflicts-interest-policy.cfm}{Conflict of Interest policy page}. If there are no disclosures, then list ``The authors declare no conflicts of interest.''
-
-% \smallskip
-
-% \noindent Here are examples of disclosures:
-
-
-% \bmsection{Disclosures} ABC: 123 Corporation (I,E,P), DEF: 456 Corporation (R,S). GHI: 789 Corporation (C).
-
-% \bmsection{Disclosures} The authors declare no conflicts of interest.
-
-
-% \bmsection{Data Availability Statement} A Data Availability Statement (DAS) will be required for all submissions beginning 1 March 2021. The DAS should be an unnumbered separate section titled ``Data Availability'' that
-% immediately follows the Disclosures section. See the \href{https://opg.optica.org/submit/review/data-availability-policy.cfm}{Data Availability Statement policy page} for more information.
-
-% There are four common (sometimes overlapping) situations that authors should use as guidance. These are provided as minimal models, and authors should feel free to
-% include any additional details that may be relevant.
-
-
-
-% \begin{enumerate}
-% \item When datasets are included as integral supplementary material in the paper, they must be declared (e.g., as "Dataset 1" following our current supplementary materials policy) and cited in the DAS, and should appear in the references.
-
-% \bmsection{Data availability} Data underlying the results presented in this paper are available in Dataset 1, Ref. [3].
-
-% \item When datasets are cited but not submitted as integral supplementary material, they must be cited in the DAS and should appear in the references.
-
-% \bmsection{Data availability} Data underlying the results presented in this paper are available in Ref. [3].
-
-% \item If the data generated or analyzed as part of the research are not publicly available, that should be stated. Authors are encouraged to explain why (e.g.~the data may be restricted for privacy reasons), and how the data might be obtained or accessed in the future.
-
-% \bmsection{Data availability} Data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.
-
-% \item If no data were generated or analyzed in the presented research, that should be stated.
-
-% \bmsection{Data availability} No data were generated or analyzed in the presented research.
-% \end{enumerate}
-
-% \bigskip
-
-% \noindent Data availability statements are not required for preprint submissions.
-
-% \bmsection{Supplemental document}
-% See Supplement 1 for supporting content. 
-
-% \end{backmatter}
-
-% \section{References}
-
-% Note that \emph{Optics Letters} and \emph{Optica} short articles use an abbreviated reference style. Citations to journal articles should omit the article title and final page number; this abbreviated reference style is produced automatically when the \emph{Optics Letters} journal option is selected in the template, if you are using a .bib file for your references.
-
-% \bigskip
-% \noindent Add citations manually or use BibTeX. See \cite{Zhang:14,OPTICA,FORSTER2007,testthesis,manga_rao_single_2007}. List up to three author names in references, and if there are more than three authors use \emph{et al.} after that.
-
-% % Bibliography
-% \bibliography{sample}
-
-% % Full bibliography added automatically for Optics Letters submissions; the following line will simply be ignored if submitting to other journals.
-% % Note that this extra page will not count against page length
-% \bibliographyfullrefs{sample}
-
-% %Manual citation list
-% %\begin{thebibliography}{1}
-% %\bibitem{Zhang:14}
-% %Y.~Zhang, S.~Qiao, L.~Sun, Q.~W. Shi, W.~Huang, %L.~Li, and Z.~Yang,
-%  % \enquote{Photoinduced active terahertz metamaterials with nanostructured
-%   %vanadium dioxide film deposited by sol-gel method,} Opt. Express \textbf{22},
-%   %11070--11078 (2014).
-% %\end{thebibliography}
-
-% % Please include bios and photos of all authors for aop articles
-% \ifthenelse{\equal{\journalref}{aop}}{%
-% \section*{Author Biographies}
-% \begingroup
-% \setlength\intextsep{0pt}
-% \begin{minipage}[t][6.3cm][t]{1.0\textwidth} % Adjust height [6.3cm] as required for separation of bio photos.
-%   \begin{wrapfigure}{L}{0.25\textwidth}
-%     \includegraphics[width=0.25\textwidth]{john_smith.eps}
-%   \end{wrapfigure}
-%   \noindent
-%   {\bfseries John Smith} received his BSc (Mathematics) in 2000 from The University of Maryland. His research interests include lasers and optics.
-% \end{minipage}
-% \begin{minipage}{1.0\textwidth}
-%   \begin{wrapfigure}{L}{0.25\textwidth}
-%     \includegraphics[width=0.25\textwidth]{alice_smith.eps}
-%   \end{wrapfigure}
-%   \noindent
-%   {\bfseries Alice Smith} also received her BSc (Mathematics) in 2000 from The University of Maryland. Her research interests also include lasers and optics.
-% \end{minipage}
-% \endgroup
-% }{}
-
+% \bibliographystyle{plain}
+\bibliography{iv}
 
 \end{document}
