@@ -106,7 +106,9 @@ Fig 1 provides us with a starting point to plot the airports. For our dataset, w
 
 While this provides a starting point to what we want to do, there are still many things missing. For example, the line chart that we have included for each point's tooltips was unlabeled, it had no axis, making it difficult for the user to intuitively understand what chart is displaying. Not only that, but the points are all colored blue, which is not very intuitive. We need to color the points based on the climate indicator that we want to display.
 
-Additionally, at this time, we began formatting the data sets to fit into the TopoJSON. (pink figure) demonstrates a test data set built with python that aligns the color strength with the county's coordinates. Once the temperature data for a month was properly formatted, we mapped the values to the county FIPS code, filling in the counties using D3's svg fill feature. (temp initial figure) represents our data set
+Additionally, at this time, we began formatting the data sets to fit into the TopoJSON. (pink figure) demonstrates a test data set built with python that aligns the color strength with the county's coordinates. Once the temperature data for a month was properly formatted, we mapped the values to the county FIPS code, filling in the counties using D3's svg fill feature. (temp initial figure) represents our data set. 
+
+When picking out a color set, we used ColorBrewer (ref) to pick out a color scheme. Considering temperature is often represented as red: hot, blue: cold, we decided to imitate the color choices found on many temperature maps to maintain familiarity, thus we chose a divergent scheme with a shade of red and blue on each end. One thing that came up was whether we use a discrete or linear color spread. We ended up deciding against using a discrete scheme as we found that the discrete theme would feel too disjoint and misrepresent some counties to be too similar. Additionally, a linear scheme would be easily understood, and it would allow us replicate the feeling of a "painted" on weather map, as previous mentioned (see figures).
 
 \subsection {Progress Report 3: Implementing the Time Slider}
 
@@ -147,6 +149,8 @@ Fig 4 shows the choice made in coloring each airport. We decided to select a seq
 \end{figure}
 
 Fig 5 shows the improved tooltip. It shows you the airport IATA code, the wind speed for the day, and also the improvement line chart from progress update 2. Since it was a line chart, we made the decision to flip the x-axis so it would easier to visualize the trend, with the right side being the nearest day, and the left side being the further day.
+
+Using Javascript and D3's 'onchange' feature, we also implemented a change of the type of graph from temperature to precipitation based. This meant now also implementing a method that would change the type of map displayed. For actually displaying the map, we now ran the same scripts - previously used to parse the temperature - on the manually downloaded precipitation data, and used the 'onchange' function to determine which of the two maps to render. This meant that we also had to pick a new color scheme from Colorbrewer (ref). We chose to use a sequential map to represent increasing amounts, and chose a white to green theme, given that green is often associated with cooler themes and since we didn't want to create confusion with the blue from temperature, and white could represent 0, as opposed to all being a single hue of green (figure map). 
 
 \subsection {Final Visualization}
 
