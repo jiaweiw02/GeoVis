@@ -1,6 +1,9 @@
 \begin{thebibliography}{10}
 \newcommand{\enquote}[1]{``#1''}
 
+\bibitem{noaa_2019_national}
+NOAA, \enquote{National centers for environmental information (ncei),}  (2019).
+
 \bibitem{a2019_wind}
 \enquote{Wind map,}  (2019).
 
@@ -20,9 +23,6 @@ N.~Al~Aswad, \enquote{Us airports,}  (2021).
 \bibitem{noaa_nomads}
 NOAA, \enquote{Nomads at ncep.noaa.gov,} .
 
-\bibitem{noaa_2019_national}
-NOAA, \enquote{National centers for environmental information (ncei),}  (2019).
-
 \bibitem{bostock_2024_topojsontopojson}
 M.~Bostock, \enquote{topojson/topojson,}  (2024).
 
@@ -31,6 +31,9 @@ D3, \enquote{U.s. map,}  (2023).
 
 \bibitem{mapbox_geojsonio}
 MapBox, \enquote{geojson.io,} .
+
+\bibitem{colorbrewer}
+\enquote{Colorbrewer: Color advice for maps,} .
 
 \bibitem{d3_2020_gallery}
 D3, \enquote{Gallery,}  (2020).

@@ -92,7 +92,7 @@ While topojson is our choice, it is not the only way to render a map. We also co
     \caption{Plotting the airports on the US map}
 \end{figure}
 
-Fig 1 provides us with a starting point to plot the airports. For our dataset, we have information like the latitude and longitude of the airports, which is crucial for plotting them in topojson. Fig 2 shows the 265 airports all plotted out on our map of the United States. An additional feature that we included was a slight hover effect. Hovering over each airport would enlarge the airport point, this decision was made so that it would be easier for users to see which airport they are hovering over. At this point, if you decide to select an airport by clicking on it, it will display information about that airport, such as the airport name, the wind speed for that airport, and also a line chart to show the trend of the wind speed over the last 7 days.
+(Fig 1) provides us with a starting point to plot the airports. For our dataset, we have information like the latitude and longitude of the airports, which is crucial for plotting them in topojson. (Fig 2) shows the 265 airports all plotted out on our map of the United States. An additional feature that we included was a slight hover effect. Hovering over each airport would enlarge the airport point, this decision was made so that it would be easier for users to see which airport they are hovering over. At this point, if you decide to select an airport by clicking on it, it will display information about that airport, such as the airport name, the wind speed for that airport, and also a line chart to show the trend of the wind speed over the last 7 days.
 
 While this provides a starting point for what we want to do, there are still many things missing. For example, the line chart that we have included for each point's tooltips was unlabeled and contained no axis, making it difficult for the user to intuitively understand what the chart is displaying. Not only that, but the points are all colored blue, which is not very intuitive. We need to color the points based on the climate indicator that we want to display.
 
@@ -102,15 +102,15 @@ While this provides a starting point for what we want to do, there are still man
 	\caption{Testing coloring in the counties using gradually generated numbers based on coordinates.}
 \end{figure}
 
-At this time, we began formatting the data sets to fit into the TopoJSON. (fig pink figure) demonstrates a test data set built with Python that aligns the color strength with the county's coordinates. Once the temperature data for a month was properly formatted, we mapped the values to the county FIPS code, filling in the counties using D3's svg fill feature. (fig temp initial figure) represents our data set. 
+At this time, we began formatting the data sets to fit into the TopoJSON. (Fig 3) demonstrates a test data set built with Python that aligns the color strength with the county's coordinates. Once the temperature data for a month was properly formatted, we mapped the values to the county FIPS code, filling in the counties using D3's svg fill feature. (Fig 4) represents our data set. 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.25]{images/tempMap.png}
+	\includegraphics[scale=0.15]{images/tempMap.png}
 	\caption{Temperature plotted gradually across map.}
 \end{figure}
 
-When picking out a color set, we used ColorBrewer \cite{colorbrewer} to pick out a color scheme. Considering temperature is often represented as red for hot, and blue for cold, we decided to imitate the color choices found on many temperature maps to maintain familiarity, thus we chose a divergent scheme with a shade of red and blue on each end. One thing that came up was whether we use a discrete or linear color spread. We ended up deciding against using a discrete scheme as we found that the discrete theme would feel too disjoint and misrepresent some counties to be too similar. Additionally, a linear scheme would be easily understood, and it would allow us to replicate the feeling of a "painted" weather map, as previously mentioned (figures).
+When picking out a color set, we used ColorBrewer \cite{colorbrewer} to pick out a color scheme. Considering temperature is often represented as red for hot, and blue for cold, we decided to imitate the color choices found on many temperature maps to maintain familiarity, thus we chose a divergent scheme with a shade of red and blue on each end. One thing that came up was whether we use a discrete or linear color spread. We ended up deciding against using a discrete scheme as we found that the discrete theme would feel too disjoint and misrepresent some counties to be too similar. Additionally, a linear scheme would be easily understood, and it would allow us to replicate the feeling of a "painted" weather map, as previously mentioned.
 
 \begin{figure}
 	\centering
@@ -127,7 +127,7 @@ When picking out a color set, we used ColorBrewer \cite{colorbrewer} to pick out
     \caption{Implementing the time slider}
 \end{figure}
 
-Time slider implementation was a crucial feature that we wanted to implement. We wanted to allow users to be able to select a specific date and see the climate data for that specific date. Fig 3 shows the implementation of the time slider. The time slider allows users to select a specific date, and the points on the map would update to show the climate data for that specific date. This was done on client-side rendering with an event listener.
+Time slider implementation was a crucial feature that we wanted to implement. We wanted to allow users to be able to select a specific date and see the climate data for that specific date. (Fig 6) shows the implementation of the time slider. The time slider allows users to select a specific date, and the points on the map would update to show the climate data for that specific date. This was done on client-side rendering with an event listener.
 
 \begin{algorithm}
     \caption{Time Slider Implementation}
@@ -149,7 +149,7 @@ This algorithm is called with an 'onchange' event listener, which is triggered w
     \caption{Color choice on the airports based on wind speed}
 \end{figure}
 
-Fig 4 shows the choice made in coloring each airport. We decided to select a sequential green hue coloring for our color representation. On the left side, we have filled the circle with the color respective to their wind speed, however, for the lighter colors such as on the southwest side, it became more difficult to distinguish between the point and the background. The fix that we came up with for this issue was by implementing a border. The effects of the border are shown in the right image, which makes it easier to distinguish between the points and the background of the map.
+(Fig 7) shows the choices made in coloring each airport. We decided to select a sequential green hue coloring for our color representation. On the left side, we have filled the circle with the color respective to their wind speed, however, for the lighter colors such as on the southwest side, it became more difficult to distinguish between the point and the background. The fix that we came up with for this issue was by implementing a border. The effects of the border are shown in the right image, which makes it easier to distinguish between the points and the background of the map.
 
 \begin{figure}
     \centering
@@ -157,9 +157,9 @@ Fig 4 shows the choice made in coloring each airport. We decided to select a seq
     \caption{Tooltip improvements}
 \end{figure}
 
-Fig 5 shows the improved tooltip. It shows you the airport IATA code, the wind speed for the day, and also the improvement line chart from progress update 2. Since it was a line chart, we made the decision to flip the x-axis so it would be easier to visualize the trend, with the right side being the nearest day, and the left side being the further day.
+(Fig 8) shows the improved tooltip. It shows you the airport IATA code, the wind speed for the day, and also the improvement line chart from progress update 2. Since it was a line chart, we made the decision to flip the x-axis so it would be easier to visualize the trend, with the right side being the nearest day, and the left side being the further day.
 
-Using Javascript and D3's 'onchange' feature, we also implemented a change of the type of graph from temperature to precipitation based. This meant now also implementing a method that would change the type of map displayed. For actually displaying the map, we now ran the same scripts - previously used to parse the temperature - on the manually downloaded precipitation data, and used the 'onchange' function to determine which of the two maps to render. This meant that we also had to pick a new color scheme from ColorBrewer \cite{colorbrewer}. We chose to use a sequential map to represent increasing amounts, and chose a white to green theme, given that green is often associated with cooler themes and since we didn't want to create confusion with the blue from temperature, and white could represent 0, as opposed to all being a single hue of green (figure prec map). 
+Using Javascript and D3's 'onchange' feature, we also implemented a change of the type of graph from temperature to precipitation based. This meant now also implementing a method that would change the type of map displayed. For actually displaying the map, we now ran the same scripts - previously used to parse the temperature - on the manually downloaded precipitation data, and used the 'onchange' function to determine which of the two maps to render. This meant that we also had to pick a new color scheme from ColorBrewer \cite{colorbrewer}. We chose to use a sequential map to represent increasing amounts, and chose a white to green theme, given that green is often associated with cooler themes and since we didn't want to create confusion with the blue from temperature, and white could represent 0, as opposed to all being a single hue of green (Fig 9). 
 
 
 \begin{figure}
@@ -170,7 +170,7 @@ Using Javascript and D3's 'onchange' feature, we also implemented a change of th
 
 \subsection {Final Visualization}
 
-For our final visualization, we included not only a legend for the points, but also a toggle for users to switch between the climate indicators such as temperature, dew point, and wind speed. Fig 6 shows the final implementation. We have the time slider on the top, the legend for the airport on the bottom right, and a stats box that on the bottom left, indicating the highest selected climate indicator for that day, along with the location in which it occurred as shown in Fig 7.
+For our final visualization, we included not only a legend for the points, but also a toggle for users to switch between the climate indicators such as temperature, dew point, and wind speed. (Fig 10) shows the final implementation. We have the time slider on the top, the legend for the airport on the bottom right, and a stats box that on the bottom left, indicating the highest selected climate indicator for that day, along with the location in which it occurred as shown in (Fig 11).
 
 \begin{figure}
     \centering
@@ -181,7 +181,7 @@ For our final visualization, we included not only a legend for the points, but a
     \caption{Multiple Airports have the Highest Pressure for the selected date}
 \end{figure}
 
-In addition, one of the crucial improvements that we wanted to implement was the tooltip for each of the airports. Our final tooltip (Fig 8) shows the full name of the airport that you selected. This felt more intuitive given that airports with an unfamiliar airport code were unknown to users. In addition, since we had data on all the climate indicators, we thought it would also be best to include statistics on all the weather indicators, and the line chart should only show the climate indicator selected. In Fig 8, temperature was selected as the toggle for Point Information, and the line chart reflects by graphing the temperature data for the past 7 days.
+In addition, one of the crucial improvements that we wanted to implement was the tooltip for each of the airports. Our final tooltip (Fig 12) shows the full name of the airport that you selected. This felt more intuitive given that airports with an unfamiliar airport code were unknown to users. In addition, since we had data on all the climate indicators, we thought it would also be best to include statistics on all the weather indicators, and the line chart should only show the climate indicator selected. In Fig 8, temperature was selected as the toggle for Point Information, and the line chart reflects by graphing the temperature data for the past 7 days.
 
 \begin{figure}
     \centering
@@ -216,7 +216,7 @@ Collectively, we heard that adding more map elements would crowd the visualizati
 
 Some other feedback received was related to how large the data set was. Given that our airport points data was across the entire year with its weather stats, it take a noticeable amount of time to refresh. Our Python script creates JSON files, and reformatting the files in case of changes made takes upwards of 15 minutes running. Thus, a suggestion that came up was to break down the data into 7-day segments, allowing the graphs to be succinctly kept. We discussed this, but ultimately decided against it given that it would disjoint the feeling of the current daily slider. Additionally, breaking up the data would result in an uneven week total, since the number of weeks doesn't divide perfectly.
 
-Finally, some more feedback that we were able to partially follow through on was based on the color choices used. Primarily, one suggestion was to implement a colorblind friendly mode for the colors, especially considering we're using green on red, and beige next to the red. We switched the temperature coloring to one with more distinct points and ends from ColorBrewer's \cite{colorbrewer} diverging colorblind safe options. We didn't apply a fully colorblind safe feature, especially for the airport points being green; however, we ensured the point contains distinct black borders to draw it away from blending with the background. Additionally, there was a suggestion regarding the missing or faulty data representations. Currently, if a county has missing or faulty data for a specific time period, it will appear blacked out (figure see image), which could cause confusion with high precipitation levels for example. When I asked what could be better done to represent the data, it was brought up to use a pattern - such as diagonally stripped or spotted - in the county. As indicated, that is something we didn't implement, as during testing there were initially difficulities, and in later stages, it seemed like the approaches would create too much clutter, but is spoken further in \textit{Future Work}.
+Finally, some more feedback that we were able to partially follow through on was based on the color choices used. Primarily, one suggestion was to implement a colorblind friendly mode for the colors, especially considering we're using green on red, and beige next to the red. We switched the temperature coloring to one with more distinct points and ends from ColorBrewer's \cite{colorbrewer} diverging colorblind safe options. We didn't apply a fully colorblind safe feature, especially for the airport points being green; however, we ensured the point contains distinct black borders to draw it away from blending with the background. Additionally, there was a suggestion regarding the missing or faulty data representations. Currently, if a county has missing or faulty data for a specific time period, it will appear blacked out (Fig 15), which could cause confusion with high precipitation levels for example. When I asked what could be better done to represent the data, it was brought up to use a pattern - such as diagonally stripped or spotted - in the county. As indicated, that is something we didn't implement, as during testing there were initially difficulities, and in later stages, it seemed like the approaches would create too much clutter, but is spoken further in \textit{Future Work}.
 
 
 \begin{figure}
@@ -240,7 +240,7 @@ Another suggestion was to add a toggle for the climate indicators. Some people m
 
 \textbf{Data collection} was definitely one of the more significant barriers to our success. We struggled with finding a dataset with all the information that we needed, so we ended up having to combine different datasets for the airport data. We also struggled in building the map weather statistics as we set our goals too large when it came to sampling data, and found that many of the available sets were not in applicable formats. We recognize that counties are not always monolithic fields of weather and not all counties are of the same area; however, we felt counties roughly resembled similar climates and weather occurrences throughout each individual one. 
 
-\textbf{Stack} also posed a challenge for us. We were not familiar with the D3 stack, and we had to rely heavily on trying to map the examples given on the D3 gallery \cite{d3_2020_gallery} to our own project. Despite briefly using D3 for a previous project, we still spent a lot of time debugging and dealing with complicated issues, such as attempting to fill the county data (figure broken counties). Our TopoJSON counties were initially drawn using lines, and many examples online used different styles, so it took a lot of time and cross-referencing with other code to build a stable product.
+\textbf{Stack} also posed a challenge for us. We were not familiar with the D3 stack, and we had to rely heavily on trying to map the examples given on the D3 gallery \cite{d3_2020_gallery} to our own project. Despite briefly using D3 for a previous project, we still spent a lot of time debugging and dealing with complicated issues, such as attempting to fill the county data (Fig 16). Our TopoJSON counties were initially drawn using lines, and many examples online used different styles, so it took a lot of time and cross-referencing with other code to build a stable product.
 
 \begin{figure}
 	\centering
